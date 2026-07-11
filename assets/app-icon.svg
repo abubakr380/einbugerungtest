@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="38" x2="430" y2="474" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182849"/>
+      <stop offset="0.52" stop-color="#0a1630"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="book" x1="146" y1="126" x2="374" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#69a9ff"/>
+      <stop offset="1" stop-color="#2f73ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="340" cy="130" r="104" fill="#3482ff" opacity=".18" filter="url(#glow)"/>
+  <path d="M117 151c0-20 16-36 36-36h69c25 0 46 10 60 27 14-17 35-27 60-27h18c20 0 36 16 36 36v230c0 10-8 18-18 18h-36c-24 0-46 9-62 26-16-17-38-26-62-26h-83c-10 0-18-8-18-18V151Z" fill="url(#book)" opacity=".98"/>
+  <path d="M282 155v266" stroke="#d9eaff" stroke-width="14" stroke-linecap="round" opacity=".72"/>
+  <path d="M162 201h76M162 247h76M162 293h76" stroke="#eaf4ff" stroke-width="13" stroke-linecap="round" opacity=".9"/>
+  <path d="m322 252 28 29 56-65" fill="none" stroke="#dff8ec" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 399h86c24 0 46 9 64 26 18-17 40-26 64-26h31" fill="none" stroke="#9ac6ff" stroke-width="10" stroke-linecap="round" opacity=".62"/>
+</svg>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Mobile-first Übungs-App für den Einbürgerungstest Berlin mit 310 Fragen, Prüfungssimulation und Lernstatistik." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="EinTest Berlin" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Einbürgerungstest Berlin</title>
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true">
+      <defs>
+        <linearGradient id="ring-gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#69adff" />
+          <stop offset="1" stop-color="#3d75ff" />
+        </linearGradient>
+        <linearGradient id="result-ring-gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#50e3a4" />
+          <stop offset="1" stop-color="#2f8cff" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="app-shell" id="app">
+      <header class="app-header">
+        <a class="brand" href="#home" aria-label="EinTest Berlin – Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v14a3.5 3.5 0 0 0-3.5-3.5H4V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H14v17a3.5 3.5 0 0 1 3.5-3.5H20v-11Z"/></svg>
+          </span>
+          <span><strong>EinTest</strong><small>Berlin</small></span>
+        </a>
+        <button class="install-button is-hidden" id="install-button" type="button" aria-label="App installieren">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+          <span>Installieren</span>
+        </button>
+        <div class="header-progress" id="header-progress" aria-label="Lernfortschritt">
+          <span class="mini-ring" aria-hidden="true"><i id="mini-ring-fill"></i></span>
+          <span><strong id="header-mastered">0</strong><small>gemeistert</small></span>
+        </div>
+      </header>
+
+      <main class="main-content" id="main-content">
+        <section class="tab-view is-active" id="view-home" data-view="home" aria-labelledby="home-title">
+          <div class="hero-section">
+            <div class="eyebrow"><span class="live-dot"></span> Berlin Edition · 2026</div>
+            <h1 id="home-title">Einbürgerungs&shy;test Berlin</h1>
+            <p>310 Fragen. Ein klares Ziel. Bereite dich in deinem Tempo auf den Test vor.</p>
+            <div class="hero-orb" aria-hidden="true">
+              <span class="orb-ring orb-ring-one"></span>
+              <span class="orb-ring orb-ring-two"></span>
+              <svg viewBox="0 0 64 64"><path d="M17 15h19a9 9 0 0 1 9 9v26H26a9 9 0 0 0-9 9V15Z"/><path d="M47 15h-3a9 9 0 0 0-9 9v26h3a9 9 0 0 1 9 9V15Z"/><path d="m25 31 5 5 10-12"/></svg>
+            </div>
+          </div>
+
+          <section class="quick-stats glass-card" aria-label="Schnellstatistik">
+            <div><span class="stat-icon stat-icon-green"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><strong id="home-mastered">0</strong><small>Gemeistert</small></div>
+            <div><span class="stat-icon stat-icon-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg></span><strong id="home-remaining">310</strong><small>Verbleibend</small></div>
+            <div><span class="stat-icon stat-icon-purple"><svg viewBox="0 0 24 24"><path d="M4 18V9m6 9V5m6 13v-7m4 7V3"/></svg></span><strong id="home-accuracy">0%</strong><small>Genauigkeit</small></div>
+          </section>
+
+          <section class="content-section" aria-labelledby="modes-title">
+            <div class="section-heading">
+              <div><span class="section-kicker">DEIN TRAINING</span><h2 id="modes-title">Übungsmodus wählen</h2></div>
+              <span class="section-count">4 Modi</span>
+            </div>
+            <div class="mode-grid">
+              <button class="mode-card mode-card-featured" type="button" data-start-mode="all">
+                <span class="mode-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/><circle cx="19" cy="19" r="2"/></svg></span>
+                <span class="mode-copy"><strong>Alle Fragen</strong><small>Alle 310 zufällig üben</small><em><i id="all-progress-fill"></i></em></span>
+                <span class="mode-arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span>
+              </button>
+              <button class="mode-card" type="button" data-start-mode="mock">
+                <span class="mode-icon mode-icon-purple"><svg viewBox="0 0 24 24"><path d="M8 3h8v3H8zM6 5h12a2 2 0 0 1 2 2v14H4V7a2 2 0 0 1 2-2Z"/><path d="m8 13 3 3 5-6"/></svg></span>
+                <span class="mode-copy"><span class="mode-title-line"><strong>Probeprüfung</strong><b>60 MIN</b></span><small>33 Fragen · Bestehen ab 17</small></span>
+                <span class="mode-arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span>
+              </button>
+              <button class="mode-card" type="button" data-start-mode="weak">
+                <span class="mode-icon mode-icon-red"><svg viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg></span>
+                <span class="mode-copy"><span class="mode-title-line"><strong>Schwachstellen</strong><b class="red-badge" id="weak-count">0</b></span><small>Falsch beantwortete Fragen</small></span>
+                <span class="mode-arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span>
+              </button>
+              <button class="mode-card" type="button" data-start-mode="unmastered">
+                <span class="mode-icon mode-icon-cyan"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 0-4 12.75V19h8v-3.25A7 7 0 0 0 12 3Z"/><path d="M9 22h6M9 12l2 2 4-4"/></svg></span>
+                <span class="mode-copy"><strong>Noch nicht gemeistert</strong><small><span id="unmastered-count">310</span> Fragen verbleiben</small></span>
+                <span class="mode-arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="exam-card glass-card" aria-labelledby="exam-info-title">
+            <span class="exam-card-icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M6 10v6c3 2 9 2 12 0v-6M21 8v7"/></svg></span>
+            <div><span class="section-kicker">ECHTER TEST</span><h2 id="exam-info-title">So läuft die Prüfung ab</h2>
+              <div class="exam-facts"><span><strong>33</strong><small>Fragen</small></span><i></i><span><strong>60</strong><small>Minuten</small></span><i></i><span><strong>17</strong><small>zum Bestehen</small></span></div>
+              <p>30 allgemeine Fragen + 3 Fragen zu Berlin. Pro Frage ist genau eine Antwort richtig.</p>
+            </div>
+          </section>
+          <p class="source-note">Inoffizielles Lerntool · Fragenbasis nach dem öffentlichen BAMF-Katalog</p>
+        </section>
+
+        <section class="tab-view" id="view-practice" data-view="practice" aria-labelledby="practice-title" hidden>
+          <header class="page-intro">
+            <span class="section-kicker">GEZIELT LERNEN</span>
+            <h1 id="practice-title">Themenbereiche</h1>
+            <p>Konzentriere dich auf ein Thema und sieh deinen Fortschritt auf einen Blick.</p>
+          </header>
+          <button class="berlin-card" id="berlin-category-card" type="button" data-category="Berlin (Bundesland)">
+            <span class="berlin-bear" aria-hidden="true"><img src="assets/app-icon.svg" alt="" /></span>
+            <span class="category-copy"><span class="category-topline"><span><small>BUNDESLAND</small><strong>Berlin</strong></span><b id="berlin-category-count">0 / 10</b></span><em><i id="berlin-category-fill"></i></em><small>10 landesspezifische Fragen</small></span>
+            <span class="mode-arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></span>
+          </button>
+          <div class="category-list" id="category-list"></div>
+        </section>
+
+        <section class="tab-view" id="view-stats" data-view="stats" aria-labelledby="stats-title" hidden>
+          <header class="page-intro stats-intro">
+            <span class="section-kicker">DEIN FORTSCHRITT</span>
+            <h1 id="stats-title">Statistik</h1>
+            <p>Jede Antwort bringt dich deinem Ziel näher.</p>
+          </header>
+          <section class="accuracy-card glass-card" aria-labelledby="accuracy-title">
+            <div class="accuracy-ring-wrap">
+              <svg class="accuracy-ring" viewBox="0 0 140 140" role="img" aria-labelledby="accuracy-ring-title accuracy-ring-desc">
+                <title id="accuracy-ring-title">Gesamtgenauigkeit</title><desc id="accuracy-ring-desc">Anteil richtiger Antworten an allen beantworteten Fragen.</desc>
+                <circle class="ring-track" cx="70" cy="70" r="58" />
+                <circle class="ring-value" id="stats-ring-value" cx="70" cy="70" r="58" pathLength="100" />
+              </svg>
+              <div><strong id="stats-accuracy">0%</strong><small>Genauigkeit</small></div>
+            </div>
+            <div><span class="section-kicker">GESAMTLEISTUNG</span><h2 id="accuracy-title">Bleib konsequent dran</h2><p id="accuracy-message">Beantworte deine erste Frage, um deine Statistik zu starten.</p></div>
+          </section>
+
+          <section class="stats-grid" aria-label="Antwortstatistik">
+            <div class="stat-card"><span class="stat-icon stat-icon-blue"><svg viewBox="0 0 24 24"><path d="M7 4h10v16H7zM4 7h3m10 0h3"/></svg></span><strong id="stats-answered">0</strong><small>Beantwortet</small></div>
+            <div class="stat-card"><span class="stat-icon stat-icon-green"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><strong id="stats-correct">0</strong><small>Richtig</small></div>
+            <div class="stat-card"><span class="stat-icon stat-icon-red"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6m0-6-6 6"/></svg></span><strong id="stats-wrong">0</strong><small>Falsch</small></div>
+            <div class="stat-card"><span class="stat-icon stat-icon-purple"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg></span><strong id="stats-mastered">0</strong><small>Gemeistert</small></div>
+          </section>
+
+          <section class="streak-card glass-card" aria-labelledby="streak-title">
+            <span class="flame-icon"><svg viewBox="0 0 24 24"><path d="M13 2c1 5-3 5-3 9 0 2 1 3 2 4-3 0-5-2-5-5-3 3-3 8 0 11 4 4 12 2 13-4 1-5-2-10-7-15Z"/></svg></span>
+            <div><span class="section-kicker">SERIE</span><h2 id="streak-title">Weiter so!</h2><p>Richtige Antworten in Folge</p></div>
+            <div class="streak-values"><span><strong id="current-streak">0</strong><small>Aktuell</small></span><i></i><span><strong id="best-streak">0</strong><small>Rekord</small></span></div>
+          </section>
+
+          <section class="history-section" aria-labelledby="history-title">
+            <div class="section-heading"><div><span class="section-kicker">PROBEPRÜFUNGEN</span><h2 id="history-title">Letzte Ergebnisse</h2></div><span class="section-count" id="history-count">0 Versuche</span></div>
+            <div class="history-list" id="exam-history"></div>
+          </section>
+
+          <button class="danger-button" id="reset-progress" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m-9 0 1 14h10l1-14M10 11v6m4-6v6"/></svg>Fortschritt zurücksetzen</button>
+        </section>
+      </main>
+
+      <nav class="tab-bar" aria-label="Hauptnavigation">
+        <button class="tab-button is-active" type="button" data-tab="home" aria-current="page"><span><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-7H9v7H3V11Z"/></svg></span><small>Home</small></button>
+        <button class="tab-button" type="button" data-tab="practice"><span><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v14a3.5 3.5 0 0 0-3.5-3.5H4V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H14v17a3.5 3.5 0 0 1 3.5-3.5H20v-11Z"/></svg></span><small>Üben</small></button>
+        <button class="tab-button" type="button" data-tab="stats"><span><svg viewBox="0 0 24 24"><path d="M5 20V10m7 10V4m7 16v-7"/></svg></span><small>Statistik</small></button>
+      </nav>
+    </div>
+
+    <section class="overlay quiz-overlay" id="quiz-overlay" aria-labelledby="quiz-question" hidden>
+      <header class="quiz-header">
+        <button class="icon-button" id="exit-quiz" type="button" aria-label="Quiz verlassen"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+        <div class="quiz-header-center"><strong id="quiz-progress-text">1 / 310</strong><span id="quiz-mode-badge">Alle Fragen</span></div>
+        <div class="quiz-header-actions"><span class="timer is-hidden" id="quiz-timer"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>60:00</b></span><button class="translation-toggle" id="translation-toggle" type="button" aria-pressed="false" aria-label="Englische Übersetzung einblenden">🇬🇧</button></div>
+      </header>
+      <div class="quiz-progress-track"><i id="quiz-progress-fill"></i></div>
+      <main class="quiz-main">
+        <article class="question-card" id="question-card">
+          <div class="question-meta"><span id="question-number">FRAGE 1</span><span id="question-category">Geschichte</span></div>
+          <img class="question-image" id="question-image" src="" alt="Abbildung zur Frage" hidden />
+          <h1 id="quiz-question"></h1>
+          <div class="translation-block" id="question-translation"><span>ENGLISH</span><p></p></div>
+        </article>
+        <div class="options-list" id="quiz-options" role="group" aria-label="Antwortmöglichkeiten"></div>
+        <aside class="feedback-panel" id="feedback-panel" aria-live="polite" hidden>
+          <div class="feedback-heading"><span id="feedback-icon"></span><strong id="feedback-title"></strong></div>
+          <p id="feedback-context"></p>
+          <div class="translation-block" id="feedback-translation"><span>ENGLISH EXPLANATION</span><p></p></div>
+        </aside>
+      </main>
+      <footer class="quiz-footer"><button class="primary-button" id="next-question" type="button" hidden>Weiter<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button></footer>
+    </section>
+
+    <section class="overlay results-overlay" id="results-overlay" aria-labelledby="results-title" hidden>
+      <main class="results-main">
+        <div class="results-topline"><span class="section-kicker">ERGEBNIS</span><button class="icon-button" id="close-results" type="button" aria-label="Ergebnis schließen"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+        <section class="score-hero">
+          <div class="result-ring-wrap">
+            <svg viewBox="0 0 180 180" role="img" aria-labelledby="result-ring-title result-ring-desc"><title id="result-ring-title">Testergebnis</title><desc id="result-ring-desc">Prozentualer Anteil korrekter Antworten.</desc><circle class="result-ring-track" cx="90" cy="90" r="72"/><circle class="result-ring-value" id="result-ring-value" cx="90" cy="90" r="72" pathLength="100"/></svg>
+            <div><strong id="result-percent">0%</strong><small>Richtig</small></div>
+          </div>
+          <span class="result-badge is-hidden" id="result-badge"></span>
+          <h1 id="results-title">Stark gemacht!</h1>
+          <p><strong id="result-score">0 von 0</strong> Fragen richtig beantwortet</p>
+        </section>
+        <section class="breakdown-section" aria-labelledby="breakdown-title"><div class="section-heading"><div><span class="section-kicker">AUSWERTUNG</span><h2 id="breakdown-title">Nach Themenbereich</h2></div></div><div class="breakdown-list" id="category-breakdown"></div></section>
+        <section class="review-section" id="wrong-review-section" aria-labelledby="wrong-review-title"><div class="section-heading"><div><span class="section-kicker">WIEDERHOLEN</span><h2 id="wrong-review-title">Falsche Antworten</h2></div><span class="section-count" id="wrong-review-count">0</span></div><div class="wrong-review-list" id="wrong-review-list"></div></section>
+      </main>
+      <footer class="results-footer"><button class="secondary-button" id="try-again" type="button"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg>Noch einmal</button><button class="primary-button" id="back-home" type="button">Zur Startseite<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button></footer>
+    </section>
+
+    <dialog class="confirm-dialog" id="confirm-dialog">
+      <div class="dialog-icon" id="dialog-icon"><svg viewBox="0 0 24 24"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg></div>
+      <h2 id="dialog-title">Quiz verlassen?</h2>
+      <p id="dialog-message">Dein Fortschritt in dieser Runde geht verloren.</p>
+      <div><button class="secondary-button" id="dialog-cancel" type="button">Abbrechen</button><button class="danger-button filled" id="dialog-confirm" type="button">Verlassen</button></div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

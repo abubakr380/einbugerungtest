@@ -1,0 +1,9 @@
+{
+  "name": "eintest-berlin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 4173",
+    "check": "node --check app.js && node --check questions.js && node --check sw.js && node scripts/verify.mjs"
+  }
+}
