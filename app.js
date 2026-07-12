@@ -387,6 +387,7 @@ function renderQuestion() {
     </button>`).join("");
   $("#feedback-panel").hidden = true;
   $("#feedback-panel").classList.remove("is-correct", "is-wrong");
+  $("#quiz-footer").hidden = true;
   $("#next-question").hidden = true;
   $("#next-question").firstChild.textContent = quiz.index === quiz.questions.length - 1 ? "Auswertung" : "Weiter";
   $(".quiz-main")?.scrollTo?.({ top: 0 });
@@ -436,6 +437,7 @@ function answerQuestion(selected) {
   $("#feedback-title").textContent = correct ? "Richtig beantwortet" : "Leider nicht richtig";
   $("#feedback-context").textContent = question.context;
   $("#feedback-translation p").textContent = question.en?.context || question.context;
+  $("#quiz-footer").hidden = false;
   $("#next-question").hidden = false;
   window.setTimeout(() => $("#feedback-panel").scrollIntoView({ behavior: "smooth", block: "nearest" }), 120);
 }
