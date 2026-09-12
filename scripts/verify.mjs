@@ -23,7 +23,15 @@ if (QUESTIONS.length !== 310 || general.length !== 300 || berlin.length !== 10) 
 if (new Set(QUESTIONS.map((question) => question.num)).size !== 310) failures.push("Question numbers are not unique.");
 if (QUESTIONS.some((question) => requiredQuestionKeys.some((key) => !(key in question)))) failures.push("At least one question is missing a required key.");
 if (QUESTIONS.some((question) => !["a", "b", "c", "d"].includes(question.solution))) failures.push("At least one solution key is invalid.");
-if (QUESTIONS.some((question) => !question.en?.question || !question.en?.context)) failures.push("At least one English translation is incomplete.");
+const identicalEnglish = new Set(['Willy Brandt', 'Konrad Adenauer', 'Kurt Georg Kiesinger', 'Helmut Schmidt', 'Japan', 'USA', 'Dresden', 'Frankfurt/Oder', 'Berlin', 'Konrad Adenauer.', 'Willy Brandt.', 'Ludwig Erhard.', 'Gerhard Schröder.', 'Saarland', 'Brandenburg', 'Bremen', 'Baden-Württemberg', 'Schleswig-Holstein', 'Mecklenburg-Vorpommern', 'Gerhard Schröder', 'Helmut Kohl', 'Ludwig Erhard', 'tolerant.', 'Angela Merkel', 'Friedrich Merz', 'Ursula von der Leyen', 'Bärbel Bas', 'Bodo Ramelow', 'Frank-Walter Steinmeier', 'Joachim Gauck', 'Opposition', 'Portugal', 'Paris', 'London', 'Euro Union', 'Pankow', 'Prignitz', 'Altona']);
+for (const question of QUESTIONS) {
+  for (const key of ['question', 'a', 'b', 'c', 'd', 'context']) {
+    const en = question.en?.[key]?.trim();
+    if (!en) failures.push(`Missing English ${key} for ${question.num}`);
+    else if (en === question[key].trim() && (key === 'question' || key === 'context' || (!/^[0-9%]+$/.test(en) && !identicalEnglish.has(en)))) failures.push(`German copied into English ${key} for ${question.num}`);
+  }
+  if (!/^[A-Za-z &]+$/.test(question.category)) failures.push(`Invalid theme: ${question.num} ${question.category}`);
+}
 if (QUESTIONS.some((question) => question.image && !existsSync(new URL(`../${question.image}`, import.meta.url)))) failures.push("At least one local question image is missing.");
 
 for (let run = 0; run < 500; run += 1) {

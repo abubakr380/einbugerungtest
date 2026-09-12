@@ -1,9 +1,13 @@
-const CACHE_NAME = "eintest-berlin-v2";
+const CACHE_NAME = "eintest-berlin-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
+  "./progress-model.js",
+  "./progress-store.js",
+  "./sync-config.js",
+  "./scripts/migrate-localstorage.js",
   "./questions.js",
   "./manifest.json",
   "./assets/app-icon.svg",
@@ -26,26 +30,34 @@ const APP_SHELL = [
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
-  self.skipWaiting();
+});
+
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+    caches.keys().then((keys) => Promise.all(keys.filter((key) => key.startsWith('eintest-berlin-') && key !== CACHE_NAME).map((key) => caches.delete(key)))).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  const url = new URL(event.request.url);
+  // Progress is never cached, including a future same-origin backend.
+  if (url.origin !== self.location.origin || url.pathname.includes('/api/')) return;
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    caches.open(CACHE_NAME).then(cache => cache.match(event.request)).then((cached) => {
       if (cached) return cached;
       return fetch(event.request)
         .then((response) => {
           if (!response || response.status !== 200 || response.type === "opaque") return response;
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          // Cache only known app files, not arbitrary pages or user data.
+          if (APP_SHELL.some(path => new URL(path, self.registration.scope).href === url.href)) {
+            const copy = response.clone();
+            event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy)));
+          }
           return response;
         })
         .catch(() => event.request.mode === "navigate" ? caches.match("./index.html") : Response.error());

@@ -4,6 +4,17 @@
   "type": "module",
   "scripts": {
     "serve": "python3 -m http.server 4173",
-    "check": "node --check app.js && node --check questions.js && node --check sw.js && node scripts/verify.mjs"
+    "check": "node --check app.js && node --check questions.js && node --check sw.js && node --check worker/index.js && node scripts/verify.mjs && node --test tests/*.test.mjs",
+    "dev:api": "wrangler dev --port 8787",
+    "db:local": "wrangler d1 migrations apply eintest-progress --local",
+    "db:remote": "wrangler d1 migrations apply eintest-progress --remote",
+    "deploy:api": "wrangler deploy",
+    "translations": "node scripts/apply-translations.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "4.131.1"
   }
 }

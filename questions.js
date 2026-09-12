@@ -13,7 +13,7 @@ export const QUESTIONS = [
     "en": {
       "question": "What happened on May 8, 1945?",
       "a": "End of World War II in Europe",
-      "b": "Tod Adolf Hitlers",
+      "b": "Death of Adolf Hitler",
       "c": "Election of Konrad Adenauer as Federal Chancellor",
       "d": "Beginning of the construction of the Berlin Wall",
       "context": "The question refers to an important date in German and European history in the 20th century. Several historical events are put to choose from, which are far apart in time. In order to find the right answer, it is helpful to have a basic knowledge of the course of the Second World War, the post-war period in Germany, as well as significant political developments such as changes of government or the Cold War."
@@ -31,7 +31,7 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die Frage bezieht sich auf die Zeit des Nationalsozialismus (1933–1945) in Deutschland. In dieser Epoche errichtete das NS-Regime eine Diktatur, in der demokratische Grundrechte schrittweise abgeschafft wurden. Politische Opposition wurde verfolgt, die Medien gleichgeschaltet und das politische Leben stark kontrolliert. Gesetze und staatliche Maßnahmen dienten der Machtsicherung der NSDAP und nicht dem Schutz individueller Freiheiten oder der Menschenwürde.",
     "en": {
-      "question": "What happened in Germany during the Nazi era?",
+      "question": "What existed in Germany during the National Socialist era?",
       "a": "the right to the free development of one's personality",
       "b": "the protection of human dignity",
       "c": "the prohibition of political parties",
@@ -551,7 +551,7 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Der erste Bundeskanzler der Bundesrepublik Deutschland war …",
+      "question": "The first Federal Chancellor of the Federal Republic of Germany was …",
       "a": "Konrad Adenauer.",
       "b": "Willy Brandt.",
       "c": "Ludwig Erhard.",
@@ -672,10 +672,10 @@ export const QUESTIONS = [
     "context": "Die Frage bezieht sich auf ein historisches Ereignis in der frühen Geschichte der DDR. Im Jahr 1953 kam es dort zu einem Volksaufstand gegen politische und wirtschaftliche Maßnahmen der Staatsführung. Dieser Aufstand hatte eine große symbolische Bedeutung für Deutschland und wurde in der Bundesrepublik über viele Jahre hinweg offiziell als Gedenk- und Feiertag begangen. Gesucht ist das konkrete Datum, an dem dieser Aufstand stattfand.",
     "en": {
       "question": "In 1953 there was an uprising in the GDR, which was commemorated for a long time by a holiday in the Federal Republic of Germany. When was that?",
-      "a": "9. November",
+      "a": "November 9",
       "b": "July 20",
       "c": "June 17",
-      "d": "1. May",
+      "d": "May 1",
       "context": "The question refers to a historical event in the early history of the GDR. In 1953, there was a popular uprising against political and economic measures taken by the state leadership. This uprising had great symbolic significance for Germany and was officially celebrated in the Federal Republic of Germany for many years as a memorial and holiday. The specific date on which this uprising took place is sought."
     }
   },
@@ -692,7 +692,7 @@ export const QUESTIONS = [
     "context": "Nach dem Zweiten Weltkrieg war Deutschland in verschiedene Staaten mit unterschiedlichen politischen Systemen geteilt. Jeder dieser Staaten verwendete eigene nationale Symbole wie Flaggen und Wappen, um seine Ideologie und Identität darzustellen. Besonders Flaggen unterschieden sich durch Farben und Embleme, etwa durch zusätzliche Zeichen neben den Farben Schwarz‑Rot‑Gold. Um die richtige Antwort zu finden, ist es hilfreich, die historischen Hintergründe der deutschen Staaten im 20. Jahrhundert zu kennen.",
     "en": {
       "question": "Which German state had a black-red-gold flag with hammer, compass and wreath of wheat?",
-      "a": "DDR",
+      "a": "GDR (East Germany)",
       "b": "Third Reich",
       "c": "Prussia",
       "d": "Federal Republic of Germany",
@@ -831,11 +831,11 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Am 3. Oktober feiert man in Deutschland den Tag der Deutschen …",
-      "a": "Bundesländer.",
-      "b": "Einheit.",
-      "c": "Nation.",
-      "d": "Städte.",
+      "question": "On October 3, Germany celebrates the Day of German …",
+      "a": "federal states.",
+      "b": "unity.",
+      "c": "nation.",
+      "d": "cities.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -931,11 +931,11 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Mit der Abkürzung \"Stasi\" meinte man in der DDR …",
-      "a": "das Ministerium für Volksbildung.",
-      "b": "eine regierende Partei.",
-      "c": "das Parlament.",
-      "d": "das Ministerium fuеr Staatssicherheit.",
+      "question": "In the GDR, the abbreviation ‘Stasi’ referred to …",
+      "a": "the Ministry of Public Education.",
+      "b": "a governing party.",
+      "c": "the parliament.",
+      "d": "the Ministry for State Security.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -1291,7 +1291,7 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die Frage bezieht sich auf die historische Entwicklung Deutschlands nach dem Zweiten Weltkrieg. In verschiedenen Jahren änderten sich Staatsform, politische Ordnung und territoriale Grenzen Deutschlands. Besonders wichtig sind die Gründung der Bundesrepublik Deutschland, die Teilung in Ost- und Westdeutschland sowie die deutsche Wiedervereinigung. Der zeitliche Zusammenhang hilft zu verstehen, ab welchem Jahr die heutigen Grenzen der Bundesrepublik Deutschland bestehen.",
     "en": {
-      "question": "The Federal Republic of Germany has closed the borders of today since ...",
+      "question": "The Federal Republic of Germany has had its present borders since …",
       "a": "1933",
       "b": "1949",
       "c": "1971",
@@ -1411,11 +1411,11 @@ export const QUESTIONS = [
     "category": "Education & Religion",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am?",
-      "a": "Religionsunterricht teilnimmt",
-      "b": "Politikunterricht teilnimmt.",
-      "c": "Geschichtsunterricht teilnimmt.",
-      "d": "Sprachunterricht teilnimmt.",
+      "question": "In Germany, until their child turns 14, parents can decide whether the child attends … at school.",
+      "a": "religious education classes.",
+      "b": "politics classes.",
+      "c": "history classes.",
+      "d": "language classes.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -1451,11 +1451,11 @@ export const QUESTIONS = [
     "category": "Rights & Freedoms",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
-      "a": "Selbstjustiz.",
-      "b": "Meinungsfreiheit",
-      "c": "Waffenbesitz",
-      "d": "Faustrecht",
+      "question": "Which right is one of the fundamental rights in Germany?",
+      "a": "Taking the law into one's own hands.",
+      "b": "Freedom of expression.",
+      "c": "Gun ownership.",
+      "d": "Rule by force.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -1595,7 +1595,7 @@ export const QUESTIONS = [
       "a": "Constitutional Treaty",
       "b": "Code of Law",
       "c": "Basic Law",
-      "d": "Bundesverfassung",
+      "d": "Federal Constitution",
       "context": "The question relates to Germany's political system and legal foundations. It examines basic knowledge about the state and its organization. Knowledge of the most important legal basis, in which the state order, fundamental rights and the interaction of state organs are defined, is particularly relevant. Such questions often come up in politics lessons, civics or naturalization tests."
     }
   },
@@ -1613,9 +1613,9 @@ export const QUESTIONS = [
     "en": {
       "question": "Freedom of expression in Germany means that I ...",
       "a": "can express my opinion in letters to the editor.",
-      "b": "insulted passers-by on the street.",
+      "b": "may insult passers-by in the street.",
       "c": "I am only allowed to express my opinion as long as I do not contradict the government.",
-      "d": "Nazi, Hamas or Islamic State symbols in public.",
+      "d": "may publicly display Nazi, Hamas or Islamic State symbols.",
       "context": "The question relates to the fundamental right of freedom of expression in Germany. This right is enshrined in the Basic Law and allows people to express their opinions freely, for example in public or in the media. At the same time, there are legal limits, for example to protect other people or public order. The answer options are intended to show which statements on freedom of expression are allowed and which violate applicable law."
     }
   },
@@ -1791,11 +1791,11 @@ export const QUESTIONS = [
     "category": "Economy & Employment",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Eine Frau, die ein zweijähriges Kind hat, bewirbt sich in Deutschland um eine Stelle. Was ist ein Beispiel für Diskriminierung? Sie bekommt die Stelle nur deshalb nicht, weil sie ...",
-      "a": "keine Erfahrungen in diesem Beruf hat.",
-      "b": "kein Englisch spricht.",
-      "c": "Mutter ist.",
-      "d": "zu hohe Gehaltsvorstellungen hat.",
+      "question": "A woman with a two-year-old child applies for a job in Germany. Which is an example of discrimination? She is refused the job solely because she …",
+      "a": "has no experience in this profession.",
+      "b": "does not speak English.",
+      "c": "is a mother.",
+      "d": "expects too high a salary.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -1814,7 +1814,7 @@ export const QUESTIONS = [
       "question": "A man in a wheelchair has applied for a job as an accountant. What is an example of discrimination? The only reason he doesn't get the job is because he ...",
       "a": "has too high salary expectations.",
       "b": "has no experience.",
-      "c": "in a wheelchair.",
+      "c": "uses a wheelchair.",
       "d": "doesn't speak English.",
       "context": "An applicant applies for a job as an accountant. He meets the professional requirements, but there are various possible reasons why he does not get the job. In this context, it is to be assessed which reason for refusal constitutes discrimination. This is about the question of when a decision is unfair or discriminatory."
     }
@@ -1912,7 +1912,7 @@ export const QUESTIONS = [
     "context": "Die folgende Frage bezieht sich auf traditionelle Bräuche in Deutschland. Ostern ist ein wichtiges christliches Fest, das den Frühling und die Auferstehung Jesu Christi feiert. In dieser Zeit gibt es verschiedene typische Traditionen, die je nach Region unterschiedlich sein können. Die Antwortmöglichkeiten beschreiben verschiedene Handlungen, von denen nur eine tatsächlich zu den bekannten Osterbräuchen in Deutschland gehört.",
     "en": {
       "question": "What is an Easter custom in Germany?",
-      "a": "Shoot missiles into the air",
+      "a": "Set off fireworks",
       "b": "to decorate a Christmas tree",
       "c": "Putting pumpkins in front of the door",
       "d": "Paint eggs",
@@ -2094,7 +2094,7 @@ export const QUESTIONS = [
       "question": "Which animal is the heraldic animal of the Federal Republic of Germany?",
       "a": "Bear",
       "b": "Eagle",
-      "c": "Leo",
+      "c": "Lion",
       "d": "Horse",
       "context": "The question refers to state symbols and the heraldry of Germany. Many countries have a heraldic animal that symbolizes their history, values, or power. To choose the right option, basic knowledge of the German national coat of arms and its historical significance is helpful."
     }
@@ -2311,9 +2311,9 @@ export const QUESTIONS = [
     "category": "Law & Governance",
     "context": "In vielen Mietshäusern regelt die sogenannte Hausordnung das Zusammenleben der Bewohnerinnen und Bewohner. Sie soll Konflikte vermeiden und dafür sorgen, dass sich alle im Haus wohlfühlen. Die Hausordnung ergänzt oft den Mietvertrag und informiert darüber, welche Regeln im Alltag gelten, zum Beispiel im Umgang mit Gemeinschaftsflächen oder beim Einhalten von Ruhezeiten. Die folgende Frage bezieht sich auf den typischen Inhalt einer solchen Hausordnung.",
     "en": {
-      "question": "In most apartment buildings in Germany there are \"house rules\". What does such \"house rules\" say? It calls",
+      "question": "Most apartment buildings in Germany have ‘house rules’. What do these rules set out?",
       "a": "the address of the nearest public order office.",
-      "b": "Rules for the use of public.",
+      "b": "Rules for using public facilities.",
       "c": "all tenants in the building.",
       "d": "Rules that all residents must adhere to.",
       "context": "In many apartment buildings, the so-called house rules regulate the coexistence of the residents. It is intended to avoid conflicts and ensure that everyone feels comfortable in the house. The house rules often supplement the rental agreement and provide information about the rules that apply in everyday life, for example when dealing with common areas or when observing quiet hours. The following question refers to the typical content of such house rules."
@@ -2392,8 +2392,8 @@ export const QUESTIONS = [
     "context": "Stellen Sie sich vor, Sie kaufen in einem deutschen Elektronikgeschäft einen neuen Fernseher. Nach dem Kauf bringen Sie ihn nach Hause und packen ihn aus. Beim Einschalten merken Sie, dass der Fernseher nicht richtig funktioniert oder gar nicht angeht. Der Fernseher ist also defekt. Nun fragen Sie sich, welche Möglichkeit Sie als Kunde haben und wie Sie richtig reagieren sollten, um das Problem zu lösen.",
     "en": {
       "question": "You bought a television in Germany. At home, you unpack the TV, but it doesn't work. The TV is broken. What can you do?",
-      "a": "complain about the TV",
-      "b": "Write an ad",
+      "a": "make a complaint about the television",
+      "b": "place an advertisement",
       "c": "extend the warranty",
       "d": "replace the device without being asked",
       "context": "Imagine you buy a new TV in a German electronics store. After the purchase, you bring it home and unpack it. When you turn it on, you notice that the TV is not working properly or does not turn on at all. So the TV is defective. Now you are wondering what options you have as a customer and how you should react correctly to solve the problem."
@@ -2592,10 +2592,10 @@ export const QUESTIONS = [
     "context": "Die Frage bezieht sich auf grundlegende Prinzipien der deutschen Staatsordnung. In der politischen Bildung wird erklärt, woher die staatliche Macht in einer Demokratie stammt. Konzepte wie das Grundgesetz, demokratische Wahlen und die Rolle der Bürgerinnen und Bürger sind dabei zentral. Der Begriff „Volkssouveränität“ spielt eine wichtige Rolle im Verständnis, wie politische Entscheidungen legitimiert werden und welche Institutionen oder Personen Träger der Staatsgewalt sind.",
     "en": {
       "question": "What does \"popular sovereignty\" mean? All state power proceeds from ...",
-      "a": "Prussian king.",
-      "b": "Federal Constitutional Court.",
-      "c": "Volke.",
-      "d": "Bundestag.",
+      "a": "the Prussian king.",
+      "b": "the Federal Constitutional Court.",
+      "c": "the people.",
+      "d": "the Bundestag (federal parliament).",
       "context": "The question relates to fundamental principles of the German state order. Political education explains where state power in a democracy comes from. Concepts such as the Basic Law, democratic elections and the role of citizens are central to this. The term \"popular sovereignty\" plays an important role in understanding how political decisions are legitimized and which institutions or individuals are the bearers of state power."
     }
   },
@@ -2731,11 +2731,11 @@ export const QUESTIONS = [
     "category": "Law & Governance",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Die Zusammenarbeit von Parteien zur Bildung einer Regierung nennt man in Deutschland …",
-      "a": "Ministerium.",
-      "b": "Koalition.",
-      "c": "Fraktion.",
-      "d": "Einheit.",
+      "question": "In Germany, cooperation between political parties to form a government is called a …",
+      "a": "ministry.",
+      "b": "coalition.",
+      "c": "parliamentary group.",
+      "d": "unit.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -2772,10 +2772,10 @@ export const QUESTIONS = [
     "context": "In Deutschland ist der Staat föderal organisiert und besteht aus 16 Bundesländern. Jedes Bundesland hat eine eigene Landesregierung mit einer gewählten Führungsperson. Je nach historischer und politischer Tradition kann diese Person unterschiedliche Amtsbezeichnungen tragen. Die Frage zielt darauf ab, die gebräuchlichste Bezeichnung für die Regierungschefinnen und Regierungschefs der meisten Bundesländer zu erkennen.",
     "en": {
       "question": "What are the heads of government of most federal states called in Germany?",
-      "a": "Senator/Senatorin",
+      "a": "Senator",
       "b": "First Minister",
-      "c": "Prime Minister",
-      "d": "Prime Minister",
+      "c": "Prime Minister (Premierminister)",
+      "d": "Minister-President (Ministerpräsident)",
       "context": "In Germany, the state is federally organized and consists of 16 federal states. Each state has its own state government with an elected leader. Depending on the historical and political tradition, this person may have different official titles. The aim of the question is to identify the most common term for the heads of government of most federal states."
     }
   },
@@ -2832,7 +2832,7 @@ export const QUESTIONS = [
     "context": "In Deutschland werden wichtige politische Entscheidungen durch verschiedene staatliche Organe getroffen. Dazu gehören unter anderem Institutionen, die für Ordnung und Recht sorgen, sowie Gremien, die politische Richtlinien festlegen oder Gesetze anwenden. Um zu verstehen, wie neue Gesetze entstehen, ist es wichtig zu wissen, welche Aufgaben diese Organe haben und welche Rolle sie im politischen System spielen. Die folgende Frage bezieht sich darauf, welches Organ für die Verabschiedung neuer Gesetze zuständig ist.",
     "en": {
       "question": "Who passes a new law in Germany?",
-      "a": "the dishes",
+      "a": "the courts",
       "b": "the police",
       "c": "the government",
       "d": "Parliament",
@@ -2895,7 +2895,7 @@ export const QUESTIONS = [
       "a": "the government",
       "b": "the citizens' assembly",
       "c": "the Federal Council",
-      "d": "the President of the Swiss Confederation",
+      "d": "the Federal President",
       "context": "The question relates to the political system of the Federal Republic of Germany and tests knowledge about the so-called constitutional organs. Constitutional organs are state institutions that are laid down in the Basic Law and have central tasks in the formation and implementation of the state's will. In the multiple-choice question, various institutions are to be examined to determine whether they officially belong to these constitutional bodies or not."
     }
   },
@@ -2934,7 +2934,7 @@ export const QUESTIONS = [
       "question": "What is not state authority in Germany?",
       "a": "Judiciary",
       "b": "Directive",
-      "c": "Legislative",
+      "c": "Legislative branch",
       "d": "Executive",
       "context": "The question relates to the German political system and the principle of the separation of powers. In a democracy, state tasks are distributed among different powers in order to prevent abuse of power. Usually, a distinction is made between certain state powers with clear functions in the legislative, executive and judicial areas. The possible answers contain terms, not all of which belong to these recognised state authorities."
     }
@@ -2995,7 +2995,7 @@ export const QUESTIONS = [
       "a": "the President of the Bundestag",
       "b": "the President of the Federal Constitutional Court",
       "c": "the President of the Bundesrat",
-      "d": "the President of the Swiss Confederation",
+      "d": "the Federal President",
       "context": "The question relates to the political system of the Federal Republic of Germany and the formation of the Federal Government. It examines knowledge of the competences of the most important constitutional organs. In order to answer them, it is necessary to know what role individual state organs play in the appointment of members of the Federal Government and how the formal procedures are regulated under the Basic Law."
     }
   },
@@ -3031,11 +3031,11 @@ export const QUESTIONS = [
     "category": "Constitution",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "In Deutschland gehören der Bundestag und der Bundesrat zur …",
-      "a": "Judikative.",
-      "b": "Direktive.",
-      "c": "Exekutive.",
-      "d": "Legislative.",
+      "question": "In Germany, the Bundestag and Bundesrat belong to the …",
+      "a": "judiciary.",
+      "b": "directive branch.",
+      "c": "executive branch.",
+      "d": "legislative branch.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -3075,7 +3075,7 @@ export const QUESTIONS = [
       "a": "the tax office",
       "b": "the police",
       "c": "the ministries",
-      "d": "the dishes",
+      "d": "the courts",
       "context": "In Germany, state authority is divided into different areas according to the Basic Law. This separation of powers is intended to prevent abuse of power and ensures that different institutions have different tasks. There are organs that make laws, others that execute laws, and still others that decide on right and wrong. The question relates to which of the institutions mentioned does not belong to the executive power."
     }
   },
@@ -3272,7 +3272,7 @@ export const QUESTIONS = [
     "context": "Die Frage stammt aus dem Bereich Politik und Gemeinschaftskunde und bezieht sich auf das politische System der Bundesrepublik Deutschland. Sie soll prüfen, ob man die wichtigsten staatlichen Organe kennt. Deutschland ist ein föderaler, demokratischer Staat mit verschiedenen Institutionen auf Bundesebene, die unterschiedliche Aufgaben haben. Eine dieser Institutionen ist das Parlament, das die Bürgerinnen und Bürger auf Bundesebene vertritt.",
     "en": {
       "question": "What is the name of the parliament for the whole of Germany?",
-      "a": "Bundestag",
+      "a": "Bundestag (federal parliament)",
       "b": "Federal Convention",
       "c": "Federal Court of Justice",
       "d": "People's Chamber",
@@ -3432,7 +3432,7 @@ export const QUESTIONS = [
     "context": "In Deutschland gibt es mehrere wichtige Verfassungsorgane mit unterschiedlichen Aufgaben. Die Bundesregierung besteht aus dem Bundeskabinett, in dem Ministerinnen und Minister zentrale politische Entscheidungen vorbereiten und umsetzen. Daneben existieren weitere Ämter wie der Bundespräsident, der Bundesrat und der Bundestag, die jeweils eigene Rollen im politischen System haben. Um die Frage zu beantworten, ist es wichtig zu wissen, welche Funktion die Leitung des Bundeskabinetts umfasst.",
     "en": {
       "question": "Who heads the German Federal Cabinet?",
-      "a": "the President of the Swiss Confederation",
+      "a": "the Federal President",
       "b": "the President of the Bundesrat",
       "c": "the Federal Chancellor",
       "d": "the President of the Bundestag",
@@ -3532,7 +3532,7 @@ export const QUESTIONS = [
     "context": "Die Frage bezieht sich auf das politische System Deutschlands. In der Bundesrepublik Deutschland gibt es verschiedene wichtige Staatsorgane mit unterschiedlichen Aufgaben, zum Beispiel Regierung, Parlament und Bundesrat. Um die richtige Antwort zu finden, muss man wissen, welches Amt offiziell das Staatsoberhaupt vertritt und vor allem repräsentative Aufgaben übernimmt.",
     "en": {
       "question": "Who is the head of state of the Federal Republic of Germany?",
-      "a": "the President of the Swiss Confederation",
+      "a": "the Federal President",
       "b": "the President of the Bundestag",
       "c": "the Federal Chancellor",
       "d": "the President of the Bundesrat",
@@ -3892,7 +3892,7 @@ export const QUESTIONS = [
     "context": "Der folgende Multiple-Choice-Frage bezieht sich auf das Wahlsystem in Deutschland. Sie soll prüfen, wie gut man die Regeln versteht, nach denen bei Bundestagswahlen entschieden wird, welche Partei als Gewinner gilt. Dabei geht es um Stimmenarten und darum, welches Kriterium letztlich ausschlaggebend ist, um eine Wahl offiziell zu gewinnen.",
     "en": {
       "question": "Elections in Germany are won by the party that ...",
-      "a": "voted for most men by a majority.",
+      "a": "a majority of men voted for.",
       "b": "received the most votes among the workers.",
       "c": "has received the most first votes for their chancellor candidate.",
       "d": "gets the most votes.",
@@ -3911,11 +3911,11 @@ export const QUESTIONS = [
     "category": "Elections",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "An demokratischen Wahlen in Deutschland teilzunehmen ist …",
-      "a": "ein Zwang.",
-      "b": "eine Last.",
-      "c": "ein Recht.",
-      "d": "eine Pflicht.",
+      "question": "Taking part in democratic elections in Germany is …",
+      "a": "compulsory.",
+      "b": "a burden.",
+      "c": "a right.",
+      "d": "a duty.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -3933,7 +3933,7 @@ export const QUESTIONS = [
     "en": {
       "question": "What does \"active suffrage\" mean in Germany?",
       "a": "You have to go to the counting of the votes.",
-      "b": "You can choose.",
+      "b": "You have the right to vote.",
       "c": "You can be elected.",
       "d": "You have to vote.",
       "context": "In Germany, there are various rights in connection with elections. These concern both the possibility of participating in an election and being allowed to stand as candidates. Many people hear terms such as \"active\" and \"passive suffrage\", but do not know exactly what is meant by them. To understand the difference, it is important to know what rights citizens have in Bundestag, state or local elections."
@@ -3948,14 +3948,14 @@ export const QUESTIONS = [
     "d": "aktives Wahlverfahren.",
     "solution": "a",
     "image": null,
-    "category": "'Elections'",
+    "category": "Elections",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …",
-      "a": "aktives Wahlrecht.",
-      "b": "aktiver Wahlkampf.",
-      "c": "aktive Wahlkampagne.",
-      "d": "aktives Wahlverfahren.",
+      "question": "If you are allowed to vote in a Bundestag election in Germany, this is called …",
+      "a": "the right to vote (active suffrage).",
+      "b": "active election campaigning.",
+      "c": "an active election campaign.",
+      "d": "an active voting procedure.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -4052,7 +4052,7 @@ export const QUESTIONS = [
     "context": "In Deutschland werden die Abgeordneten des Deutschen Bundestages durch allgemeine Wahlen bestimmt. Dabei gelten bestimmte gesetzliche Regeln, die festlegen, welche Parteien im Parlament vertreten sein dürfen. Um eine Zersplitterung des Bundestages zu verhindern, gibt es Vorgaben zum notwendigen Stimmenanteil. Diese Regel beeinflusst direkt, ob eine Partei Sitze im Bundestag erhält oder nicht.",
     "en": {
       "question": "A party wants to enter the German Bundestag. However, it must have a minimum share of votes. That is...",
-      "a": "Underlying asset.",
+      "a": "a base value.",
       "b": "5% hurdle.",
       "c": "Directive.",
       "d": "Admission limit.",
@@ -4131,7 +4131,7 @@ export const QUESTIONS = [
     "category": "Elections",
     "context": "In Demokratien spielen Wahlen eine zentrale Rolle für die politische Ordnung. Sie sind ein wichtiges Mittel, mit dem Bürgerinnen und Bürger Einfluss auf politische Entscheidungen und die Zusammensetzung der Regierung nehmen können. Die Frage bezieht sich darauf, welche zentrale Aufgabe regelmäßige Wahlen erfüllen und welches demokratische Prinzip dadurch verwirklicht wird. Dabei steht das Verhältnis zwischen Wählerschaft, politischer Macht und Regierungswechsel im Mittelpunkt.",
     "en": {
-      "question": "In a democracy, one function of regular elections, ...",
+      "question": "In a democracy, one function of regular elections is …",
       "a": "to maintain existing laws in the country.",
       "b": "to give more power to the poor.",
       "c": "to force citizens to cast their votes.",
@@ -4211,7 +4211,7 @@ export const QUESTIONS = [
     "category": "Elections",
     "context": "In Deutschland gibt es verschiedene politische Ämter auf Bundes- und Landesebene. Diese Ämter werden auf unterschiedliche Weise besetzt: manche durch direkte Wahlen der Bürgerinnen und Bürger, andere durch Parlamente oder besondere Wahlversammlungen. Um die Frage beantworten zu können, ist es wichtig zu wissen, welches Organ oder welche Person vom Volk direkt gewählt wird und wie die Wahlverfahren für Bundestag, Bundespräsident, Bundeskanzler und Ministerpräsidenten geregelt sind.",
     "en": {
-      "question": "In Germany, elections are held by the people ...",
+      "question": "In Germany, the people elect …",
       "a": "the Federal President.",
       "b": "the Bundestag.",
       "c": "the Minister-President of a federal state.",
@@ -4315,7 +4315,7 @@ export const QUESTIONS = [
       "a": "Child benefit",
       "b": "Housing allowance",
       "c": "Social assistance",
-      "d": "Social Security",
+      "d": "Social insurance contributions",
       "context": "The question relates to taxes and state benefits in the German social system. It is intended to check which element is automatically associated with a permanent position. In Germany, there are various forms of support and compulsory contributions, which are either paid or received depending on your personal situation. The task calls for a distinction to be made between voluntary benefits and mandatory payments."
     }
   },
@@ -4413,7 +4413,7 @@ export const QUESTIONS = [
     "en": {
       "question": "A woman in Germany loses her job. What should not be the reason for this dismissal?",
       "a": "The woman was often late for work.",
-      "b": "The woman has a child and her boss knows it.",
+      "b": "The woman is expecting a child and her boss knows it.",
       "c": "The woman has been ill for a long time and unable to work.",
       "d": "The woman does private things during working hours.",
       "context": "It is about the legal reasons for dismissal in Germany. German labor law protects female employees from unfair dismissal and prohibits dismissals for certain personal or protected reasons. The question is intended to examine which conduct or circumstance is not legally a permissible reason for dismissal. Knowledge of protection against dismissal, equal rights, maternity protection and duties in the workplace is important for this."
@@ -4471,7 +4471,7 @@ export const QUESTIONS = [
     "category": "Economy & Employment",
     "context": "Stellen Sie sich vor, Sie haben in Deutschland ein rechtliches Problem und überlegen, welches Gericht zuständig ist. Je nach Art des Konflikts – zum Beispiel im Arbeitsleben, im Straßenverkehr, beim Wohnen oder im privaten Umfeld – sind unterschiedliche Gerichte verantwortlich. Die folgende Frage prüft Ihr Wissen darüber, in welchem Fall man sich an das Arbeitsgericht wendet.",
     "en": {
-      "question": "They go to the labour court in Germany at ...",
+      "question": "In Germany, you go to the labour court in the event of …",
       "a": "unfair dismissal by your boss.",
       "b": "Difficulties after a traffic accident.",
       "c": "incorrect utility bill.",
@@ -4751,7 +4751,7 @@ export const QUESTIONS = [
     "category": "Law & Governance",
     "context": "In Deutschland wirken neben Berufsrichtern auch ehrenamtliche Laienrichter am Gericht mit. Diese nennt man Schöffen. Sie werden aus der Bevölkerung ausgewählt und nehmen an Gerichtsverhandlungen teil, besonders in Strafverfahren. Dabei haben sie bestimmte Rechte und Pflichten und tragen Verantwortung bei gerichtlichen Entscheidungen. Vor diesem Hintergrund stellt sich die Frage nach ihrer genauen Aufgabe im Gericht.",
     "en": {
-      "question": "What does a juror do in Germany? He/she ...",
+      "question": "What does a lay judge do in Germany? They …",
       "a": "defends the defendant",
       "b": "issues certificates",
       "c": "gives legal advice to citizens",
@@ -4772,10 +4772,10 @@ export const QUESTIONS = [
     "context": "Die Frage bezieht sich auf die staatliche Gewaltenteilung in Deutschland. Der Staat ist in drei Gewalten aufgeteilt: Legislative (Gesetzgebung), Exekutive (Ausführung der Gesetze) und Judikative (Rechtsprechung). Um die richtige Antwort zu finden, muss man wissen, welche Aufgabe Richterinnen und Richter im deutschen Staatssystem haben und welcher dieser Gewalten sie zugeordnet sind.",
     "en": {
       "question": "A judge in Germany belongs to the ...",
-      "a": "Operative",
+      "a": "operative branch.",
       "b": "executive.",
       "c": "Judiciary",
-      "d": "Legislative",
+      "d": "legislative branch.",
       "context": "The question relates to the separation of powers in Germany. The state is divided into three powers: legislative (legislature), executive (execution of laws) and judiciary (judiciary). In order to find the right answer, it is necessary to know what role judges have in the German state system and to which of these powers they are assigned."
     }
   },
@@ -4795,7 +4795,7 @@ export const QUESTIONS = [
       "a": "judiciary.",
       "b": "executive power.",
       "c": "legislative power.",
-      "d": "planning violence.",
+      "d": "planning branch.",
       "context": "The question relates to the organization of the state in Germany and the principle of the separation of powers. This principle divides state power into different areas to prevent abuse of power. Each area has its own tasks and responsibilities. In order to be able to answer this question, it is necessary to know what role judges play in the state system and to which state authority their work is assigned."
     }
   },
@@ -4812,7 +4812,7 @@ export const QUESTIONS = [
     "context": "In Deutschland gilt das Prinzip der Gewaltenteilung. Das bedeutet, dass die staatliche Macht auf verschiedene Bereiche verteilt ist, um Machtmissbrauch zu verhindern. Diese Bereiche haben unterschiedliche Aufgaben: Gesetze werden gemacht, ausgeführt und kontrolliert. Um die Frage richtig zu beantworten, muss man wissen, welche Aufgaben ein Richter oder eine Richterin im Staat übernimmt und zu welchem Bereich der Staatsgewalt diese Tätigkeit gehört.",
     "en": {
       "question": "In Germany, state power is divided. For which state authority does a judge work? For the ...",
-      "a": "Legislative",
+      "a": "Legislative branch",
       "b": "Judiciary",
       "c": "Executive",
       "d": "Press",
@@ -4833,7 +4833,7 @@ export const QUESTIONS = [
     "en": {
       "question": "What is a court case called in Germany?",
       "a": "Protocol",
-      "b": "Process",
+      "b": "Trial",
       "c": "Program",
       "d": "Procedure",
       "context": "In Germany, there are various terms in the legal system for processes in court. Some words are used in everyday language, others are legal terms. In order to find the right answer, it is helpful to know what a court case is officially called and which of the terms tend to come from other areas such as administration, technology or documentation."
@@ -4915,7 +4915,7 @@ export const QUESTIONS = [
       "a": "a member of a municipal council.",
       "b": "a person who has studied law",
       "c": "the deputy of the head of the city",
-      "d": "an honorary judge",
+      "d": "a volunteer lay judge",
       "context": "The question relates to the German legal system and the participation of citizens in court proceedings. In certain courts, in addition to professional judges, lay judges are also involved in decision-making decisions. The term \"court lay judge\" describes such a role. In order to find the right answer, it is important to know what tasks and prerequisites these people have and whether they hold an office, a profession or an honorary function."
     }
   },
@@ -4932,7 +4932,7 @@ export const QUESTIONS = [
     "context": "In Deutschland gibt es bestimmte gesetzliche Regelungen, die für Kinder und Jugendliche gelten. Diese Regelungen betreffen unter anderem Bildung, Rechte und Pflichten im Alltag sowie die Verantwortung des Staates und der Eltern. Manche Pflichten sind gesetzlich vorgeschrieben, andere gelten nur für bestimmte Gruppen oder Situationen. Vor diesem Hintergrund soll die folgende Frage prüfen, welche Verpflichtung auf die meisten Kinder in Deutschland zutrifft.",
     "en": {
       "question": "What applies to most children in Germany?",
-      "a": "Schulpflicht",
+      "a": "Compulsory school attendance",
       "b": "Religious duty",
       "c": "Confidentiality",
       "d": "Compulsory voting",
@@ -5012,7 +5012,7 @@ export const QUESTIONS = [
     "context": "In Deutschland gibt es unterschiedliche Schul- und Berufsabschlüsse. Wer nach der Schule ein Studium beginnen möchte, muss bestimmte Voraussetzungen erfüllen. Besonders für Schüler und Eltern ist es wichtig zu wissen, welcher Abschluss den Zugang zu einer Universität ermöglicht. Die folgende Frage bezieht sich auf die allgemeinen Zulassungsvoraussetzungen für ein Studium in Deutschland.",
     "en": {
       "question": "What school-leaving certificate do you normally need to start studying at a university in Germany?",
-      "a": "the Abitur",
+      "a": "the Abitur (university entrance qualification)",
       "b": "the power of attorney",
       "c": "a journeyman's examination",
       "d": "a diploma",
@@ -5071,7 +5071,7 @@ export const QUESTIONS = [
     "category": "Constitution",
     "context": "In Deutschland regelt das Grundgesetz, wer für die Erziehung und Entwicklung von Kindern verantwortlich ist. Dabei spielen Familie, Staat und Bildungseinrichtungen unterschiedliche Rollen. Die folgende Frage prüft das Wissen über die rechtlichen und gesellschaftlichen Grundlagen der Kindererziehung in Deutschland und darüber, wem diese Aufgabe in erster Linie zugeschrieben wird.",
     "en": {
-      "question": "In Germany, the education of children is above all a task ...",
+      "question": "In Germany, raising children is primarily the responsibility …",
       "a": "of parents",
       "b": "of schools",
       "c": "of grandparents",
@@ -5151,11 +5151,11 @@ export const QUESTIONS = [
     "category": "Law & Governance",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "In Deutschland dürfen Ehepaare sich scheiden lassen. Meistens müssen sie dazu das \"Trennungsjahr\" einhalten. Was bedeutet das?",
-      "a": "Die Ehegatten sind ein Jahr verheiratet, dann ist die Scheidung möglich.",
-      "b": "Der Scheidungsprozess dauert ein Jahr.",
-      "c": "Die Ehegatten führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich.",
-      "d": "Das Besuchsrecht für die Kinder gilt ein Jahr.",
+      "question": "Married couples in Germany may divorce. They usually have to observe a ‘year of separation’. What does this mean?",
+      "a": "The spouses must be married for one year before they can divorce.",
+      "b": "The divorce proceedings take one year.",
+      "c": "The spouses live separate lives for at least one year. After that, divorce is possible.",
+      "d": "Visitation rights for the children last for one year.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -5191,11 +5191,11 @@ export const QUESTIONS = [
     "category": "Education & Religion",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
-      "question": "Eine erwachsene Frau möchte in Deutschland das Abitur nachholen. Das kann sie an …",
-      "a": "einer Privatuniversität",
-      "b": "einem Abendgymnasium",
-      "c": "einer Hauptschule",
-      "d": "einer Hochschule.",
+      "question": "An adult woman in Germany wants to obtain her Abitur (university entrance qualification) later in life. She can do this at …",
+      "a": "a private university.",
+      "b": "an evening secondary school for adults (Abendgymnasium).",
+      "c": "a lower secondary school (Hauptschule).",
+      "d": "a higher education institution.",
       "context": "The correct answer follows from the official BAMF question catalog."
     }
   },
@@ -5212,10 +5212,10 @@ export const QUESTIONS = [
     "context": "Die Frage bezieht sich auf gesellschaftliche und arbeitsmarktbezogene Faktoren in Deutschland. Sie soll dabei helfen zu verstehen, welche persönlichen Merkmale oder Voraussetzungen statistisch oder allgemein als besonders wichtig gelten, um gute Chancen auf einen gut bezahlten Arbeitsplatz zu haben. Dabei werden unterschiedliche Aspekte wie Geschlecht, Religion, politische Zugehörigkeit und Bildungsniveau gegenübergestellt, um zu prüfen, welcher Faktor im deutschen Arbeitsmarkt die größte Rolle spielt.",
     "en": {
       "question": "In Germany, you have the best chances of getting a well-paid job if you ...",
-      "a": "is a woman.",
-      "b": "is Catholic.",
-      "c": "is a member of a political party.",
-      "d": "is well educated.",
+      "a": "are a woman.",
+      "b": "are Catholic.",
+      "c": "are a member of a political party.",
+      "d": "have a good education and qualifications.",
       "context": "The question relates to social and labour market-related factors in Germany. It is intended to help understand which personal characteristics or prerequisites are statistically or generally considered particularly important in order to have a good chance of finding a well-paid job. Different aspects such as gender, religion, political affiliation and level of education are compared in order to check which factor plays the greatest role in the German labour market."
     }
   },
@@ -5271,7 +5271,7 @@ export const QUESTIONS = [
     "category": "Education & Religion",
     "context": "Die Frage bezieht sich auf das deutsche Bildungssystem und die grundlegenden Rechte und Pflichten von Kindern im Schulalter. In Deutschland sind bestimmte Regeln gesetzlich festgelegt, um den regelmäßigen Schulbesuch sicherzustellen und gleiche Bildungschancen zu ermöglichen. Dazu gehören Vorgaben, welche Rechte Kinder haben und welche Verpflichtungen sie erfüllen müssen. Die Antwortmöglichkeiten spiegeln typische Missverständnisse oder zentrale Prinzipien des Schulwesens wider.",
     "en": {
-      "question": "In Germany, a child at school...",
+      "question": "In Germany, a child at school has …",
       "a": "Freedom of choice for all subjects.",
       "b": "Right to unlimited free time.",
       "c": "Compulsory attendance.",
@@ -5291,11 +5291,11 @@ export const QUESTIONS = [
     "category": "Education & Religion",
     "context": "In Deutschland gibt es verschiedene Bildungswege für Erwachsene, die einen höheren Schulabschluss nachholen möchten. Das Abitur ist Voraussetzung für ein Studium an einer Universität oder Hochschule. Auch Menschen, die bereits im Berufsleben stehen oder älter als 20 Jahre sind, können das Abitur auf speziellen Wegen nachholen. Die Frage bezieht sich darauf, welche Bildungseinrichtung für einen 30‑jährigen Mann geeignet ist, um in Deutschland das Abitur nachzuholen.",
     "en": {
-      "question": "A man wants to catch up on his Abitur in Germany at the age of 30. Where can he do that? On ...",
-      "a": "of a Hauptschule",
-      "b": "an evening grammar school",
-      "c": "of a university",
-      "d": "of a private university",
+      "question": "A 30-year-old man in Germany wants to obtain his Abitur (university entrance qualification). Where can he do this? At …",
+      "a": "a lower secondary school (Hauptschule).",
+      "b": "an evening secondary school for adults (Abendgymnasium).",
+      "c": "a higher education institution.",
+      "d": "a private university.",
       "context": "In Germany, there are various educational paths for adults who want to catch up on a higher school leaving certificate. The Abitur is a prerequisite for studying at a university or college. People who are already in working life or older than 20 years can also catch up on the Abitur in special ways. The question relates to which educational institution is suitable for a 30-year-old man to catch up on the Abitur in Germany."
     }
   },
@@ -5871,7 +5871,7 @@ export const QUESTIONS = [
     "category": "History & Geography",
     "context": "Die Frage bezieht sich auf Migration in der Deutschen Demokratischen Republik (DDR). In der DDR lebten und arbeiteten ausländische Arbeitskräfte und Vertragsarbeiter, die meist auf Grundlage staatlicher Abkommen aus sozialistischen oder befreundeten Ländern kamen. Sie wurden vor allem in Industrie, Landwirtschaft und Bauwesen eingesetzt. Das Wissen über Herkunftsländer dieser Migrantinnen und Migranten ist wichtig, um die Migrationspolitik und internationalen Beziehungen der DDR besser zu verstehen.",
     "en": {
-      "question": "In the GDR, it was mainly migrants from ...",
+      "question": "In the GDR, migrants mainly came from …",
       "a": "Chile, Hungary, Zimbabwe.",
       "b": "North Korea, Mexico, Egypt.",
       "c": "France, Romania, Somalia.",
@@ -6199,5 +6199,4 @@ export const QUESTIONS = [
       "context": "The question relates to the federal structure of Germany. Germany consists of 16 federal states, some of which are also city states. In a quiz or test, participants are asked to choose which federal state is Berlin based on given answer options. Options a to d stand for numbered answers, from which one should be selected as correct."
     }
   }
-]
-;
+];

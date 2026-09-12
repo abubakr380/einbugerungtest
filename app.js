@@ -1,6 +1,7 @@
 import { QUESTIONS } from "./questions.js";
+import { ProgressStore } from "./progress-store.js";
+import { SYNC_API } from "./sync-config.js";
 
-const STORAGE_KEY = "eintest_progress";
 const OPTION_KEYS = ["a", "b", "c", "d"];
 const CATEGORY_ORDER = [
   "General",
@@ -60,65 +61,24 @@ const berlinQuestions = QUESTIONS.filter(isBerlin);
 
 const state = {
   activeTab: "home",
-  progress: loadProgress(),
+  progress: null,
   quiz: null,
   translation: false,
   lastRun: null,
   result: null,
   dialogAction: null,
   deferredInstall: null,
-  toastTimer: null
+  toastTimer: null,
+  themeFilter: "all"
 };
 
-function emptyProgress() {
-  return {
-    mastered: new Set(),
-    incorrect: new Map(),
-    totals: { answered: 0, correct: 0, wrong: 0 },
-    streaks: { current: 0, best: 0 },
-    examHistory: []
-  };
-}
-
-function loadProgress() {
-  const fallback = emptyProgress();
-  try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (!saved || typeof saved !== "object") return fallback;
-    const mastered = Array.isArray(saved.mastered) ? saved.mastered.filter((num) => typeof num === "string") : [];
-    const incorrectEntries = saved.incorrect && typeof saved.incorrect === "object"
-      ? Object.entries(saved.incorrect).filter(([, count]) => Number.isFinite(Number(count)))
-      : [];
-    return {
-      mastered: new Set(mastered),
-      incorrect: new Map(incorrectEntries.map(([num, count]) => [num, Number(count)])),
-      totals: {
-        answered: Math.max(0, Number(saved.totals?.answered) || 0),
-        correct: Math.max(0, Number(saved.totals?.correct) || 0),
-        wrong: Math.max(0, Number(saved.totals?.wrong) || 0)
-      },
-      streaks: {
-        current: Math.max(0, Number(saved.streaks?.current) || 0),
-        best: Math.max(0, Number(saved.streaks?.best) || 0)
-      },
-      examHistory: Array.isArray(saved.examHistory) ? saved.examHistory.slice(0, 20) : []
-    };
-  } catch {
-    return fallback;
-  }
-}
-
-function saveProgress() {
-  const { progress } = state;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({
-    version: 1,
-    mastered: [...progress.mastered],
-    incorrect: Object.fromEntries(progress.incorrect),
-    totals: progress.totals,
-    streaks: progress.streaks,
-    examHistory: progress.examHistory
-  }));
-}
+const progressStore = new ProgressStore({
+  storage: localStorage,
+  api: SYNC_API,
+  onChange: () => { state.progress = progressStore.summary(); renderAll(); },
+  onStatus: (status, message) => renderSyncStatus(status, message)
+});
+state.progress = progressStore.summary();
 
 function shuffle(items) {
   const result = [...items];
@@ -190,23 +150,26 @@ function renderHome() {
 }
 
 function renderPractice() {
+  $("#theme-summary").textContent = `${state.progress.mastered.size} von ${QUESTIONS.length} Fragen gemeistert · ${percentage(state.progress.mastered.size, QUESTIONS.length)}%`;
   const berlinMastered = berlinQuestions.filter((question) => state.progress.mastered.has(question.num)).length;
   $("#berlin-category-count").textContent = `${berlinMastered} / ${berlinQuestions.length}`;
   $("#berlin-category-fill").style.width = `${percentage(berlinMastered, berlinQuestions.length)}%`;
   $("#berlin-category-fill").style.setProperty("--progress-color", "#ff6f7b");
+  $("#berlin-category-card").disabled = state.themeFilter === "unmastered" && berlinMastered === berlinQuestions.length;
 
   const presentCategories = new Set(generalQuestions.map((question) => question.category));
-  const categories = CATEGORY_ORDER.filter((category) => presentCategories.has(category));
+  const categories = [...new Set([...CATEGORY_ORDER, ...presentCategories])].filter((category) => presentCategories.has(category));
   $("#category-list").innerHTML = categories.map((category) => {
     const meta = CATEGORY_META[category] || CATEGORY_META.General;
     const questions = generalQuestions.filter((question) => question.category === category);
     const mastered = questions.filter((question) => state.progress.mastered.has(question.num)).length;
     const progress = percentage(mastered, questions.length);
     return `
-      <button class="category-card" type="button" data-category="${escapeHTML(category)}">
+      <button class="category-card" type="button" data-category="${escapeHTML(category)}" ${state.themeFilter === "unmastered" && mastered === questions.length ? "disabled" : ""}>
         <span class="mode-icon" style="--category-color:${meta.color};color:${meta.color};background:color-mix(in srgb, ${meta.color} 13%, transparent);border-color:color-mix(in srgb, ${meta.color} 19%, transparent)">${svgIcon(meta.icon)}</span>
         <span>
-          <span class="category-line"><h2>${escapeHTML(meta.label)}</h2><small>${mastered} / ${questions.length}</small></span>
+          <span class="category-line"><strong>${escapeHTML(meta.label || category)}</strong><small>${progress}%</small></span>
+          <small class="theme-detail">${mastered} / ${questions.length} gemeistert · ${questions.length - mastered} offen</small>
           <em style="--progress-color:${meta.color}"><i style="width:${progress}%"></i></em>
         </span>
         <span class="mode-arrow">${svgIcon("arrow")}</span>
@@ -233,6 +196,7 @@ function renderStats() {
   if (accuracy >= 80) message = "Sehr solide. Mit regelmäßigen Probeprüfungen hältst du dein Niveau.";
   if (accuracy >= 90) message = "Prüfungsreif — halte deinen starken Rhythmus bis zum Testtag.";
   $("#accuracy-message").textContent = message;
+  renderThemeStats();
 
   const history = $("#exam-history");
   if (!examHistory.length) {
@@ -270,9 +234,10 @@ function selectQuestions(mode, category) {
     return shuffle(QUESTIONS.filter((question) => !state.progress.mastered.has(question.num)));
   }
   if (mode === "category") {
-    return shuffle(category === "Berlin (Bundesland)"
+    const pool = category === "Berlin (Bundesland)"
       ? berlinQuestions
-      : generalQuestions.filter((question) => question.category === category));
+      : generalQuestions.filter((question) => question.category === category);
+    return shuffle(state.themeFilter === "unmastered" ? pool.filter(question => !state.progress.mastered.has(question.num)) : pool);
   }
   return shuffle(QUESTIONS);
 }
@@ -285,8 +250,8 @@ function modeLabel(mode, category) {
   return "Alle Fragen";
 }
 
-function startQuiz(mode, category = null) {
-  const questions = selectQuestions(mode, category);
+function startQuiz(mode, category = null, restored = null) {
+  const questions = restored ? restored.ids.map(id => QUESTIONS.find(q => q.num === id)) : selectQuestions(mode, category);
   if (!questions.length) {
     const message = mode === "weak"
       ? "Noch keine Schwachstellen — falsch beantwortete Fragen erscheinen hier."
@@ -296,18 +261,19 @@ function startQuiz(mode, category = null) {
   }
 
   stopTimer();
-  state.translation = false;
+  try { state.translation = localStorage.getItem("eintest_translation") === "true"; } catch { state.translation = false; }
   state.lastRun = { mode, category };
   state.quiz = {
     mode,
     category,
     label: modeLabel(mode, category),
     questions,
-    index: 0,
-    answers: [],
+    index: restored?.index || 0,
+    answers: restored ? restored.answers.map(answer => ({ question: QUESTIONS.find(q => q.num === answer.num), selected: answer.selected, correct: answer.selected === QUESTIONS.find(q => q.num === answer.num).solution })) : [],
     locked: false,
     selected: null,
-    startedAt: Date.now(),
+    startedAt: restored?.startedAt || Date.now(),
+    deadline: mode === "mock" ? restored?.deadline || Date.now() + 60 * 60 * 1000 : null,
     remainingSeconds: mode === "mock" ? 60 * 60 : null,
     timerId: null
   };
@@ -315,8 +281,9 @@ function startQuiz(mode, category = null) {
   $("#quiz-overlay").hidden = false;
   $("#results-overlay").hidden = true;
   document.body.classList.add("overlay-open");
-  $("#translation-toggle").setAttribute("aria-pressed", "false");
-  $("#quiz-overlay").classList.remove("translation-visible");
+  $("#app").inert = true;
+  $("#translation-toggle").setAttribute("aria-pressed", String(state.translation));
+  $("#quiz-overlay").classList.toggle("translation-visible", state.translation);
   if (mode === "mock") {
     $("#quiz-timer").classList.remove("is-hidden");
     state.quiz.timerId = window.setInterval(tickTimer, 1000);
@@ -325,12 +292,21 @@ function startQuiz(mode, category = null) {
     $("#quiz-timer").classList.add("is-hidden");
   }
   renderQuestion();
+  const previous = state.quiz.answers[state.quiz.index];
+  if (previous) {
+    state.quiz.locked = true;
+    state.quiz.selected = previous.selected;
+    renderAnswer(previous.question, previous.selected, previous.correct);
+  }
+  saveQuizSession();
+  if (mode === "mock") tickTimer();
   $("#quiz-overlay").scrollTop = 0;
+  $("#exit-quiz").focus({ preventScroll: true });
 }
 
 function tickTimer() {
   if (!state.quiz || state.quiz.mode !== "mock") return;
-  state.quiz.remainingSeconds = Math.max(0, state.quiz.remainingSeconds - 1);
+  state.quiz.remainingSeconds = Math.max(0, Math.ceil((state.quiz.deadline - Date.now()) / 1000));
   updateTimerDisplay();
   if (state.quiz.remainingSeconds === 0) {
     stopTimer();
@@ -367,7 +343,7 @@ function renderQuestion() {
   $("#question-number").textContent = isBerlin(question) ? `BERLIN · ${question.num}` : `FRAGE ${question.num}`;
   $("#question-category").textContent = isBerlin(question) ? "Berlin (Bundesland)" : categoryLabel(question.category);
   $("#quiz-question").textContent = question.question;
-  $("#question-translation p").textContent = question.en?.question || question.question;
+  $("#question-translation p").textContent = question.en.question;
 
   const image = $("#question-image");
   if (question.image) {
@@ -382,7 +358,7 @@ function renderQuestion() {
   $("#quiz-options").innerHTML = OPTION_KEYS.map((key) => `
     <button class="option-button" type="button" data-option="${key}">
       <span class="option-letter">${key.toUpperCase()}</span>
-      <span class="option-text"><span>${escapeHTML(question[key])}</span><small class="option-translation">${escapeHTML(question.en?.[key] || question[key])}</small></span>
+      <span class="option-text"><span>${escapeHTML(question[key])}</span><small class="option-translation" lang="en">${escapeHTML(question.en[key])}</small></span>
       <span class="option-status" aria-hidden="true"></span>
     </button>`).join("");
   $("#feedback-panel").hidden = true;
@@ -394,7 +370,7 @@ function renderQuestion() {
   $("#quiz-overlay").scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function answerQuestion(selected) {
+async function answerQuestion(selected) {
   const quiz = state.quiz;
   if (!quiz || quiz.locked || !OPTION_KEYS.includes(selected)) return;
   const question = quiz.questions[quiz.index];
@@ -403,21 +379,12 @@ function answerQuestion(selected) {
   quiz.selected = selected;
   quiz.answers.push({ question, selected, correct });
 
-  const { progress } = state;
-  progress.totals.answered += 1;
-  if (correct) {
-    progress.totals.correct += 1;
-    progress.mastered.add(question.num);
-    progress.streaks.current += 1;
-    progress.streaks.best = Math.max(progress.streaks.best, progress.streaks.current);
-  } else {
-    progress.totals.wrong += 1;
-    progress.incorrect.set(question.num, (progress.incorrect.get(question.num) || 0) + 1);
-    progress.streaks.current = 0;
-  }
-  saveProgress();
-  renderHome();
+  await progressStore.answer(question.num, correct);
+  saveQuizSession();
+  renderAnswer(question, selected, correct);
+}
 
+function renderAnswer(question, selected, correct) {
   $$(".option-button", $("#quiz-options")).forEach((button) => {
     const option = button.dataset.option;
     button.disabled = true;
@@ -436,7 +403,7 @@ function answerQuestion(selected) {
   $("#feedback-icon").innerHTML = svgIcon(correct ? "check" : "x");
   $("#feedback-title").textContent = correct ? "Richtig beantwortet" : "Leider nicht richtig";
   $("#feedback-context").textContent = question.context;
-  $("#feedback-translation p").textContent = question.en?.context || question.context;
+  $("#feedback-translation p").textContent = question.en.context;
   $("#quiz-footer").hidden = false;
   $("#next-question").hidden = false;
   window.setTimeout(() => $("#feedback-panel").scrollIntoView({ behavior: "smooth", block: "nearest" }), 120);
@@ -451,11 +418,13 @@ function nextQuestion() {
   }
   quiz.index += 1;
   renderQuestion();
+  saveQuizSession();
 }
 
-function finishQuiz(timedOut = false) {
+async function finishQuiz(timedOut = false) {
   const quiz = state.quiz;
-  if (!quiz) return;
+  if (!quiz || quiz.finishing) return;
+  quiz.finishing = true;
   stopTimer();
   if (timedOut) {
     for (let index = quiz.answers.length; index < quiz.questions.length; index += 1) {
@@ -477,17 +446,16 @@ function finishQuiz(timedOut = false) {
   };
 
   if (quiz.mode === "mock") {
-    state.progress.examHistory.unshift({
+    await progressStore.exam({
       date: new Date().toISOString(),
       score: correct,
       total,
       passed
     });
-    state.progress.examHistory = state.progress.examHistory.slice(0, 20);
-    saveProgress();
   }
 
   state.quiz = null;
+  clearQuizSession();
   $("#quiz-overlay").hidden = true;
   renderResults();
   $("#results-overlay").hidden = false;
@@ -544,7 +512,7 @@ function renderResults() {
       <article class="review-item">
         <span>${isBerlin(question) ? question.num : `FRAGE ${question.num}`} · ${escapeHTML(isBerlin(question) ? "BERLIN" : categoryLabel(question.category))}</span>
         <h3>${escapeHTML(question.question)}</h3>
-        <p class="review-en">${escapeHTML(question.en?.question || "")}</p>
+        <p class="review-en" lang="en">${escapeHTML(question.en.question)}</p>
         <div class="review-answer wrong"><small>Deine Antwort</small><strong>${escapeHTML(selectedText)}</strong></div>
         <div class="review-answer correct"><small>Richtig</small><strong>${escapeHTML(question[question.solution])}</strong></div>
       </article>`;
@@ -554,10 +522,12 @@ function renderResults() {
 function closeOverlays(goHome = true) {
   stopTimer();
   state.quiz = null;
+  clearQuizSession();
   state.result = null;
   $("#quiz-overlay").hidden = true;
   $("#results-overlay").hidden = true;
   document.body.classList.remove("overlay-open");
+  $("#app").inert = false;
   renderAll();
   if (goHome) switchTab("home");
 }
@@ -573,6 +543,7 @@ function toggleTranslation() {
   state.translation = !state.translation;
   $("#translation-toggle").setAttribute("aria-pressed", String(state.translation));
   $("#quiz-overlay").classList.toggle("translation-visible", state.translation);
+  try { localStorage.setItem("eintest_translation", String(state.translation)); } catch { /* Translation still works without storage. */ }
 }
 
 function openConfirm({ title, message, confirmLabel, action, reset = false }) {
@@ -586,11 +557,10 @@ function openConfirm({ title, message, confirmLabel, action, reset = false }) {
   $("#confirm-dialog").showModal();
 }
 
-function resetProgress() {
-  state.progress = emptyProgress();
-  localStorage.removeItem(STORAGE_KEY);
-  renderAll();
-  showToast("Dein Fortschritt wurde vollständig zurückgesetzt.");
+async function resetProgress() {
+  await progressStore.reset();
+  clearQuizSession();
+  showToast("Fortschritt zurückgesetzt. Ein vorhandenes Migrationsbackup bleibt erhalten.");
 }
 
 function bindEvents() {
@@ -600,6 +570,36 @@ function bindEvents() {
   $("#practice-title").closest("section").addEventListener("click", (event) => {
     const button = event.target.closest("[data-category]");
     if (button) startQuiz("category", button.dataset.category);
+  });
+  $("#theme-filter").addEventListener("click", event => {
+    const button = event.target.closest('[data-theme-filter]');
+    if (!button) return;
+    state.themeFilter = button.dataset.themeFilter;
+    $$("[data-theme-filter]").forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+    renderPractice();
+  });
+  $("#open-themes").addEventListener("click", () => switchTab("practice"));
+  $("#open-profile").addEventListener("click", () => {
+    switchTab("stats");
+    $("#profile-title").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  $("#theme-stats").addEventListener("click", event => {
+    const button = event.target.closest('[data-category]');
+    if (button) startQuiz("category", button.dataset.category);
+  });
+  $("#profile-form").addEventListener("submit", async event => {
+    event.preventDefault();
+    $("#profile-connect").disabled = true;
+    try { await progressStore.connect($("#username").value); clearQuizSession(); }
+    catch (error) { showToast(error.message); }
+    finally { $("#profile-connect").disabled = false; }
+  });
+  $("#sync-now").addEventListener("click", () => progressStore.sync());
+  $("#disconnect-profile").addEventListener("click", () => progressStore.disconnect());
+  $("#export-progress").addEventListener("click", exportProgress);
+  $("#ios-help-close").addEventListener("click", () => {
+    $("#ios-help").hidden = true;
+    try { localStorage.setItem("eintest_ios_tip_dismissed", "true"); } catch { /* Optional preference. */ }
   });
   $("#quiz-options").addEventListener("click", (event) => {
     const button = event.target.closest("[data-option]");
@@ -618,7 +618,7 @@ function bindEvents() {
   $("#try-again").addEventListener("click", retryLastRun);
   $("#reset-progress").addEventListener("click", () => openConfirm({
     title: "Fortschritt zurücksetzen?",
-    message: "Alle gemeisterten Fragen, Fehler, Serien und Prüfungsergebnisse werden dauerhaft gelöscht.",
+    message: "Gemeisterte Fragen, Fehler, Serien und Prüfungsergebnisse dieses Profils werden zurückgesetzt. Bei verbundenem Benutzernamen gilt das auch für andere Geräte.",
     confirmLabel: "Zurücksetzen",
     action: resetProgress,
     reset: true
@@ -653,10 +653,93 @@ function bindEvents() {
   });
 }
 
+function renderThemeStats() {
+  const themes = [...new Set(generalQuestions.map(q => q.category)), "Berlin (Bundesland)"];
+  $("#theme-stats").innerHTML = themes.map(category => {
+    const pool = category === "Berlin (Bundesland)" ? berlinQuestions : generalQuestions.filter(q => q.category === category);
+    const mastered = pool.filter(q => state.progress.mastered.has(q.num)).length;
+    const value = percentage(mastered, pool.length);
+    return `<button type="button" class="breakdown-item theme-stat" data-category="${escapeHTML(category)}"><span class="theme-stat-line"><strong>${escapeHTML(category === "Berlin (Bundesland)" ? "Berlin" : categoryLabel(category))}</strong><span>${mastered} / ${pool.length} · ${value}%</span></span><em><i style="width:${value}%"></i></em></button>`;
+  }).join("");
+}
+
+function renderSyncStatus(status, message = '') {
+  const labels = { local: "Nur auf diesem Gerät gespeichert", pending: "Änderungen warten auf Synchronisierung", syncing: "Wird synchronisiert …", synced: "Mit der Cloud synchronisiert", error: "Offline — lokal gespeichert, neuer Versuch folgt" };
+  $("#sync-status").textContent = message || labels[status];
+  $("#sync-status").dataset.status = status;
+  $("#profile-current").textContent = progressStore.name ? `Benutzername: ${progressStore.name}` : "Geräteübergreifend weiterlernen";
+  $("#sync-now").hidden = !progressStore.name;
+  $("#disconnect-profile").hidden = !progressStore.name;
+}
+
+function exportProgress() {
+  const backup = { exportedAt: new Date().toISOString(), username: progressStore.name, progress: progressStore.doc };
+  try { backup.originalLocalBackup = JSON.parse(localStorage.getItem("eintest_progress_v1_backup")); } catch { /* The current v2 data can still be exported. */ }
+  const url = URL.createObjectURL(new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" }));
+  const link = document.createElement("a");
+  link.href = url; link.download = `eintest-fortschritt-${new Date().toISOString().slice(0, 10)}.json`;
+  link.click(); setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+
+function quizSessionKey() { return `eintest_quiz:${progressStore.name ? `user:${progressStore.name}` : 'guest'}`; }
+function clearQuizSession() { try { localStorage.removeItem(quizSessionKey()); } catch { /* Optional session restoration. */ } }
+function saveQuizSession() {
+  const quiz = state.quiz;
+  if (!quiz || quiz.finishing) return;
+  try {
+    localStorage.setItem(quizSessionKey(), JSON.stringify({
+      mode: quiz.mode, category: quiz.category, generation: progressStore.doc.generation,
+      ids: quiz.questions.map(q => q.num), index: quiz.index,
+      answers: quiz.answers.map(a => ({ num: a.question.num, selected: a.selected })),
+      startedAt: quiz.startedAt, deadline: quiz.deadline
+    }));
+  } catch { /* Progress has its own durable storage and sync status. */ }
+}
+function restoreQuizSession() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(quizSessionKey()));
+    if (!saved || saved.generation !== progressStore.doc.generation) return;
+    const validIds = new Set(QUESTIONS.map(q => q.num));
+    if (!["all", "mock", "weak", "unmastered", "category"].includes(saved.mode) || !Array.isArray(saved.ids) || !saved.ids.length || saved.ids.length > 310 || saved.ids.some(id => !validIds.has(id)) || new Set(saved.ids).size !== saved.ids.length) return;
+    if (!Number.isInteger(saved.index) || saved.index < 0 || saved.index >= saved.ids.length || !Array.isArray(saved.answers) || ![saved.index, saved.index + 1].includes(saved.answers.length)) return;
+    if (saved.answers.some((a, i) => a.num !== saved.ids[i] || !OPTION_KEYS.includes(a.selected))) return;
+    if (saved.mode === "mock" && (!Number.isFinite(saved.deadline) || saved.ids.length !== 33)) return;
+    startQuiz(saved.mode, saved.category, saved);
+    showToast("Deine letzte Runde wurde wiederhergestellt.");
+  } catch { /* Ignore invalid session data, preserve learning progress. */ }
+}
+
 function registerServiceWorker() {
-  if ("serviceWorker" in navigator && location.protocol !== "file:") {
-    window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
-  }
+  if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (refreshing) return;
+    refreshing = true; saveQuizSession(); location.reload();
+  });
+  navigator.serviceWorker.register("./sw.js").then(registration => {
+    const offer = () => { if (registration.waiting) $("#update-banner").hidden = false; };
+    offer();
+    registration.addEventListener('updatefound', () => {
+      const installing = registration.installing;
+      installing?.addEventListener('statechange', () => { if (installing.state === 'installed' && navigator.serviceWorker.controller) offer(); });
+    });
+    $("#apply-update").addEventListener('click', () => { saveQuizSession(); registration.waiting?.postMessage({ type: 'SKIP_WAITING' }); });
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) registration.update().catch(() => {}); });
+  }).catch(() => {});
+}
+
+function setupDeviceSupport() {
+  const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+  const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  try { $("#ios-help").hidden = !ios || standalone || localStorage.getItem('eintest_ios_tip_dismissed') === 'true'; } catch { /* Nonessential tip. */ }
+  if (standalone) navigator.storage?.persist?.().catch(() => {});
+  window.addEventListener('online', () => progressStore.sync());
+  window.addEventListener('pagehide', saveQuizSession);
+  window.addEventListener('storage', event => { if (event.key === progressStore.key()) progressStore.refreshLocal(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { saveQuizSession(); void progressStore.sync(); }
+    else { tickTimer(); void progressStore.refreshLocal(); void progressStore.sync(); }
+  });
 }
 
 function init() {
@@ -668,6 +751,10 @@ function init() {
   const initialTab = location.hash.slice(1);
   switchTab(["home", "practice", "stats"].includes(initialTab) ? initialTab : "home", false);
   registerServiceWorker();
+  setupDeviceSupport();
+  renderSyncStatus(progressStore.storageError ? 'error' : 'local', progressStore.storageError);
+  restoreQuizSession();
+  void progressStore.sync();
 }
 
 init();

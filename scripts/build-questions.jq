@@ -21,14 +21,14 @@
           (if ($q.image | endswith(".jpeg")) then ".jpeg" else ".png" end)
         end
       ),
-      category: ($q.category // "General"),
+      category: (($q.category // "General") | gsub("^'|'$"; "")),
       context: ($q.context // "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog."),
       en: {
-        question: ($q.translation.en.question // $q.question),
-        a: ($q.translation.en.a // $q.a),
-        b: ($q.translation.en.b // $q.b),
-        c: ($q.translation.en.c // $q.c),
-        d: ($q.translation.en.d // $q.d),
+        question: ($q.translation.en.question // ""),
+        a: ($q.translation.en.a // ""),
+        b: ($q.translation.en.b // ""),
+        c: ($q.translation.en.c // ""),
+        d: ($q.translation.en.d // ""),
         context: ($q.translation.en.context // "The correct answer follows from the official BAMF question catalog.")
       }
     }

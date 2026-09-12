@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="EinTest Berlin" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/icon-192.png" />
@@ -48,7 +49,9 @@
       </header>
 
       <main class="main-content" id="main-content">
+        <div class="update-banner" id="update-banner" role="status" hidden><span>Eine neue Version ist bereit.</span><button type="button" id="apply-update">Aktualisieren</button></div>
         <section class="tab-view is-active" id="view-home" data-view="home" aria-labelledby="home-title">
+          <aside class="ios-help" id="ios-help" hidden><p>Auf dem iPhone: In Safari „Teilen“ → „Zum Home-Bildschirm“. Mit demselben Benutzernamen kannst du deinen Fortschritt dort laden.</p><button type="button" id="ios-help-close" aria-label="iPhone-Hinweis schließen">×</button></aside>
           <div class="hero-section">
             <div class="eyebrow"><span class="live-dot"></span> Berlin Edition · 2026</div>
             <h1 id="home-title">Einbürgerungs&shy;test Berlin</h1>
@@ -95,6 +98,8 @@
             </div>
           </section>
 
+          <button type="button" id="open-themes" class="theme-shortcut"><span><strong>Nach Themen üben</strong><small>Thema wählen und Lernfortschritt ansehen</small></span><span aria-hidden="true">→</span></button>
+          <button type="button" id="open-profile" class="secondary-button profile-shortcut">Fortschritt mit Benutzernamen sichern</button>
           <section class="exam-card glass-card" aria-labelledby="exam-info-title">
             <span class="exam-card-icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M6 10v6c3 2 9 2 12 0v-6M21 8v7"/></svg></span>
             <div><span class="section-kicker">ECHTER TEST</span><h2 id="exam-info-title">So läuft die Prüfung ab</h2>
@@ -111,6 +116,9 @@
             <h1 id="practice-title">Themenbereiche</h1>
             <p>Konzentriere dich auf ein Thema und sieh deinen Fortschritt auf einen Blick.</p>
           </header>
+          <p class="theme-summary" id="theme-summary"></p>
+          <div class="theme-filter" id="theme-filter" role="group" aria-label="Fragen je Thema"><button type="button" data-theme-filter="all" aria-pressed="true">Alle Fragen</button><button type="button" data-theme-filter="unmastered" aria-pressed="false">Nur offene Fragen</button></div>
+          <p class="theme-explanation">Einmal richtig beantwortet = gemeistert. Wähle ein Thema zum Starten.</p>
           <button class="berlin-card" id="berlin-category-card" type="button" data-category="Berlin (Bundesland)">
             <span class="berlin-bear" aria-hidden="true"><img src="assets/app-icon.svg" alt="" /></span>
             <span class="category-copy"><span class="category-topline"><span><small>BUNDESLAND</small><strong>Berlin</strong></span><b id="berlin-category-count">0 / 10</b></span><em><i id="berlin-category-fill"></i></em><small>10 landesspezifische Fragen</small></span>
@@ -155,18 +163,30 @@
             <div class="history-list" id="exam-history"></div>
           </section>
 
+          <section class="theme-progress-section" aria-labelledby="theme-progress-title"><div class="section-heading"><div><span class="section-kicker">THEMEN</span><h2 id="theme-progress-title">Fortschritt je Thema</h2></div></div><p class="theme-explanation">Gemeisterte Fragen in allen Übungsmodi. Tippe auf ein Thema, um zu üben.</p><div id="theme-stats" class="breakdown-list"></div></section>
+
+          <section class="profile-card glass-card" aria-labelledby="profile-title">
+            <span class="section-kicker">FORTSCHRITT SPEICHERN</span><h2 id="profile-title">Dein Lernprofil</h2>
+            <p id="profile-current">Geräteübergreifend weiterlernen</p>
+            <p>Nutze denselben Benutzernamen auf jedem Gerät. Vorhandener lokaler Fortschritt wird beim ersten Verbinden übernommen.</p>
+            <form id="profile-form"><label for="username">Benutzername</label><input id="username" name="username" type="text" minlength="3" maxlength="32" pattern="[a-zA-Z0-9][a-zA-Z0-9_-]{2,31}" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required placeholder="z. B. lernfuchs-berlin" aria-describedby="username-help" /><small id="username-help">3–32 Zeichen: a–z, 0–9, _ oder -. Groß-/Kleinschreibung spielt keine Rolle.</small><button type="submit" id="profile-connect" class="primary-button">Verbinden / Wechseln</button></form>
+            <p class="profile-notice">Ohne Passwort: Wer denselben Namen eingibt, kann diesen Fortschritt sehen und ändern. Wähle einen unverwechselbaren Spitznamen.</p>
+            <p id="sync-status" role="status" aria-live="polite">Nur auf diesem Gerät gespeichert</p>
+            <div class="profile-actions"><button class="secondary-button" type="button" id="sync-now" hidden>Jetzt synchronisieren</button><button class="secondary-button" type="button" id="disconnect-profile" hidden>Nur lokal üben</button><button class="secondary-button" type="button" id="export-progress">Backup exportieren</button></div>
+          </section>
+
           <button class="danger-button" id="reset-progress" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m-9 0 1 14h10l1-14M10 11v6m4-6v6"/></svg>Fortschritt zurücksetzen</button>
         </section>
       </main>
 
       <nav class="tab-bar" aria-label="Hauptnavigation">
         <button class="tab-button is-active" type="button" data-tab="home" aria-current="page"><span><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-7H9v7H3V11Z"/></svg></span><small>Home</small></button>
-        <button class="tab-button" type="button" data-tab="practice"><span><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v14a3.5 3.5 0 0 0-3.5-3.5H4V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H14v17a3.5 3.5 0 0 1 3.5-3.5H20v-11Z"/></svg></span><small>Üben</small></button>
+        <button class="tab-button" type="button" data-tab="practice"><span><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v14a3.5 3.5 0 0 0-3.5-3.5H4V5.5Z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H14v17a3.5 3.5 0 0 1 3.5-3.5H20v-11Z"/></svg></span><small>Themen</small></button>
         <button class="tab-button" type="button" data-tab="stats"><span><svg viewBox="0 0 24 24"><path d="M5 20V10m7 10V4m7 16v-7"/></svg></span><small>Statistik</small></button>
       </nav>
     </div>
 
-    <section class="overlay quiz-overlay" id="quiz-overlay" aria-labelledby="quiz-question" hidden>
+    <section class="overlay quiz-overlay" id="quiz-overlay" role="dialog" aria-modal="true" aria-labelledby="quiz-question" hidden>
       <header class="quiz-header">
         <button class="icon-button" id="exit-quiz" type="button" aria-label="Quiz verlassen"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
         <div class="quiz-header-center"><strong id="quiz-progress-text">1 / 310</strong><span id="quiz-mode-badge">Alle Fragen</span></div>
@@ -178,19 +198,19 @@
           <div class="question-meta"><span id="question-number">FRAGE 1</span><span id="question-category">Geschichte</span></div>
           <img class="question-image" id="question-image" src="" alt="Abbildung zur Frage" hidden />
           <h1 id="quiz-question"></h1>
-          <div class="translation-block" id="question-translation"><span>ENGLISH</span><p></p></div>
+          <div class="translation-block" id="question-translation" lang="en"><span>ENGLISH</span><p></p></div>
         </article>
         <div class="options-list" id="quiz-options" role="group" aria-label="Antwortmöglichkeiten"></div>
         <aside class="feedback-panel" id="feedback-panel" aria-live="polite" hidden>
           <div class="feedback-heading"><span id="feedback-icon"></span><strong id="feedback-title"></strong></div>
           <p id="feedback-context"></p>
-          <div class="translation-block" id="feedback-translation"><span>ENGLISH EXPLANATION</span><p></p></div>
+          <div class="translation-block" id="feedback-translation" lang="en"><span>ENGLISH EXPLANATION</span><p></p></div>
         </aside>
       </main>
       <footer class="quiz-footer" id="quiz-footer" hidden><button class="primary-button" id="next-question" type="button" hidden>Weiter<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button></footer>
     </section>
 
-    <section class="overlay results-overlay" id="results-overlay" aria-labelledby="results-title" hidden>
+    <section class="overlay results-overlay" id="results-overlay" role="dialog" aria-modal="true" aria-labelledby="results-title" hidden>
       <main class="results-main">
         <div class="results-topline"><span class="section-kicker">ERGEBNIS</span><button class="icon-button" id="close-results" type="button" aria-label="Ergebnis schließen"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
         <section class="score-hero">

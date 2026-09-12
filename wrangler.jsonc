@@ -1,0 +1,9 @@
+{
+  "name": "eintest-progress",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-12",
+  "account_id": "052d048aab7cbe7cce489fa632c75d95",
+  "workers_dev": true,
+  "vars": { "ALLOWED_ORIGINS": "https://abubakr380.github.io,http://localhost:4173,http://127.0.0.1:4173" },
+  "d1_databases": [{ "binding": "DB", "database_name": "eintest-progress", "database_id": "30d7555e-aa12-4afd-b372-fe94009f8421", "migrations_dir": "migrations" }]
+}
