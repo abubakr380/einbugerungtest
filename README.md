@@ -145,7 +145,7 @@ The service worker caches the application shell, question bank, icons, and quest
 
 When changing cached files, increment `CACHE_NAME` in `sw.js` so existing installations receive the new version.
 
-Updates wait for the user to tap **Aktualisieren**. Quiz progress and translation preference survive reloads, and a mock exam uses a wall-clock deadline even if iOS suspends the app. Only app files are cached; remote progress responses are never cached. Cache cleanup only touches this app's cache prefix.
+This migration release activates automatically once so devices running the old silent-update service worker are not stranded on stale files. Subsequent updates wait for the user to tap **Aktualisieren**. Quiz progress and translation preference survive reloads, and a mock exam uses a wall-clock deadline even if iOS suspends the app. Only app files are cached; remote progress responses are never cached. Cache cleanup only touches this app's cache prefix.
 
 On iPhone, open the existing app in Safari and use Share → Add to Home Screen. The app offers installation guidance outside standalone mode and requests persistent storage when running standalone. Safari and an installed home-screen app can have separate storage, so connect each using the same username. Do not remove the installed app or clear its storage before the first successful migration/sync.
 

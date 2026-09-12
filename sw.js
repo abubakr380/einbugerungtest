@@ -1,4 +1,9 @@
-const CACHE_NAME = "eintest-berlin-v4";
+const CACHE_NAME = "eintest-berlin-v5";
+const LEGACY_AUTO_ACTIVATE = new Set([
+  "eintest-berlin-v2",
+  "eintest-berlin-v3",
+  "eintest-berlin-v4"
+]);
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -29,7 +34,14 @@ const APP_SHELL = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(APP_SHELL);
+    const keys = await caches.keys();
+    // v2 updated silently and cannot display the new update prompt. Activate
+    // this migration release once so installed copies do not stay stranded.
+    if (keys.some((key) => LEGACY_AUTO_ACTIVATE.has(key))) await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('message', event => {
