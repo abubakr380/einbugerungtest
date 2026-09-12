@@ -126,7 +126,7 @@ Every entry in `questions.js` follows this structure:
   d: "Beginn des Berliner Mauerbaus",
   solution: "a",
   image: null,
-  category: "History & Geography",
+  category: "History",
   context: "Erklärung auf Deutsch.",
   en: {
     question: "What happened on May 8, 1945?",
@@ -151,10 +151,12 @@ On iPhone, open the existing app in Safari and use Share → Add to Home Screen.
 
 ## Updating question data
 
-The rebuild script deliberately uses empty strings for missing translations instead of falling back to German. After rebuilding `questions.js`, run `npm run translations` to apply the reviewed corrections in `scripts/translation-overrides.json`, then `npm run check`. Every question, answer choice and explanation must contain English; only reviewed identical names, numbers and shared English words are exempt. Question 198's malformed theme is normalized to Elections so every question belongs to a practice theme.
+The rebuild script deliberately uses empty strings for missing translations instead of falling back to German. After rebuilding `questions.js`, run `npm run translations` to apply the reviewed corrections in `scripts/translation-overrides.json` and `scripts/theme-overrides.json`, then `npm run check`. Every question, answer choice and explanation must contain English; only reviewed identical names, numbers and shared English words are exempt. The theme overrides split Geschichte from Geografie and Recht from Staat, and combine the former sub-five categories under Sonstiges. Verification rejects any general practice theme with fewer than five questions.
 
 ## Data attribution and disclaimer
 
 The question bank was adapted from the public [Leben in Deutschland project](https://github.com/leben-in-deutschland/leben-in-deutschland-app) and follows the [BAMF preparation catalogue](https://oet.bamf.de/ords/oetut/f?p=514:1) format.
+
+Theme names and question-to-theme assignments are maintained by this app as learning aids; they are not official BAMF categories.
 
 This is an unofficial learning tool and is not affiliated with the Bundesamt für Migration und Flüchtlinge. For authoritative and current exam information, consult BAMF directly.

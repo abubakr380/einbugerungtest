@@ -1,4 +1,4 @@
-const CACHE_NAME = "eintest-berlin-v6";
+const CACHE_NAME = "eintest-berlin-v7";
 const LEGACY_AUTO_ACTIVATE = new Set([
   "eintest-berlin-v2",
   "eintest-berlin-v3",

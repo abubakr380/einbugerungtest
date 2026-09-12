@@ -4,9 +4,10 @@ import { SYNC_API } from "./sync-config.js";
 
 const OPTION_KEYS = ["a", "b", "c", "d"];
 const CATEGORY_ORDER = [
-  "General",
-  "History & Geography",
-  "Law & Governance",
+  "History",
+  "Geography",
+  "Law",
+  "State",
   "Democracy & Politics",
   "Rights & Freedoms",
   "Constitution",
@@ -14,14 +15,14 @@ const CATEGORY_ORDER = [
   "Elections",
   "Education & Religion",
   "Economy & Employment",
-  "Press Freedom",
-  "Assembly & Protests"
+  "Others"
 ];
 
 const CATEGORY_META = {
-  "General": { label: "Allgemein", icon: "layers", color: "#68aaff" },
-  "History & Geography": { label: "Geschichte & Geografie", icon: "landmark", color: "#a980ff" },
-  "Law & Governance": { label: "Recht & Staat", icon: "scale", color: "#4ad9e8" },
+  "History": { label: "Geschichte", icon: "landmark", color: "#a980ff" },
+  "Geography": { label: "Geografie", icon: "globe", color: "#5cb8ee" },
+  "Law": { label: "Recht", icon: "scale", color: "#4ad9e8" },
+  "State": { label: "Staat", icon: "parliament", color: "#68aaff" },
   "Democracy & Politics": { label: "Demokratie & Politik", icon: "parliament", color: "#68aaff" },
   "Rights & Freedoms": { label: "Rechte & Freiheiten", icon: "shield", color: "#45d79a" },
   "Constitution": { label: "Grundgesetz", icon: "document", color: "#ffad63" },
@@ -29,13 +30,21 @@ const CATEGORY_META = {
   "Elections": { label: "Wahlen", icon: "check-square", color: "#59d5bd" },
   "Education & Religion": { label: "Bildung & Religion", icon: "book", color: "#dc8aff" },
   "Economy & Employment": { label: "Wirtschaft & Arbeit", icon: "briefcase", color: "#f1b45f" },
-  "Press Freedom": { label: "Pressefreiheit", icon: "newspaper", color: "#64b6f4" },
-  "Assembly & Protests": { label: "Versammlung & Protest", icon: "users", color: "#f48493" }
+  "Others": { label: "Sonstiges", icon: "layers", color: "#94a3b8" },
+  "General": { label: "Sonstiges", icon: "layers", color: "#94a3b8" },
+  "History & Geography": { label: "Geschichte & Geografie", icon: "landmark", color: "#a980ff" },
+  "Law & Governance": { label: "Recht & Staat", icon: "scale", color: "#4ad9e8" }
+};
+
+const LEGACY_CATEGORY_GROUPS = {
+  "History & Geography": ["History", "Geography"],
+  "Law & Governance": ["Law", "State"]
 };
 
 const ICONS = {
   layers: '<path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/>',
   landmark: '<path d="m3 9 9-5 9 5M5 10v8m5-8v8m4-8v8m5-8v8M3 21h18"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 4.2 6.2 4.2 9S15 17.8 12 21c-3-3.2-4.2-6.2-4.2-9S9 6.2 12 3Z"/>',
   scale: '<path d="M12 3v18M5 6h14M5 6l-3 7h6L5 6Zm14 0-3 7h6l-3-7ZM8 21h8"/>',
   parliament: '<path d="M4 21h16M6 18h12M7 18V9m5 9V9m5 9V9M4 9h16L12 3 4 9Z"/>',
   shield: '<path d="M12 3 4 6v5c0 5 3.2 8.6 8 10 4.8-1.4 8-5 8-10V6l-8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/>',
@@ -100,7 +109,18 @@ function percentage(part, total) {
 }
 
 function categoryLabel(category) {
-  return CATEGORY_META[category]?.label || category || "Allgemein";
+  return CATEGORY_META[category]?.label || category || "Sonstiges";
+}
+
+function orderedCategories() {
+  const presentCategories = new Set(generalQuestions.map(question => question.category));
+  return [...new Set([...CATEGORY_ORDER, ...presentCategories])].filter(category => presentCategories.has(category));
+}
+
+function questionsForCategory(category) {
+  if (category === "Berlin (Bundesland)") return berlinQuestions;
+  const categories = new Set(LEGACY_CATEGORY_GROUPS[category] || [category]);
+  return generalQuestions.filter(question => categories.has(question.category));
 }
 
 function getAccuracy() {
@@ -157,11 +177,9 @@ function renderPractice() {
   $("#berlin-category-fill").style.setProperty("--progress-color", "#ff6f7b");
   $("#berlin-category-card").disabled = state.themeFilter === "unmastered" && berlinMastered === berlinQuestions.length;
 
-  const presentCategories = new Set(generalQuestions.map((question) => question.category));
-  const categories = [...new Set([...CATEGORY_ORDER, ...presentCategories])].filter((category) => presentCategories.has(category));
-  $("#category-list").innerHTML = categories.map((category) => {
-    const meta = CATEGORY_META[category] || CATEGORY_META.General;
-    const questions = generalQuestions.filter((question) => question.category === category);
+  $("#category-list").innerHTML = orderedCategories().map((category) => {
+    const meta = CATEGORY_META[category] || CATEGORY_META.Others;
+    const questions = questionsForCategory(category);
     const mastered = questions.filter((question) => state.progress.mastered.has(question.num)).length;
     const progress = percentage(mastered, questions.length);
     return `
@@ -234,9 +252,7 @@ function selectQuestions(mode, category) {
     return shuffle(QUESTIONS.filter((question) => !state.progress.mastered.has(question.num)));
   }
   if (mode === "category") {
-    const pool = category === "Berlin (Bundesland)"
-      ? berlinQuestions
-      : generalQuestions.filter((question) => question.category === category);
+    const pool = questionsForCategory(category);
     return shuffle(state.themeFilter === "unmastered" ? pool.filter(question => !state.progress.mastered.has(question.num)) : pool);
   }
   return shuffle(QUESTIONS);
@@ -654,9 +670,9 @@ function bindEvents() {
 }
 
 function renderThemeStats() {
-  const themes = [...new Set(generalQuestions.map(q => q.category)), "Berlin (Bundesland)"];
+  const themes = [...orderedCategories(), "Berlin (Bundesland)"];
   $("#theme-stats").innerHTML = themes.map(category => {
-    const pool = category === "Berlin (Bundesland)" ? berlinQuestions : generalQuestions.filter(q => q.category === category);
+    const pool = questionsForCategory(category);
     const mastered = pool.filter(q => state.progress.mastered.has(q.num)).length;
     const value = percentage(mastered, pool.length);
     return `<button type="button" class="breakdown-item theme-stat" data-category="${escapeHTML(category)}"><span class="theme-stat-line"><strong>${escapeHTML(category === "Berlin (Bundesland)" ? "Berlin" : categoryLabel(category))}</strong><span>${mastered} / ${pool.length} · ${value}%</span></span><em><i style="width:${value}%"></i></em></button>`;

@@ -8,7 +8,7 @@ export const QUESTIONS = [
     "d": "Beginn des Berliner Mauerbaus",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf ein wichtiges Datum der deutschen und europäischen Geschichte im 20. Jahrhundert. Mehrere historische Ereignisse werden zur Auswahl gestellt, die zeitlich weit auseinanderliegen. Um die richtige Antwort zu finden, ist es hilfreich, grundlegende Kenntnisse über den Verlauf des Zweiten Weltkriegs, die Nachkriegszeit in Deutschland sowie bedeutende politische Entwicklungen wie Regierungswechsel oder den Kalten Krieg zu haben.",
     "en": {
       "question": "What happened on May 8, 1945?",
@@ -28,7 +28,7 @@ export const QUESTIONS = [
     "d": "Pressefreiheit",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Zeit des Nationalsozialismus (1933–1945) in Deutschland. In dieser Epoche errichtete das NS-Regime eine Diktatur, in der demokratische Grundrechte schrittweise abgeschafft wurden. Politische Opposition wurde verfolgt, die Medien gleichgeschaltet und das politische Leben stark kontrolliert. Gesetze und staatliche Maßnahmen dienten der Machtsicherung der NSDAP und nicht dem Schutz individueller Freiheiten oder der Menschenwürde.",
     "en": {
       "question": "What existed in Germany during the National Socialist era?",
@@ -48,7 +48,7 @@ export const QUESTIONS = [
     "d": "Helmut Schmidt",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs entstand 1949 die Bundesrepublik Deutschland als neuer westdeutscher Staat. Mit der Gründung eines demokratischen politischen Systems wurde auch das Amt des Bundeskanzlers eingeführt, das die Regierungsführung übernahm. Verschiedene Politiker spielten in den ersten Jahrzehnten der Bundesrepublik eine wichtige Rolle beim Wiederaufbau, bei der Westintegration und bei der Gestaltung der deutschen Nachkriegspolitik. Die Frage bezieht sich auf den ersten Amtsinhaber dieses zentralen Regierungsamtes.",
     "en": {
       "question": "What was the name of the first Chancellor of the Federal Republic of Germany?",
@@ -68,7 +68,7 @@ export const QUESTIONS = [
     "d": "durch die bedingungslose Kapitulation Deutschlands",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf das Ende des Zweiten Weltkriegs in Europa im Jahr 1945. In den letzten Kriegsmonaten brach das nationalsozialistische Regime zusammen, alliierte Truppen rückten in Deutschland ein, und wichtige politische sowie militärische Ereignisse überschnitten sich. Um die Frage zu beantworten, muss man zwischen militärischen Entwicklungen, politischen Entscheidungen und symbolischen Ereignissen unterscheiden, die oft miteinander verwechselt werden.",
     "en": {
       "question": "How did the Second World War officially end in Europe?",
@@ -88,7 +88,7 @@ export const QUESTIONS = [
     "d": "1936",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die folgende Frage bezieht sich auf ein wichtiges Ereignis der deutschen Geschichte in der Zeit der Weimarer Republik. Adolf Hitler war der Führer der Nationalsozialistischen Deutschen Arbeiterpartei (NSDAP). Nach Jahren politischer Instabilität und wirtschaftlicher Probleme übernahm er eine zentrale Regierungsposition, die den weiteren Verlauf Deutschlands entscheidend prägte. Die Frage zielt darauf ab, das Jahr zu bestimmen, in dem Hitler offiziell zum Reichskanzler ernannt wurde.",
     "en": {
       "question": "What year did Hitler become Chancellor of the Reich?",
@@ -108,7 +108,7 @@ export const QUESTIONS = [
     "d": "1918 bis 1923",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Zeit des Nationalsozialismus in Deutschland. Damals übernahm Adolf Hitler die politische Führung und errichtete eine Diktatur. Diese Epoche war geprägt von tiefgreifenden politischen Veränderungen, Verfolgung, Zweitem Weltkrieg und massiven Menschenrechtsverletzungen. Um die richtige Antwort zu finden, ist es wichtig, die historischen Ereignisse rund um Hitlers Machtübernahme und das Ende seiner Herrschaft zeitlich einzuordnen.",
     "en": {
       "question": "When were the National Socialists in power in Germany with Adolf Hitler?",
@@ -128,7 +128,7 @@ export const QUESTIONS = [
     "d": "Demokratie.",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Staatsform Deutschlands in der Zeit des Nationalsozialismus von 1933 bis 1945. In dieser Epoche übernahm Adolf Hitler die Macht und veränderte das politische System grundlegend. Demokratische Strukturen der Weimarer Republik wurden abgeschafft, Parteien verboten und politische Gegner verfolgt. Um die richtige Antwort zu finden, ist es wichtig, die Merkmale verschiedener Staatsformen wie Monarchie, Demokratie, Räterepublik und Diktatur zu kennen und mit den historischen Gegebenheiten dieser Zeit zu vergleichen.",
     "en": {
       "question": "The \"Third Reich\" was a ...",
@@ -148,7 +148,7 @@ export const QUESTIONS = [
     "d": "der Vietnamkrieg",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Der Zeitraum von 1939 bis 1945 ist historisch besonders bedeutsam, da in diesen Jahren ein globaler militärischer Konflikt stattfand, an dem viele Länder auf verschiedenen Kontinenten beteiligt waren. In der Geschichtswissenschaft werden Kriege oft nach ihrer zeitlichen Einordnung, ihrem Ausmaß und den beteiligten Staaten unterschieden. Um die richtige Antwort zu finden, ist es hilfreich, die wichtigsten Kriege des 20. Jahrhunderts und ihre jeweiligen Zeiträume zu kennen.",
     "en": {
       "question": "What war lasted from 1939 to 1945?",
@@ -168,7 +168,7 @@ export const QUESTIONS = [
     "d": "1945",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Verfolgung der jüdischen Bevölkerung im nationalsozialistischen Deutschland. In einer Phase zunehmender antisemitischer Politik kam es zu landesweit organisierten Gewaltakten, bei denen Synagogen in Brand gesteckt, jüdische Geschäfte zerstört und viele Menschen verhaftet wurden. Diese Ereignisse gelten als Wendepunkt von Diskriminierung zu offener, systematischer Gewalt und sind ein zentrales Thema der deutschen Zeitgeschichte.",
     "en": {
       "question": "In what year did the Nazis destroy synagogues and Jewish shops in Germany?",
@@ -188,7 +188,7 @@ export const QUESTIONS = [
     "d": "Hitler wird Reichspräsident und lässt alle Parteien verbieten",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf ein wichtiges historisches Ereignis in der Zeit des Nationalsozialismus in Deutschland. Am 9. November 1938 kam es zu staatlich organisierten Gewalttaten gegen jüdische Menschen, ihre Geschäfte und religiösen Einrichtungen. Dieses Ereignis ist ein zentraler Bestandteil der deutschen Geschichte und steht im Zusammenhang mit der Verfolgung der jüdischen Bevölkerung. Die Antwortmöglichkeiten nennen verschiedene historische Ereignisse, von denen nur eines auf dieses Datum zutrifft.",
     "en": {
       "question": "What happened in Germany on November 9, 1938?",
@@ -208,7 +208,7 @@ export const QUESTIONS = [
     "d": "1949 bis 1963",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die deutsche Geschichte des 20. Jahrhunderts. Gemeint ist die Zeit, in der die NSDAP unter Adolf Hitler die politische Macht innehatte. In diesem Zeitraum wurden Demokratie abgeschafft, eine Diktatur errichtet und weitreichende politische, gesellschaftliche und militärische Veränderungen durchgeführt. Das Ende dieser Epoche hängt eng mit dem Ausgang des Zweiten Weltkriegs zusammen.",
     "en": {
       "question": "When were the National Socialists in power in Germany?",
@@ -228,7 +228,7 @@ export const QUESTIONS = [
     "d": "den Bau des Reichstagsgebäudes.",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf eine wichtige Person der deutschen Geschichte während der Zeit des Nationalsozialismus. Claus Schenk Graf von Stauffenberg war ein Offizier der Wehrmacht im Zweiten Weltkrieg. Er wurde vor allem durch sein Handeln in der politischen und militärischen Opposition gegen Adolf Hitler bekannt. Um die richtige Antwort zu finden, ist es hilfreich, den historischen Hintergrund des Widerstands gegen das NS-Regime zu kennen.",
     "en": {
       "question": "Claus Schenk Graf von Stauffenberg became known for ...",
@@ -248,7 +248,7 @@ export const QUESTIONS = [
     "d": "1933",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Der Zweite Weltkrieg war ein globaler Konflikt, an dem viele Länder beteiligt waren und der große politische und gesellschaftliche Veränderungen bewirkte. Er begann in Europa mit dem deutschen Angriff auf Polen und endete mit der Kapitulation der Achsenmächte. Die Frage zielt darauf ab, das richtige historische Jahr für das Kriegsende zu erkennen.",
     "en": {
       "question": "When did the Second World War end?",
@@ -268,7 +268,7 @@ export const QUESTIONS = [
     "d": "des staatlichen Rassismus",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf den NS-Staat in Deutschland zwischen 1933 und 1945. In dieser Zeit errichtete das nationalsozialistische Regime eine Diktatur unter Adolf Hitler. Politische Gegner wurden verfolgt, Grundrechte stark eingeschränkt und die Ideologie der Nationalsozialisten bestimmte Staat und Gesellschaft. Das Hintergrundwissen über zentrale Merkmale dieser Herrschaft hilft, die richtige Antwort auf die Frage zu verstehen.",
     "en": {
       "question": "What characterized the Nazi state? A policy ...",
@@ -288,7 +288,7 @@ export const QUESTIONS = [
     "d": "willkürliche Verhaftungen",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Zeit des Nationalsozialismus in Deutschland von 1933 bis 1945. In dieser Epoche herrschte eine diktatorische Regierung unter Adolf Hitler, die das politische, gesellschaftliche und kulturelle Leben stark kontrollierte. Viele Grundrechte wurden eingeschränkt oder abgeschafft, und der Staat griff massiv in das Leben der Bevölkerung ein. Vor diesem historischen Hintergrund soll beurteilt werden, welche der genannten Zustände es in dieser Zeit nicht gab.",
     "en": {
       "question": "What did not exist in Germany during the National Socialist era?",
@@ -308,7 +308,7 @@ export const QUESTIONS = [
     "d": "eine Monarchie.",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die politische Entwicklung Deutschlands nach der Machtübernahme der Nationalsozialisten im Jahr 1933. In dieser Zeit veränderte sich das politische System grundlegend. Demokratische Strukturen der Weimarer Republik wurden abgeschafft, politische Gegner verfolgt und die Macht stark zentralisiert. Das Verständnis der damaligen historischen Ereignisse und Herrschaftsformen hilft, die richtige Aussage über den entstandenen Staat zu erkennen.",
     "en": {
       "question": "In 1933, the National Socialists with Adolf Hitler set up a ...",
@@ -328,7 +328,7 @@ export const QUESTIONS = [
     "d": "die Bundesrepublik Deutschland",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland in Ost und West geteilt und Berlin lag als geteilte Stadt mitten im Kalten Krieg. Politische Spannungen, unterschiedliche Wirtschaftssysteme und die Abwanderung vieler Menschen aus dem Osten führten zu drastischen Maßnahmen. In diesem Zusammenhang entstand 1961 die Berliner Mauer, um die Grenze zwischen Ost- und Westberlin zu sichern.",
     "en": {
       "question": "Who built the Wall in Berlin?",
@@ -348,7 +348,7 @@ export const QUESTIONS = [
     "d": "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf einen bekannten politischen Ruf der deutschen Geschichte. „Wir sind das Volk“ wurde in verschiedenen Zeiten mit Protesten, Bürgerrechten und politischem Wandel verbunden. Um die richtige Antwort zu finden, ist es wichtig, die historischen Hintergründe der genannten Demonstrationen zu kennen, insbesondere die Situation in der DDR und der Bundesrepublik Deutschland sowie die Bedeutung von Massenprotesten für politische Veränderungen.",
     "en": {
       "question": "At which demonstrations in Germany did people shout \"We are the people\"?",
@@ -368,7 +368,7 @@ export const QUESTIONS = [
     "d": "Sowjetunion, Großbritannien, Polen, Schweden",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs im Jahr 1945 wurde Deutschland von den Siegermächten besetzt. Das Land verlor seine staatliche Souveränität und wurde in mehrere Besatzungszonen aufgeteilt. Jede Zone wurde von einem bestimmten Staat kontrolliert, der politische, militärische und wirtschaftliche Entscheidungen traf. Diese Staaten werden als „alliierte Besatzungsmächte“ bezeichnet. Das Wissen über diese historische Situation ist wichtig, um die Aufteilung Deutschlands und die frühe Nachkriegsordnung in Europa zu verstehen.",
     "en": {
       "question": "Which countries were referred to as \"Allied Occupying Powers\" in Germany after World War II?",
@@ -388,7 +388,7 @@ export const QUESTIONS = [
     "d": "Frankreich",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs im Jahr 1945 wurde Deutschland von den Siegermächten militärisch besetzt und in Besatzungszonen aufgeteilt. Diese sogenannten „Alliierten Besatzungsmächte“ übernahmen Verwaltung, politische Neuordnung und Wiederaufbau des Landes. Nicht alle Länder, die im Krieg beteiligt waren, spielten dabei eine Rolle als Besatzungsmacht in Deutschland. Um die richtige Antwort zu finden, ist Wissen über die beteiligten Staaten der Nachkriegsordnung nötig.",
     "en": {
       "question": "Which country was not an \"Allied occupying power\" in Germany?",
@@ -408,7 +408,7 @@ export const QUESTIONS = [
     "d": "1951",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs wurde Deutschland von den Siegermächten besetzt und in verschiedene Zonen aufgeteilt. In den westlichen Besatzungszonen entwickelten sich politische Strukturen, um einen neuen demokratischen Staat aufzubauen. In diesem historischen Zusammenhang entstand ein neuer Staat mit eigener Verfassung und Regierung. Die Frage bezieht sich darauf, in welchem Jahr dieser westdeutsche Staat offiziell gegründet wurde.",
     "en": {
       "question": "When was the Federal Republic of Germany founded?",
@@ -428,7 +428,7 @@ export const QUESTIONS = [
     "d": "britischen Besatzungszone",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland von den Siegermächten in vier Besatzungszonen aufgeteilt. Diese Zonen wurden von den USA, Großbritannien, Frankreich und der Sowjetunion verwaltet. Aus den politischen und wirtschaftlichen Entwicklungen in den verschiedenen Zonen entstanden später zwei deutsche Staaten: die Bundesrepublik Deutschland im Westen und die Deutsche Demokratische Republik im Osten. Die Frage bezieht sich darauf, in welcher dieser Besatzungszonen die DDR gegründet wurde.",
     "en": {
       "question": "In which occupation zone was the GDR founded? In the ...",
@@ -448,7 +448,7 @@ export const QUESTIONS = [
     "d": "1956",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland in Besatzungszonen der Alliierten aufgeteilt. Aus den politischen Entwicklungen in den Zonen entstanden zwei deutsche Staaten mit unterschiedlichen politischen Systemen. Die Frage bezieht sich auf die formelle Gründung der Deutschen Demokratischen Republik in der sowjetischen Besatzungszone und prüft das Wissen über die frühe Nachkriegsgeschichte Deutschlands und den Beginn der deutschen Teilung.",
     "en": {
       "question": "When was the GDR founded?",
@@ -468,7 +468,7 @@ export const QUESTIONS = [
     "d": "6",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs im Jahr 1945 wurde Deutschland von den Siegermächten besetzt. Um die Verwaltung und den Wiederaufbau zu organisieren, teilten diese Mächte das Land in mehrere Besatzungszonen auf. Jede Zone wurde von einem anderen Staat kontrolliert und hatte eigene politische und militärische Strukturen. Dieses System prägte die Nachkriegszeit in Deutschland und legte den Grundstein für die spätere Teilung des Landes.",
     "en": {
       "question": "How many occupation zones were there in Germany after the Second World War?",
@@ -488,7 +488,7 @@ export const QUESTIONS = [
     "d": "Berlin",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs wurde Deutschland von den Siegermächten besetzt und in verschiedene Besatzungszonen aufgeteilt. Besonders einige Städte spielten dabei eine wichtige Rolle, da sie politisch, wirtschaftlich oder symbolisch von großer Bedeutung waren. In einem besonderen Fall wurde eine Stadt nicht nur Teil der allgemeinen Zonenaufteilung, sondern intern selbst in mehrere Sektoren gegliedert, die jeweils von unterschiedlichen Alliierten kontrolliert wurden. Diese historische Besonderheit ist Thema der folgenden Frage.",
     "en": {
       "question": "Which German city was divided into four sectors after the Second World War?",
@@ -508,7 +508,7 @@ export const QUESTIONS = [
     "d": "1 = Großbritannien, 2 = Sowjetunion, 3 = Frankreich, 4 = USA",
     "solution": "a",
     "image": "assets/questions/26.png",
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Ende des Zweiten Weltkriegs im Jahr 1945 wurde Deutschland von den Alliierten besetzt und in vier Besatzungszonen aufgeteilt. Jede Zone wurde von einer anderen Siegermacht verwaltet: den USA, der Sowjetunion, Großbritannien und Frankreich. In vielen Darstellungen werden diese Besatzungszonen auf Karten mit Zahlen oder Farben gekennzeichnet. Die Frage bezieht sich auf eine solche Darstellung und möchte wissen, welche Besatzungsmacht zu welcher nummerierten Zone gehört.",
     "en": {
       "question": "How were Germany's occupation zones distributed after 1945?",
@@ -528,7 +528,7 @@ export const QUESTIONS = [
     "d": "Die amerikanischen Soldaten/Soldatinnen hatten beim Landtransport Angst vor Überfällen.",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland in Besatzungszonen aufgeteilt, ebenso die Stadt Berlin. Politische Spannungen zwischen den Westmächten und der Sowjetunion verschärften sich 1948. West-Berlin lag als westlicher Sektor tief im sowjetisch kontrollierten Gebiet. In dieser Situation kam es zu massiven Einschränkungen der Versorgung, was eine außergewöhnliche organisatorische und logistische Maßnahme erforderlich machte, um die Bevölkerung mit lebenswichtigen Gütern zu versorgen.",
     "en": {
       "question": "From June 1948 to May 1949, the citizens of West Berlin were supplied by an airlift. What circumstance was responsible for this?",
@@ -548,7 +548,7 @@ export const QUESTIONS = [
     "d": "Gerhard Schröder.",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
       "question": "The first Federal Chancellor of the Federal Republic of Germany was …",
@@ -568,7 +568,7 @@ export const QUESTIONS = [
     "d": "Er bat Polen und die polnischen Juden um Vergebung",
     "solution": "d",
     "image": "assets/questions/29.png",
-    "category": "History & Geography",
+    "category": "History",
     "context": "1970 besuchte der damalige Bundeskanzler Willy Brandt Warschau, um den deutsch-polnischen Vertrag zu unterzeichnen. Während dieses Besuchs legte er am Denkmal für den Aufstand im jüdischen Ghetto einen Kranz nieder. Die nationalsozialistischen Verbrechen in Polen, insbesondere an den europäischen Juden, belasteten lange das Verhältnis zwischen beiden Ländern. Der unerwartete Kniefall Brandts wurde weltweit wahrgenommen und unterschiedlich interpretiert.",
     "en": {
       "question": "What did Willy Brandt want to express when he genuflected in 1970 in the former Jewish ghetto in Warsaw?",
@@ -588,7 +588,7 @@ export const QUESTIONS = [
     "d": "vor etwa 1700 Jahren",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die lange Geschichte jüdischen Lebens in Mitteleuropa. Bereits in der Antike und im frühen Mittelalter siedelten sich jüdische Gemeinschaften in verschiedenen Regionen an, die später Teil des heutigen Deutschlands wurden. Historische Quellen, archäologische Funde und schriftliche Zeugnisse geben Hinweise darauf, wann diese Gemeinden erstmals entstanden. Um die richtige Antwort zu finden, ist es hilfreich, grundlegende Kenntnisse über die Entwicklung von Städten, Handel und religiösem Leben in der europäischen Geschichte zu haben.",
     "en": {
       "question": "How many years ago was there a Jewish community in the territory of today's Germany for the first time?",
@@ -608,7 +608,7 @@ export const QUESTIONS = [
     "d": "40er Jahre",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg lag die Wirtschaft in Deutschland am Boden. In den folgenden Jahren entwickelte sich die Bundesrepublik jedoch wirtschaftlich sehr stark. Durch Währungsreform, Marshallplan, steigende Industrieproduktion und zunehmenden Wohlstand erlebte das Land eine Phase schnellen wirtschaftlichen Aufschwungs. Diese Epoche wird als „Wirtschaftswunder“ bezeichnet und ist eng mit der frühen Geschichte der Bundesrepublik Deutschland verbunden.",
     "en": {
       "question": "When was the \"economic miracle\" in the Federal Republic of Germany?",
@@ -628,7 +628,7 @@ export const QUESTIONS = [
     "d": "an die Opfer des Nationalsozialismus",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "In vielen deutschen Städten findet man kleine Messingtafeln im Gehweg vor Wohnhäusern. Diese Steine tragen Namen, Lebensdaten und kurze Informationen zu Personen, die früher dort lebten. Das Projekt wurde von dem Künstler Gunter Demnig ins Leben gerufen und hat eine besondere historische Bedeutung. Wer darüber „stolpert“, soll sich bewusst an bestimmte Kapitel der deutschen Geschichte erinnern und über das Schicksal dieser Menschen nachdenken.",
     "en": {
       "question": "What do the so-called \"Stolpersteine\" in Germany remind us of?",
@@ -648,7 +648,7 @@ export const QUESTIONS = [
     "d": "des Warschauer Pakts gegen den Westen",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf den Begriff „Eiserner Vorhang“, der im Kalten Krieg verwendet wurde. Er beschreibt die politische, militärische und ideologische Trennung Europas nach dem Zweiten Weltkrieg. Dabei standen sich zwei Machtblöcke gegenüber, die unterschiedliche Wirtschaftssysteme, politische Ideologien und Bündnisse hatten. Der Ausdruck half, die Abschottung und fehlenden Kontakte zwischen diesen Lagern zu verdeutlichen und ist ein wichtiger Begriff der europäischen Nachkriegsgeschichte.",
     "en": {
       "question": "What did the phrase \"Iron Curtain\" stand for? For the isolation..",
@@ -668,7 +668,7 @@ export const QUESTIONS = [
     "d": "1. Mai",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf ein historisches Ereignis in der frühen Geschichte der DDR. Im Jahr 1953 kam es dort zu einem Volksaufstand gegen politische und wirtschaftliche Maßnahmen der Staatsführung. Dieser Aufstand hatte eine große symbolische Bedeutung für Deutschland und wurde in der Bundesrepublik über viele Jahre hinweg offiziell als Gedenk- und Feiertag begangen. Gesucht ist das konkrete Datum, an dem dieser Aufstand stattfand.",
     "en": {
       "question": "In 1953 there was an uprising in the GDR, which was commemorated for a long time by a holiday in the Federal Republic of Germany. When was that?",
@@ -688,7 +688,7 @@ export const QUESTIONS = [
     "d": "Bundesrepublik Deutschland",
     "solution": "a",
     "image": "assets/questions/35.png",
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland in verschiedene Staaten mit unterschiedlichen politischen Systemen geteilt. Jeder dieser Staaten verwendete eigene nationale Symbole wie Flaggen und Wappen, um seine Ideologie und Identität darzustellen. Besonders Flaggen unterschieden sich durch Farben und Embleme, etwa durch zusätzliche Zeichen neben den Farben Schwarz‑Rot‑Gold. Um die richtige Antwort zu finden, ist es hilfreich, die historischen Hintergründe der deutschen Staaten im 20. Jahrhundert zu kennen.",
     "en": {
       "question": "Which German state had a black-red-gold flag with hammer, compass and wreath of wheat?",
@@ -708,7 +708,7 @@ export const QUESTIONS = [
     "d": "1953",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland in Ost‑ und Westdeutschland geteilt, ebenso die Stadt Berlin. Zwischen den beiden politischen Systemen kam es zu starken Spannungen, besonders wegen der Abwanderung vieler Menschen aus dem Osten in den Westen. Um diese Flucht zu stoppen, entschied die Regierung der DDR, eine feste Grenzanlage in Berlin zu errichten. Die folgende Frage bezieht sich auf das Jahr, in dem diese Mauer gebaut wurde.",
     "en": {
       "question": "What year was the Berlin Wall built?",
@@ -728,7 +728,7 @@ export const QUESTIONS = [
     "d": "1919",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland im Westen und die Deutsche Demokratische Republik im Osten. Berlin lag im Osten, war aber ebenfalls geteilt. Viele Menschen verließen die DDR über West-Berlin, was zu politischen Spannungen im Kalten Krieg führte. Um diese Fluchtbewegung zu stoppen, beschloss die Führung der DDR, die Grenze innerhalb Berlins zu sichern. Die Frage bezieht sich auf den Zeitpunkt dieses historischen Ereignisses.",
     "en": {
       "question": "When did the GDR build the Wall in Berlin?",
@@ -748,7 +748,7 @@ export const QUESTIONS = [
     "d": "Die Deutsche Republik",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die folgende Frage bezieht sich auf deutsche Geschichte und politische Begriffe aus dem 20. Jahrhundert. Dabei geht es um eine Abkürzung, die häufig im Zusammenhang mit der Teilung Deutschlands nach dem Zweiten Weltkrieg verwendet wurde. Um die richtige Antwort zu finden, ist es hilfreich, Grundkenntnisse über die ehemalige staatliche Aufteilung Deutschlands und deren offizielle Bezeichnungen zu haben.",
     "en": {
       "question": "What does the abbreviation DDR mean?",
@@ -768,7 +768,7 @@ export const QUESTIONS = [
     "d": "1987",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf ein wichtiges historisches Ereignis der deutschen Geschichte. Die Berliner Mauer trennte über Jahrzehnte Ost- und Westberlin während des Kalten Krieges. Ihre Öffnung hatte große politische und gesellschaftliche Folgen für Deutschland und Europa. Um die richtige Antwort zu finden, sollte man sich mit dem Ende der deutschen Teilung und den Ereignissen rund um den Fall der Mauer beschäftigen.",
     "en": {
       "question": "When was the Wall in Berlin opened to everyone?",
@@ -788,7 +788,7 @@ export const QUESTIONS = [
     "d": "Bayern",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland bis 1990 in zwei Staaten geteilt: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Die heutigen Bundesländer entstanden teilweise aus diesen früheren Strukturen. Die Frage untersucht, welches der genannten heutigen Bundesländer früher Bestandteil der DDR war.",
     "en": {
       "question": "Which present-day German state used to belong to the territory of the GDR?",
@@ -808,7 +808,7 @@ export const QUESTIONS = [
     "d": "ohne Bürgermeister.",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Zeit des Kalten Krieges nach dem Zweiten Weltkrieg. Deutschland war in zwei Staaten geteilt, und auch Berlin hatte einen besonderen politischen Status. Zwischen 1961 und 1989 prägten politische Spannungen, Grenzanlagen und unterschiedliche politische Systeme den Alltag der Stadt und ihrer Bewohner. Vor diesem historischen Hintergrund soll die Frage klären, wie Berlin in dieser Zeit organisiert und geprägt war.",
     "en": {
       "question": "From 1961 to 1989, Berlin was ...",
@@ -828,7 +828,7 @@ export const QUESTIONS = [
     "d": "Städte.",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
       "question": "On October 3, Germany celebrates the Day of German …",
@@ -848,7 +848,7 @@ export const QUESTIONS = [
     "d": "Sachsen-Anhalt",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Die DDR bestand bis zur Wiedervereinigung im Jahr 1990. Danach wurden ihre Gebiete Teil der heutigen Bundesrepublik und bilden mehrere der heutigen Bundesländer. Die Frage bezieht sich darauf, welches der genannten heutigen Bundesländer früher zur DDR gehörte.",
     "en": {
       "question": "Which present-day German state used to belong to the territory of the GDR?",
@@ -868,7 +868,7 @@ export const QUESTIONS = [
     "d": "von einer liberalen Marktwirtschaft zum Sozialismus.",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Im Herbst 1989 kam es in der DDR zu tiefgreifenden politischen und gesellschaftlichen Veränderungen. Viele Menschen gingen auf die Straße, um für Freiheit, Reisefreiheit und demokratische Rechte zu demonstrieren. Die staatliche Führung verlor zunehmend die Kontrolle, was schließlich zum Fall der Berliner Mauer führte. Diese Ereignisse leiteten einen grundlegenden Wandel des politischen Systems ein und führten zur deutschen Wiedervereinigung. Der Begriff „Die Wende“ beschreibt diesen historischen Umbruch und die Abkehr vom bisherigen System.",
     "en": {
       "question": "Why is the time in the fall of 1989 called \"The Wende\" in the GDR? During this time, the GDR changed politically ...",
@@ -888,7 +888,7 @@ export const QUESTIONS = [
     "d": "Thüringen",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Nach dem Zweiten Weltkrieg war Deutschland bis 1990 in zwei Staaten geteilt: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Die DDR bestand aus mehreren Regionen, die heute wieder Bundesländer des vereinten Deutschlands sind. Die Frage zielt darauf ab, zu erkennen, welches der genannten heutigen Bundesländer früher zur DDR gehörte.",
     "en": {
       "question": "Which present-day German state used to belong to the territory of the GDR?",
@@ -908,7 +908,7 @@ export const QUESTIONS = [
     "d": "Niedersachsen",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die deutsche Geschichte nach dem Zweiten Weltkrieg. Von 1949 bis 1990 war Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Nach der Wiedervereinigung 1990 entstanden aus dem Gebiet der DDR mehrere heutige Bundesländer. Die Frage prüft, welches der genannten Länder dazugehörte.",
     "en": {
       "question": "Which present-day German state used to belong to the territory of the GDR?",
@@ -928,7 +928,7 @@ export const QUESTIONS = [
     "d": "das Ministerium fuеr Staatssicherheit.",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
       "question": "In the GDR, the abbreviation ‘Stasi’ referred to …",
@@ -948,7 +948,7 @@ export const QUESTIONS = [
     "d": "Mecklenburg-Vorpommern",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die deutsche Geschichte vor der Wiedervereinigung 1990. Damals war Deutschland in die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten geteilt. Nach der Wiedervereinigung wurden mehrere neue Bundesländer gegründet oder neu definiert. Die Aufgabe besteht darin zu erkennen, welches der heutigen Bundesländer früher auf dem Gebiet der DDR lag, im Gegensatz zu den westdeutschen Bundesländern.",
     "en": {
       "question": "Which present-day German state used to belong to the territory of the GDR?",
@@ -968,7 +968,7 @@ export const QUESTIONS = [
     "d": "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die politische und geografische Einteilung Deutschlands während der Zeit der deutschen Teilung von 1949 bis 1990. Damals bestand die Deutsche Demokratische Republik (DDR) aus bestimmten Bundesländern im Osten Deutschlands. Um die richtige Antwort zu finden, muss man wissen, welche heutigen Bundesländer vollständig aus dem Gebiet der früheren DDR hervorgegangen sind und welche hingegen zur Bundesrepublik Deutschland (BRD) gehörten.",
     "en": {
       "question": "Which of the following lists contains only federal states that belonged to the territory of the former GDR?",
@@ -988,7 +988,7 @@ export const QUESTIONS = [
     "d": "zum Warschauer Pakt",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland in zwei Staaten geteilt: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Während des Kalten Krieges standen sich zwei große Militär- und Machtblöcke gegenüber, zu denen verschiedene Länder Bündnisse eingingen. Die Frage bezieht sich darauf, welchem dieser Bündnisse die DDR angehörte.",
     "en": {
       "question": "To whom did the GDR belong during the \"Cold War\"?",
@@ -1008,7 +1008,7 @@ export const QUESTIONS = [
     "d": "Angebot und Nachfrage",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Deutsche Demokratische Republik (DDR), einen sozialistischen Staat, der von 1949 bis 1990 existierte. Um die richtige Antwort zu finden, sollte man grundlegende Kenntnisse über politische und wirtschaftliche Systeme des 20. Jahrhunderts haben. Dabei geht es insbesondere um die Unterschiede zwischen staatlich gelenkter Wirtschaft, freier Marktwirtschaft und kapitalistischen Systemen sowie darum, wie Produktion, Preise und Verteilung von Gütern organisiert wurden.",
     "en": {
       "question": "What was the name of the GDR's economic system?",
@@ -1028,7 +1028,7 @@ export const QUESTIONS = [
     "d": "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Fall der Berliner Mauer 1989 kam es zu politischen Verhandlungen über die deutsche Einheit. Die DDR und die Bundesrepublik Deutschland entschieden sich für einen rechtlichen Weg, um wieder ein gemeinsamer Staat zu werden. Dabei spielte das Grundgesetz der Bundesrepublik eine zentrale Rolle. Die Frage bezieht sich darauf, wie dieser Beitritt konkret umgesetzt wurde und welche Gebiete Teil der Bundesrepublik wurden.",
     "en": {
       "question": "How did the Federal Republic of Germany and the GDR become one state?",
@@ -1048,7 +1048,7 @@ export const QUESTIONS = [
     "d": "zur OPEC.",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die deutsche Wiedervereinigung im Jahr 1990. Mit dem Beitritt der DDR zur Bundesrepublik Deutschland übernahm das Gebiet der neuen Bundesländer automatisch die bestehenden internationalen Verpflichtungen und Mitgliedschaften der Bundesrepublik. Vor der Wiedervereinigung war die DDR in andere politische und militärische Bündnisse eingebunden als die Bundesrepublik. Um die richtige Antwort zu verstehen, sind Kenntnisse über internationale Organisationen und Bündnisse Europas im Kalten Krieg und danach notwendig.",
     "en": {
       "question": "With the accession of the GDR to the Federal Republic of Germany, the new federal states now also belong to ...",
@@ -1068,7 +1068,7 @@ export const QUESTIONS = [
     "d": "im Europabündnis",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Zeit des Kalten Krieges, in der Deutschland in zwei Staaten geteilt war: die Bundesrepublik Deutschland (BRD) im Westen und die Deutsche Demokratische Republik (DDR) im Osten. Beide gehörten unterschiedlichen politischen und militärischen Bündnissen an, die jeweils von den Großmächten USA und Sowjetunion geprägt wurden. Das Wissen über diese Bündnisse hilft, die außenpolitische Ausrichtung der DDR zu verstehen.",
     "en": {
       "question": "In which military alliance was the GDR a member?",
@@ -1088,7 +1088,7 @@ export const QUESTIONS = [
     "d": "eine berühmte deutsche Gedenkstätte",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die deutsche Geschichte des 20. Jahrhunderts, insbesondere auf die Zeit der deutschen Teilung während des Kalten Krieges. In Ost- und Westdeutschland existierten unterschiedliche politische Systeme mit eigenen staatlichen Institutionen. Der Begriff „Stasi“ taucht häufig in historischen Berichten, Filmen und Diskussionen über Überwachung, Geheimdienste und die DDR auf. Die Antwortmöglichkeiten nennen verschiedene Organisationen und Einrichtungen aus unterschiedlichen Epochen.",
     "en": {
       "question": "What was the \"Stasi\"?",
@@ -1108,7 +1108,7 @@ export const QUESTIONS = [
     "d": "4",
     "solution": "d",
     "image": "assets/questions/56.png",
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf das Staatswappen der Deutschen Demokratischen Republik (DDR), die von 1949 bis 1990 existierte. In vielen Quiz- oder Prüfungsaufgaben werden mehrere Bilder oder nummerierte Abbildungen gezeigt, aus denen das richtige Wappen ausgewählt werden soll. Das Wappen der DDR hatte charakteristische Symbole, die den sozialistischen Staat repräsentierten. Die Antwortmöglichkeiten 1 bis 4 stehen dabei jeweils für unterschiedliche dargestellte Wappen.",
     "en": {
       "question": "What was the coat of arms of the German Democratic Republic?",
@@ -1128,7 +1128,7 @@ export const QUESTIONS = [
     "d": "der 1. SED-Parteitag",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Der 17. Juni 1953 ist ein wichtiges Datum in der Geschichte der DDR. In den frühen Jahren des sozialistischen Staates gab es wirtschaftliche Schwierigkeiten, politische Spannungen und Unzufriedenheit in der Bevölkerung, insbesondere unter Arbeitern. Entscheidungen der SED-Führung und staatliche Maßnahmen führten zu Protesten, die sich rasch ausweiteten. Dieses Ereignis hatte große Bedeutung für die deutsch-deutsche Geschichte und wurde in der Bundesrepublik lange als Gedenktag begangen.",
     "en": {
       "question": "What happened on June 17, 1953 in the GDR?",
@@ -1148,7 +1148,7 @@ export const QUESTIONS = [
     "d": "Bundesländer Deutschland",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die Frage stammt aus dem Bereich Allgemeinwissen und Politische Bildung. Sie bezieht sich auf den offiziellen Staatsnamen Deutschlands, wie er in Gesetzen, internationalen Verträgen und historischen Dokumenten verwendet wird. Um die richtige Antwort zu finden, ist es hilfreich, Grundkenntnisse über den politischen Aufbau und die Staatsform Deutschlands zu haben sowie zu wissen, wie sich der offizielle Name von umgangssprachlichen Bezeichnungen unterscheidet.",
     "en": {
       "question": "What is Germany's full name?",
@@ -1168,7 +1168,7 @@ export const QUESTIONS = [
     "d": "70 Millionen",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die aktuelle Bevölkerungszahl Deutschlands. Diese wird regelmäßig durch statistische Ämter erfasst und kann sich im Laufe der Jahre durch Geburten, Sterbefälle und Migration verändern. Die Antwortmöglichkeiten geben gerundete Zahlen an, wie sie häufig in Medien oder Statistiken verwendet werden.",
     "en": {
       "question": "How many inhabitants does Germany have?",
@@ -1188,7 +1188,7 @@ export const QUESTIONS = [
     "d": "schwarz-gelb-rot",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die folgende Frage bezieht sich auf grundlegende Kenntnisse über nationale Symbole Deutschlands. Nationalflaggen haben festgelegte Farben, die historisch gewachsen sind und eine wichtige Rolle für Identität, Geschichte und staatliche Repräsentation spielen. Um die richtige Antwort zu finden, sollte man wissen, wie die Flagge Deutschlands aussieht und welche Farben offiziell verwendet werden.",
     "en": {
       "question": "What colors does the German flag have?",
@@ -1208,7 +1208,7 @@ export const QUESTIONS = [
     "d": "Helmut Kohl",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Der Ausdruck „Kanzler der Deutschen Einheit“ bezieht sich auf die politische Führung der Bundesrepublik Deutschland während des Prozesses der Wiedervereinigung von Ost- und Westdeutschland im Jahr 1990. In dieser Zeit waren wichtige innen- und außenpolitische Entscheidungen nötig, um die staatliche Einheit herzustellen. Die Frage fragt danach, welcher der genannten Bundeskanzler eng mit diesem historischen Ereignis verbunden wird.",
     "en": {
       "question": "Who is called the \"Chancellor of German Unity\"?",
@@ -1228,7 +1228,7 @@ export const QUESTIONS = [
     "d": "die Fahne der Stadt Berlin",
     "solution": "c",
     "image": "assets/questions/62.png",
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Der Deutsche Bundestag tagt im Plenarsaal des Reichstagsgebäudes in Berlin. In diesem Raum finden wichtige Debatten und Abstimmungen statt, die das politische Leben Deutschlands prägen. Der Plenarsaal ist nicht nur ein Arbeitsort für Abgeordnete, sondern enthält auch zentrale staatliche Symbole, die die Geschichte, Verfassung und Souveränität der Bundesrepublik Deutschland widerspiegeln. Das Wissen über diese Symbole hilft, die Bedeutung des Ortes besser zu verstehen.",
     "en": {
       "question": "Which symbol can be seen in the plenary hall of the German Bundestag?",
@@ -1248,7 +1248,7 @@ export const QUESTIONS = [
     "d": "1919 bis 1927",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg wurde Deutschland in verschiedene Besatzungszonen aufgeteilt. Aus den politischen und wirtschaftlichen Entwicklungen in diesen Zonen entstanden zwei deutsche Staaten mit unterschiedlichen politischen Systemen. Einer davon war die Deutsche Demokratische Republik, ein sozialistischer Staat in Ostdeutschland. Um historische Fragen richtig beantworten zu können, ist es wichtig zu wissen, wann dieser Staat gegründet wurde und wann er endete.",
     "en": {
       "question": "In what period did the German Democratic Republic (GDR) exist?",
@@ -1268,7 +1268,7 @@ export const QUESTIONS = [
     "d": "7",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die deutsche Wiedervereinigung im Jahr 1990. Nach dem Ende der DDR und dem Fall der Mauer wurden politische und administrative Strukturen neu geordnet. Die ehemaligen Bezirke der DDR wurden wieder in Bundesländer umgewandelt und traten der Bundesrepublik Deutschland bei. Aus diesem historischen Prozess ergibt sich die gesuchte Anzahl der hinzugekommenen Bundesländer.",
     "en": {
       "question": "How many federal states were added to the Federal Republic of Germany during reunification in 1990?",
@@ -1288,7 +1288,7 @@ export const QUESTIONS = [
     "d": "1990",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die historische Entwicklung Deutschlands nach dem Zweiten Weltkrieg. In verschiedenen Jahren änderten sich Staatsform, politische Ordnung und territoriale Grenzen Deutschlands. Besonders wichtig sind die Gründung der Bundesrepublik Deutschland, die Teilung in Ost- und Westdeutschland sowie die deutsche Wiedervereinigung. Der zeitliche Zusammenhang hilft zu verstehen, ab welchem Jahr die heutigen Grenzen der Bundesrepublik Deutschland bestehen.",
     "en": {
       "question": "The Federal Republic of Germany has had its present borders since …",
@@ -1308,7 +1308,7 @@ export const QUESTIONS = [
     "d": "an die Wiedervereinigung Deutschlands",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "In Deutschland gibt es mehrere staatliche Gedenktage, die an wichtige historische Ereignisse oder Menschengruppen erinnern. Diese Tage haben oft einen festen Termin und werden bundesweit begangen, zum Beispiel durch Gedenkveranstaltungen, Reden oder Schweigeminuten. Der 27. Januar ist einer dieser Tage. Um die richtige Antwort zu finden, ist es wichtig zu wissen, welches historische Ereignis an diesem Datum stattgefunden hat und welche Bedeutung es für die deutsche Geschichte und das kollektive Erinnern hat.",
     "en": {
       "question": "January 27 is an official day of remembrance in Germany. What does this day remind us of?",
@@ -1328,7 +1328,7 @@ export const QUESTIONS = [
     "d": "Michail Gorbatschow",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die deutsche Außenpolitik im Kalten Krieg. In den späten 1960er und frühen 1970er Jahren bemühte sich die Bundesrepublik Deutschland um eine Entspannung des Verhältnisses zu den Staaten des Ostblocks. Dabei spielten spezielle Verträge eine zentrale Rolle, die als „Ostverträge“ bekannt wurden. Sie sollten die Beziehungen zu Ländern wie der Sowjetunion, Polen und der DDR normalisieren und bestehende Grenzen anerkennen.",
     "en": {
       "question": "Which politician stands for the \"Eastern Treaties\"?",
@@ -1348,7 +1348,7 @@ export const QUESTIONS = [
     "d": "Deutsche Wiedervereinigung",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Fall der Berliner Mauer 1989 kam es zu tiefgreifenden politischen Veränderungen in Deutschland. Die Deutsche Demokratische Republik (DDR) und die Bundesrepublik Deutschland näherten sich staatlich und politisch an. Dieser Prozess führte 1990 zur Eingliederung der DDR in das politische System der Bundesrepublik. Für dieses historische Ereignis existiert eine fest etablierte Bezeichnung, die in Politik, Geschichte und Medien verwendet wird.",
     "en": {
       "question": "What is the general name given to the GDR's accession to the Federal Republic of Germany in 1990?",
@@ -1428,7 +1428,7 @@ export const QUESTIONS = [
     "d": "Der Staat muss sich nicht an die Gesetze halten.",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Der Begriff „Rechtsstaat“ ist ein zentrales Prinzip der deutschen Demokratie. Er beschreibt, wie Staat, Politik und Bürger miteinander umgehen und welche Rolle Gesetze spielen. Um die Bedeutung zu verstehen, muss man wissen, wer in Deutschland an Gesetze gebunden ist und wie staatliche Macht kontrolliert wird.",
     "en": {
       "question": "Germany is a state governed by the rule of law. What does that mean?",
@@ -1568,7 +1568,7 @@ export const QUESTIONS = [
     "d": "Ja, wenn mehr als die Halfte der Abgeordneten im Bundestag dafur sind.",
     "solution": "a",
     "image": null,
-    "category": "Press Freedom",
+    "category": "Others",
     "context": "In Deutschland ist die Pressefreiheit ein zentraler Bestandteil der Demokratie und im Grundgesetz verankert. Sie schützt die freie Berichterstattung und Meinungsvielfalt und soll verhindern, dass der Staat die Medien kontrolliert oder einschränkt. Die Frage beschäftigt sich damit, ob und unter welchen politischen oder rechtlichen Voraussetzungen eine Partei im Deutschen Bundestag diese Pressefreiheit abschaffen könnte, und prüft das Wissen über den rechtlichen Schutz von Grundrechten und die Grenzen parlamentarischer Macht.",
     "en": {
       "question": "A party in the German Bundestag wants to abolish freedom of the press. Is that possible?",
@@ -1608,7 +1608,7 @@ export const QUESTIONS = [
     "d": "Nazi-, Hamas- oder Islamischer Staat-Symbole öffentlich tragen darf.",
     "solution": "a",
     "image": null,
-    "category": "General",
+    "category": "Others",
     "context": "Die Frage bezieht sich auf das Grundrecht der Meinungsfreiheit in Deutschland. Dieses Recht ist im Grundgesetz verankert und erlaubt Menschen, ihre Meinung frei zu äußern, zum Beispiel in der Öffentlichkeit oder in Medien. Gleichzeitig gibt es gesetzliche Grenzen, etwa zum Schutz anderer Personen oder der öffentlichen Ordnung. Die Antwortmöglichkeiten sollen zeigen, welche Aussagen zur Meinungsfreiheit erlaubt sind und welche gegen geltendes Recht verstoßen.",
     "en": {
       "question": "Freedom of expression in Germany means that I ...",
@@ -1868,7 +1868,7 @@ export const QUESTIONS = [
     "d": "am Maifeiertag",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "Others",
     "context": "Die Frage bezieht sich auf traditionelle Feste in Deutschland, bei denen bestimmte Bräuche typisch sind. Zu manchen Anlässen gehören Trachten, zu anderen religiöse Rituale oder Volksfeste. Besonders bekannt sind Feiern, bei denen Menschen sich verkleiden, Masken tragen und an Umzügen teilnehmen. Solche Bräuche haben oft einen historischen oder regionalen Hintergrund und finden an festgelegten Tagen im Jahreslauf statt.",
     "en": {
       "question": "For which festival do people in Germany wear colorful costumes and masks?",
@@ -1968,7 +1968,7 @@ export const QUESTIONS = [
     "d": "4",
     "solution": "a",
     "image": "assets/questions/99.png",
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die staatlichen Symbole Deutschlands. Das Wappen der Bundesrepublik Deutschland ist ein offizielles Zeichen, das häufig auf historischen Darstellungen, Gebäuden, Dokumenten oder Münzen zu sehen ist. Unter den angegebenen Abbildungen soll das korrekte Wappen ausgewählt werden.",
     "en": {
       "question": "What is the coat of arms of the Federal Republic of Germany?",
@@ -2028,7 +2028,7 @@ export const QUESTIONS = [
     "d": "Elsass-Lothringen",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die Bundesländer der Bundesrepublik Deutschland. Deutschland ist ein föderaler Staat und besteht aus 16 Bundesländern mit eigenen Regierungen und Verwaltungsstrukturen. In der folgenden Auswahl sind mehrere bekannte deutsche Bundesländer genannt, aber eine Option bezeichnet ein Gebiet, das historisch oder geografisch zu einem anderen Staat gehört. Auf dieser Grundlage soll entschieden werden, welche Antwort kein deutsches Bundesland ist.",
     "en": {
       "question": "What is not a federal state of the Federal Republic of Germany?",
@@ -2088,7 +2088,7 @@ export const QUESTIONS = [
     "d": "Pferd",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die Frage bezieht sich auf staatliche Symbole und die Heraldik Deutschlands. Viele Länder haben ein Wappentier, das ihre Geschichte, Werte oder Macht symbolisiert. Um die richtige Option zu wählen, ist Grundwissen über das deutsche Staatswappen und seine historische Bedeutung hilfreich.",
     "en": {
       "question": "Which animal is the heraldic animal of the Federal Republic of Germany?",
@@ -2148,7 +2148,7 @@ export const QUESTIONS = [
     "d": "Auswärtiges Amt",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland gibt es verschiedene staatliche Ebenen wie Bund, Länder und Gemeinden. Jede Ebene hat eigene Behörden und Ämter mit bestimmten Aufgaben. Die Frage bezieht sich darauf, welche dieser Ämter zur Verwaltung einer Gemeinde gehören. Dafür ist es wichtig zu wissen, welche Behörden lokal organisiert sind und direkt für die Bürgerinnen und Bürger einer Stadt oder Gemeinde zuständig sind, im Gegensatz zu kirchlichen oder bundesweiten Einrichtungen.",
     "en": {
       "question": "Which office belongs to the municipal administration in Germany?",
@@ -2168,7 +2168,7 @@ export const QUESTIONS = [
     "d": "der/die Vorsitzende einer Partei",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf das politische und administrative System in Deutschland. Auf kommunaler Ebene gibt es Gemeinden und Städte, die eine eigene Selbstverwaltung haben. Dort übernehmen gewählte Vertreter bestimmte Aufgaben und repräsentieren die Kommune nach außen. Um die richtige Antwort zu finden, sollte man wissen, welche Funktionen es in einer Gemeinde gibt und welche Aufgaben zu Schule, Bankwesen oder Parteien gehören.",
     "en": {
       "question": "In Germany, a mayor is ...",
@@ -2188,7 +2188,7 @@ export const QUESTIONS = [
     "d": "Ich wende mich an das Finanzamt, weil ich als Steuerzahler / Steuerzahlerin ein Recht auf die Buslinie habe.",
     "solution": "b",
     "image": null,
-    "category": "Assembly & Protests",
+    "category": "Others",
     "context": "Stellen Sie sich vor, Sie nutzen täglich eine bestimmte Buslinie, um zur Arbeit zu kommen. Eines Tages erfahren Sie, dass diese Buslinie aus Kostengründen abgeschafft werden soll. Viele Menschen aus der Umgebung wären davon betroffen und müssten ihre Gewohnheiten ändern. Sie überlegen nun, welche Möglichkeiten es gibt, sich als Bürgerin oder Bürger einzusetzen, um die Buslinie zu erhalten oder Einfluss auf die Entscheidung der Gemeinde zu nehmen.",
     "en": {
       "question": "They want to abolish the bus line that you always use to get to work. What can you do to maintain the bus line?",
@@ -2208,7 +2208,7 @@ export const QUESTIONS = [
     "d": "Sie müssen nichts tun. Man darf in Deutschland jederzeit überall demonstrieren.",
     "solution": "a",
     "image": null,
-    "category": "Assembly & Protests",
+    "category": "Others",
     "context": "In Deutschland sind Versammlungen und Demonstrationen durch das Grundgesetz geschützt, unterliegen aber bestimmten gesetzlichen Regelungen. Wer eine Demonstration im öffentlichen Raum plant, muss die geltenden Vorschriften beachten, damit Sicherheit, Ordnung und der Schutz anderer gewährleistet bleiben. Das betrifft insbesondere die Anmeldung und Zusammenarbeit mit den zuständigen Behörden.",
     "en": {
       "question": "Maik and Sybille want to hold a demonstration on the street with friends at their German place of residence. What do they have to do beforehand?",
@@ -2228,7 +2228,7 @@ export const QUESTIONS = [
     "d": "beim Ordnungsamt",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Stellen Sie sich vor, Sie ziehen innerhalb Deutschlands in eine neue Wohnung oder in eine andere Stadt. Neben dem Umzug selbst gibt es auch rechtliche Pflichten, die erfüllt werden müssen. Der Staat möchte wissen, wo Menschen wohnen, um Verwaltungsangelegenheiten korrekt zu regeln. In diesem Zusammenhang stellt sich die Frage, bei welcher Behörde man seine neue Adresse offiziell melden muss.",
     "en": {
       "question": "Where do you have to register if you move in Germany?",
@@ -2248,7 +2248,7 @@ export const QUESTIONS = [
     "d": "zur Agentur für Arbeit",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland ist die Eheschließung ein formeller Vorgang, der bestimmte rechtliche Schritte erfordert. Paare müssen sich vor der Hochzeit über die zuständige Behörde informieren, wichtige Unterlagen zusammenstellen und einen Termin vereinbaren. Je nach Aufgabe sind unterschiedliche Ämter zuständig, etwa für Meldewesen, Ordnung oder Arbeitsvermittlung. Die Frage zielt darauf ab, zu wissen, welche staatliche Stelle für die erste Anmeldung einer Eheschließung verantwortlich ist.",
     "en": {
       "question": "Where do you have to go first in Germany if you want to get married?",
@@ -2268,7 +2268,7 @@ export const QUESTIONS = [
     "d": "wenn die Nachbarn schlafen gehen",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland gibt es gesetzliche Regelungen zum Lärmschutz, die festlegen, zu welchen Zeiten besondere Ruhe einzuhalten ist. Diese sogenannten Ruhezeiten sollen Anwohner vor nächtlichem Lärm schützen und gelten unter anderem für Musik, Bauarbeiten oder laute Geräte. Die genauen Regelungen können im Bundesimmissionsschutzgesetz sowie in kommunalen Vorschriften festgelegt sein. Die Frage zielt darauf ab, wann diese Nachtruhe offiziell beginnt.",
     "en": {
       "question": "When does the statutory night's rest begin in Germany?",
@@ -2288,7 +2288,7 @@ export const QUESTIONS = [
     "d": "Ich kann mich beim Behördenleiter/bei der Behördenleiterin beschweren.",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Stellen Sie sich vor, Sie haben einen Termin bei einer deutschen Behörde, um ein wichtiges Anliegen zu klären. Während des Gesprächs fühlen Sie sich von Ihrer Ansprechpartnerin oder Ihrem Ansprechpartner respektlos oder unfair behandelt. Sie sind unsicher, welche Möglichkeiten Sie in einer solchen Situation haben und wie Sie angemessen reagieren können. Die folgende Frage hilft Ihnen, das richtige Verhalten gegenüber Behörden zu verstehen.",
     "en": {
       "question": "What should you do if you are treated badly by your contact person in a German authority?",
@@ -2308,7 +2308,7 @@ export const QUESTIONS = [
     "d": "Regeln, an die sich alle Bewohner und Bewohnerinnen halten müssen.",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In vielen Mietshäusern regelt die sogenannte Hausordnung das Zusammenleben der Bewohnerinnen und Bewohner. Sie soll Konflikte vermeiden und dafür sorgen, dass sich alle im Haus wohlfühlen. Die Hausordnung ergänzt oft den Mietvertrag und informiert darüber, welche Regeln im Alltag gelten, zum Beispiel im Umgang mit Gemeinschaftsflächen oder beim Einhalten von Ruhezeiten. Die folgende Frage bezieht sich auf den typischen Inhalt einer solchen Hausordnung.",
     "en": {
       "question": "Most apartment buildings in Germany have ‘house rules’. What do these rules set out?",
@@ -2328,7 +2328,7 @@ export const QUESTIONS = [
     "d": "nichts machen.",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland prüft das Finanzamt regelmäßig Steuererklärungen und erlässt daraufhin einen Steuerbescheid. Manchmal kann dieser Bescheid Fehler enthalten, zum Beispiel falsche Berechnungen oder nicht berücksichtigte Angaben. Steuerpflichtige haben bestimmte Rechte und Pflichten, wenn sie mit dem Bescheid nicht einverstanden sind. Die Frage bezieht sich darauf, wie man korrekt auf einen falschen Steuerbescheid reagiert.",
     "en": {
       "question": "If you want to defend yourself against a false tax assessment in Germany, you must ...",
@@ -2348,7 +2348,7 @@ export const QUESTIONS = [
     "d": "Ich gehe mit der Rechnung zum Finanzamt.",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Stellen Sie sich vor, Sie erhalten per Post eine Rechnung von einer deutschen Behörde, zum Beispiel für Gebühren oder Abgaben. Beim Überprüfen stellen Sie fest, dass der Betrag oder die Angaben nicht stimmen. Sie sind unsicher, wie man in Deutschland korrekt mit einer solchen Situation umgeht und welche Schritte vorgesehen sind, um einen Fehler offiziell zu klären oder anzufechten.",
     "en": {
       "question": "What do you do if you receive a wrong invoice from a German authority?",
@@ -2368,7 +2368,7 @@ export const QUESTIONS = [
     "d": "Worms und Speyer",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die heutige jüdische Bevölkerung in Deutschland. Jüdische Gemeinden sind historisch gewachsen und haben sich nach dem Zweiten Weltkrieg sowie durch Zuwanderung, besonders seit den 1990er‑Jahren, unterschiedlich entwickelt. Einige Großstädte sind wichtige kulturelle und religiöse Zentren mit großen Gemeinden, während andere vor allem historische Bedeutung haben. Vor diesem Hintergrund soll beurteilt werden, in welchen Städten aktuell die größten jüdischen Gemeinden leben.",
     "en": {
       "question": "Which cities have the largest Jewish communities in Germany?",
@@ -2488,7 +2488,7 @@ export const QUESTIONS = [
     "d": "Einigkeit und Recht und Freiheit...",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die deutsche Nationalhymne und ihren historischen Hintergrund. Sie prüft, welche Wortfolge die Hymne eröffnet. Dabei ist wichtig zu wissen, dass die Nationalhymne aus dem „Deutschlandlied“ stammt und nur eine bestimmte Strophe offiziell gesungen wird.",
     "en": {
       "question": "With which words does the German national anthem begin?",
@@ -2528,7 +2528,7 @@ export const QUESTIONS = [
     "d": "Er verkauft Lebensmittel und Kleidung.",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die Aufgaben des deutschen Staates und prüft das Wissen über staatliche Verantwortung. In Deutschland übernimmt der Staat bestimmte Aufgaben, um das Zusammenleben zu organisieren und die Lebensqualität der Menschen zu sichern. Dazu gehören vor allem öffentliche Leistungen und Infrastruktur. Andere Tätigkeiten werden hingegen von privaten Unternehmen übernommen und gehören nicht zu den Kernaufgaben des Staates.",
     "en": {
       "question": "The German state has many tasks. What task does this involve?",
@@ -2548,7 +2548,7 @@ export const QUESTIONS = [
     "d": "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In der politischen Bildung geht es darum zu verstehen, welche Aufgaben der Staat übernimmt. Dazu zählen soziale Leistungen, kulturelle Förderung und Unterstützung bestimmter gesellschaftlicher Bereiche. Manche Angebote gehören jedoch nicht zu den staatlichen Pflichten, sondern liegen im privaten Bereich. Die folgende Frage prüft dein Wissen darüber, welche Leistungen der deutsche Staat typischerweise erbringt und welche nicht zu seinen Aufgaben zählen.",
     "en": {
       "question": "The German state has many tasks. What task is not part of it?",
@@ -2568,7 +2568,7 @@ export const QUESTIONS = [
     "d": "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf die grundlegenden Merkmale eines demokratischen Rechtsstaates. In einem solchen Staat sind die Rechte und Freiheiten der Bürger gesetzlich geschützt, staatliches Handeln ist an Recht und Gesetz gebunden, und es gibt klare Regeln für den Umgang mit Straftaten und Macht. Die Antwortmöglichkeiten beschreiben verschiedene Situationen, von erlaubtem Verhalten der Bürger bis hin zu rechtswidrigem Handeln durch staatliche oder private Akteure.",
     "en": {
       "question": "It is not part of a democratic state under the rule of law that ...",
@@ -2648,7 +2648,7 @@ export const QUESTIONS = [
     "d": "eine Diskussion über die Politik Israels",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Der folgende Fragekomplex bezieht sich auf rechtliche und gesellschaftliche Grenzen des öffentlichen Handelns in Deutschland im Zusammenhang mit dem Staat Israel. Er soll das Verständnis dafür prüfen, wie Meinungsfreiheit, politische Diskussionen und gesetzliche Verbote – insbesondere im Bereich von Volksverhetzung, Extremismus und Schutz vor Hassaufrufen – voneinander abgegrenzt sind. Dabei ist wichtig zu unterscheiden, welche Äußerungen erlaubt sind und welche gegen deutsches Recht verstoßen.",
     "en": {
       "question": "What actions related to the State of Israel are prohibited in Germany?",
@@ -2728,7 +2728,7 @@ export const QUESTIONS = [
     "d": "Einheit.",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
       "question": "In Germany, cooperation between political parties to form a government is called a …",
@@ -2828,7 +2828,7 @@ export const QUESTIONS = [
     "d": "das Parlament",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland werden wichtige politische Entscheidungen durch verschiedene staatliche Organe getroffen. Dazu gehören unter anderem Institutionen, die für Ordnung und Recht sorgen, sowie Gremien, die politische Richtlinien festlegen oder Gesetze anwenden. Um zu verstehen, wie neue Gesetze entstehen, ist es wichtig zu wissen, welche Aufgaben diese Organe haben und welche Rolle sie im politischen System spielen. Die folgende Frage bezieht sich darauf, welches Organ für die Verabschiedung neuer Gesetze zuständig ist.",
     "en": {
       "question": "Who passes a new law in Germany?",
@@ -2948,7 +2948,7 @@ export const QUESTIONS = [
     "d": "den Bundestagssitz in Berlin",
     "solution": "d",
     "image": "assets/questions/148.png",
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf ein Bild eines bedeutenden staatlichen Gebäudes in Deutschland. Anhand von architektonischen Merkmalen, der Umgebung und bekannten Wahrzeichen soll erkannt werden, welches zentrale Verfassungsorgan oder welche politische Institution dargestellt ist. Die Antwortmöglichkeiten beziehen sich auf wichtige Regierungssitze und Institutionen in verschiedenen deutschen Städten. Ziel ist es, das abgebildete Gebäude korrekt zuzuordnen.",
     "en": {
       "question": "What does this picture show?",
@@ -2968,7 +2968,7 @@ export const QUESTIONS = [
     "d": "der Ministerpräsident/die Ministerpräsidentin des größten Bundeslandes",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Der Deutsche Bundestag ist das Parlament der Bundesrepublik Deutschland. Zu Beginn jeder neuen Wahlperiode wählt der Bundestag aus seiner Mitte eine Präsidentin oder einen Präsidenten. Dieses Amt hat eine wichtige Rolle: Die Bundestagspräsidentin oder der Bundestagspräsident leitet die Sitzungen, achtet auf die Einhaltung der Geschäftsordnung und vertritt den Bundestag nach außen. Traditionell gibt es dabei bestimmte politische Gepflogenheiten, die dabei helfen zu verstehen, wer für dieses Amt vorgeschlagen und gewählt wird.",
     "en": {
       "question": "Who is usually elected President of the German Bundestag?",
@@ -3008,7 +3008,7 @@ export const QUESTIONS = [
     "d": "ein Beschluss des Zionistenkongresses",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Entstehungsgeschichte des Staates Israel im Jahr 1948. Sie zielt darauf ab zu prüfen, auf welcher rechtlichen oder politischen Grundlage die Staatsgründung erfolgte. Dabei werden verschiedene historische Akteure und Institutionen genannt, die im Zusammenhang mit der Nachkriegsordnung, internationalen Beschlüssen und der zionistischen Bewegung eine Rolle spielten. Um die richtige Antwort zu finden, sind grundlegende Kenntnisse über die Ereignisse nach dem Zweiten Weltkrieg und die internationale Politik dieser Zeit erforderlich.",
     "en": {
       "question": "On what legal basis was the State of Israel founded?",
@@ -3108,7 +3108,7 @@ export const QUESTIONS = [
     "d": "das Bundeskabinett zu bilden.",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die Aufgaben und Zuständigkeiten des Deutschen Bundestages im politischen System der Bundesrepublik Deutschland. Der Bundestag ist das vom Volk gewählte Parlament und spielt eine zentrale Rolle in der Gesetzgebung sowie bei der Kontrolle der Bundesregierung. Um die Frage zu verstehen, ist es wichtig zu wissen, welche Funktionen dem Bundestag laut Grundgesetz zugewiesen sind und welche Aufgaben anderen staatlichen Organen zukommen.",
     "en": {
       "question": "It is not one of the tasks of the German Bundestag to ...",
@@ -3208,7 +3208,7 @@ export const QUESTIONS = [
     "d": "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die Arbeits- und Aufenthaltsorte des deutschen Bundeskanzlers bzw. der Bundeskanzlerin. In Deutschland gibt es verschiedene politische Zentren und offizielle Gebäude mit unterschiedlichen Funktionen, zum Beispiel für Regierungsgeschäfte oder den Empfang von Staatsgästen. Um die richtige Antwort zu finden, ist es wichtig zu wissen, wo sich der Amtssitz des Bundeskanzleramts befindet und welche Rolle Städte wie Berlin oder Bonn sowie Orte wie Schloss Meseberg oder Schloss Bellevue spielen.",
     "en": {
       "question": "Where does the German Chancellor spend most of his or her time? Most often, he/she is...",
@@ -3328,7 +3328,7 @@ export const QUESTIONS = [
     "d": "eine deutsche Bürgerinitiative",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland gibt es verschiedene staatliche Institutionen mit unterschiedlichen Aufgaben, zum Beispiel für Sicherheit, Verwaltung oder das Militär. Manche Begriffe klingen ähnlich und können leicht verwechselt werden. Um die richtige Antwort zu finden, ist es wichtig zu wissen, welche Organisation welche Aufgabe hat und welche Rolle sie im Staat übernimmt. Die folgende Frage prüft das Grundwissen über eine bekannte deutsche Institution und ihre Funktion.",
     "en": {
       "question": "What is the Bundeswehr?",
@@ -3428,7 +3428,7 @@ export const QUESTIONS = [
     "d": "der Bundestagspräsident/die Bundestagspräsidentin",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "In Deutschland gibt es mehrere wichtige Verfassungsorgane mit unterschiedlichen Aufgaben. Die Bundesregierung besteht aus dem Bundeskabinett, in dem Ministerinnen und Minister zentrale politische Entscheidungen vorbereiten und umsetzen. Daneben existieren weitere Ämter wie der Bundespräsident, der Bundesrat und der Bundestag, die jeweils eigene Rollen im politischen System haben. Um die Frage zu beantworten, ist es wichtig zu wissen, welche Funktion die Leitung des Bundeskabinetts umfasst.",
     "en": {
       "question": "Who heads the German Federal Cabinet?",
@@ -3688,7 +3688,7 @@ export const QUESTIONS = [
     "d": "dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Im Deutschen Bundestag sind Abgeordnete in der Regel Mitglied einer Fraktion, die gemeinsam politische Ziele verfolgt. Die Zusammensetzung der Fraktionen ist wichtig für Mehrheitsverhältnisse, die Bildung der Regierung und parlamentarische Arbeit. Manchmal entscheiden sich einzelne Abgeordnete, ihre Fraktion zu verlassen oder zu einer anderen zu wechseln. Dies wirft Fragen zu den rechtlichen Folgen, zur Stabilität der Regierung und zu den Rechten und Pflichten der Abgeordneten auf.",
     "en": {
       "question": "When members of the German Bundestag change their parliamentary group, ...",
@@ -3848,7 +3848,7 @@ export const QUESTIONS = [
     "d": "aus der christlichen Tradition",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die historischen und politischen Grundlagen der deutsch-israelischen Beziehungen. Nach dem Zweiten Weltkrieg stand Deutschland vor der Aufgabe, sich mit seiner Vergangenheit auseinanderzusetzen und Verantwortung für die Verbrechen der NS-Zeit zu übernehmen. Daraus entwickelten sich besondere moralische, politische und außenpolitische Verpflichtungen, die bis heute die deutsche Haltung gegenüber Israel prägen. Die Antwortmöglichkeiten greifen unterschiedliche mögliche Begründungen für diese besondere Verantwortung auf.",
     "en": {
       "question": "What is the basis of Germany's special responsibility for Israel?",
@@ -4388,7 +4388,7 @@ export const QUESTIONS = [
     "d": "Vaterländischen Verdienstorden",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Die Frage bezieht sich auf staatliche Auszeichnungen in Deutschland. Sie prüft das Wissen darüber, womit Personen in der Bundesrepublik für besondere Leistungen in Bereichen wie Politik, Wirtschaft, Kultur, Wissenschaft oder Soziales geehrt werden können. Dabei werden verschiedene Begriffe und Auszeichnungen genannt, von denen nur eine tatsächlich eine offizielle Ehrung der Bundesrepublik Deutschland ist. Ziel ist es, das richtige staatliche Ehrenzeichen zu erkennen.",
     "en": {
       "question": "What can you be honored with in the Federal Republic of Germany if you have made a special achievement in the political, economic, cultural, intellectual or social field? With the ...",
@@ -4488,7 +4488,7 @@ export const QUESTIONS = [
     "d": "das Familiengericht",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland werden rechtliche Streitigkeiten je nach Themenbereich unterschiedlichen Gerichten zugewiesen. Bei Problemen zwischen Arbeitnehmern und Arbeitgebern, etwa bei Kündigungen, Lohnforderungen oder Arbeitsverträgen, greift das Arbeitsrecht. Die Frage bezieht sich darauf, welches Gericht speziell für solche Konflikte in der Arbeitswelt zuständig ist und diese Fälle rechtlich entscheidet.",
     "en": {
       "question": "Which court is responsible in Germany for conflicts in the world of work?",
@@ -4548,7 +4548,7 @@ export const QUESTIONS = [
     "d": "eine Gaststättenerlaubnis von der zuständigen Behörde",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Ein Ehepaar plant, in Deutschland selbstständig zu werden und ein eigenes Restaurant zu eröffnen. Bevor der Betrieb starten kann, müssen verschiedene rechtliche und bürokratische Voraussetzungen erfüllt werden. Dazu gehören Anmeldungen bei Behörden und möglicherweise spezielle Genehmigungen. Die Frage bezieht sich darauf, welche Genehmigung für den Betrieb eines Restaurants zwingend erforderlich ist.",
     "en": {
       "question": "A couple wants to open a restaurant in Germany. What is absolutely necessary for this?",
@@ -4688,7 +4688,7 @@ export const QUESTIONS = [
     "d": "eine Straftat begangen hat und angeklagt wird",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Diese Frage stammt aus dem Bereich Staatsbürgerkunde und Recht in Deutschland. Sie prüft das Verständnis darüber, wann staatliche Gerichte eingeschaltet werden und welche Handlungen rechtliche Konsequenzen haben. Dabei geht es um den Unterschied zwischen persönlicher Freiheit, Ordnungswidrigkeiten und echten Straftaten. Der Kontext hilft zu erkennen, in welchen Fällen ein Gerichtsprozess notwendig ist und wann nicht, basierend auf den Grundprinzipien des deutschen Rechtsstaats.",
     "en": {
       "question": "When will there be a trial in court in Germany? If someone ...",
@@ -4708,7 +4708,7 @@ export const QUESTIONS = [
     "d": "eine Richterin/ein Richter",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf das deutsche Rechtssystem und die verschiedenen Rollen darin. In Deutschland gibt es unterschiedliche Personen mit rechtlichen Aufgaben, zum Beispiel im Gerichtssaal oder bei Ermittlungen. Nicht alle dürfen Bürgerinnen und Bürger beraten oder vor Gericht vertreten. Um die richtige Antwort zu finden, muss man wissen, welche Berufsgruppe rechtlich dafür zuständig ist, Mandanten bei Rechtsfragen zu helfen und ihre Interessen im Gerichtsverfahren zu vertreten.",
     "en": {
       "question": "Who advises people in Germany on legal issues and represents them in court?",
@@ -4728,7 +4728,7 @@ export const QUESTIONS = [
     "d": "arbeitet an einem Gericht und spricht Urteile",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf das deutsche Rechtssystem und die Rolle der Richterinnen und Richter darin. Sie soll prüfen, ob man versteht, welche Aufgaben Richterinnen und Richter im staatlichen Aufbau haben und wie sie sich von anderen Berufen im Justizwesen unterscheiden. Dabei geht es um ihre Funktion im Gericht und ihre Verantwortung bei der Rechtsprechung.",
     "en": {
       "question": "What is the main task of a judge in Germany? A judge ...",
@@ -4748,7 +4748,7 @@ export const QUESTIONS = [
     "d": "entscheidet mit Richtern/Richterinnen über Schuld und Strafe",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland wirken neben Berufsrichtern auch ehrenamtliche Laienrichter am Gericht mit. Diese nennt man Schöffen. Sie werden aus der Bevölkerung ausgewählt und nehmen an Gerichtsverhandlungen teil, besonders in Strafverfahren. Dabei haben sie bestimmte Rechte und Pflichten und tragen Verantwortung bei gerichtlichen Entscheidungen. Vor diesem Hintergrund stellt sich die Frage nach ihrer genauen Aufgabe im Gericht.",
     "en": {
       "question": "What does a lay judge do in Germany? They …",
@@ -4828,7 +4828,7 @@ export const QUESTIONS = [
     "d": "Prozedur",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland gibt es im Rechtssystem verschiedene Begriffe für Abläufe vor Gericht. Manche Wörter werden im alltäglichen Sprachgebrauch genutzt, andere sind juristische Fachbegriffe. Um die richtige Antwort zu finden, ist es hilfreich zu wissen, wie ein gerichtliches Verfahren offiziell genannt wird und welche der Begriffe eher aus anderen Bereichen wie Verwaltung, Technik oder Dokumentation stammen.",
     "en": {
       "question": "What is a court case called in Germany?",
@@ -4848,7 +4848,7 @@ export const QUESTIONS = [
     "d": "Deutschland regieren",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In diesem Kontext geht es um das politische und rechtliche System in Deutschland. Die Frage soll prüfen, welche Aufgaben verschiedene staatliche Rollen haben. Besonders wird der Beruf des Richters oder der Richterin betrachtet und abgegrenzt von anderen Tätigkeiten wie Gesetzgebung, Planung oder Regierungsführung. Das Verständnis der Gewaltenteilung und der jeweiligen Zuständigkeiten im Staat hilft dabei, die richtige Antwort auszuwählen.",
     "en": {
       "question": "What is the work of a judge in Germany?",
@@ -4868,7 +4868,7 @@ export const QUESTIONS = [
     "d": "die Gesetze zu beschließen",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf das politische und rechtliche System in Deutschland. Dabei geht es um die Aufgaben verschiedener staatlicher Institutionen, wie Polizei, Bundeswehr und Parlament. Um die richtige Antwort zu finden, sollte man wissen, welche Zuständigkeiten diese Organe haben und wie sie zur Sicherheit, Ordnung und Gesetzgebung im Staat beitragen. Kenntnisse aus dem Politik- oder Gemeinschaftskundeunterricht helfen beim Verständnis.",
     "en": {
       "question": "What is the task of the police in Germany?",
@@ -4888,7 +4888,7 @@ export const QUESTIONS = [
     "d": "bis zu 100 Sozialstunden",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Frage zum deutschen Gesellschafts- und Rechtssystem",
     "en": {
       "question": "How can someone who denies the Holocaust be punished?",
@@ -4908,7 +4908,7 @@ export const QUESTIONS = [
     "d": "ein ehrenamtlicher Richter/eine ehrenamtliche Richterin",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf das deutsche Rechtssystem und die Beteiligung von Bürgerinnen und Bürgern an Gerichtsverfahren. In bestimmten Gerichten wirken neben Berufsrichtern auch Laien mit, die bei Urteilen mitentscheiden. Der Begriff „Gerichtsschöffe“ beschreibt eine solche Rolle. Um die richtige Antwort zu finden, ist es wichtig zu wissen, welche Aufgaben und Voraussetzungen diese Personen haben und ob sie ein Amt, einen Beruf oder eine ehrenamtliche Funktion ausüben.",
     "en": {
       "question": "A court lay judge in Germany is ...",
@@ -5028,7 +5028,7 @@ export const QUESTIONS = [
     "d": "Anne (13 Jahre) und Tim (25 Jahre)",
     "solution": "d",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf rechtliche Rahmenbedingungen in Deutschland zum Zusammenleben als Paar. Dabei spielen vor allem der Schutz von Minderjährigen, Altersgrenzen und Gleichberechtigung eine Rolle. Erwachsene dürfen unabhängig von Geschlecht oder Altersunterschied zusammenleben. Beziehungen zwischen Erwachsenen und Minderjährigen unterliegen jedoch strengen gesetzlichen Einschränkungen zum Schutz junger Menschen. Dieses Kontextwissen hilft, die Antwortoptionen rechtlich einzuordnen.",
     "en": {
       "question": "Who is not allowed to live together as a couple in Germany?",
@@ -5048,7 +5048,7 @@ export const QUESTIONS = [
     "d": "21",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Diese Frage bezieht sich auf das deutsche Rechtssystem und das Thema Volljährigkeit. In Deutschland gibt es festgelegte Altersgrenzen, ab denen eine Person rechtlich als erwachsen gilt und bestimmte Rechte und Pflichten erhält, zum Beispiel volle Geschäftsfähigkeit oder das Wahlrecht. Die Frage soll prüfen, ab welchem Alter eine Person nach deutschem Gesetz als volljährig angesehen wird.",
     "en": {
       "question": "At what age do you come of age in Germany?",
@@ -5108,7 +5108,7 @@ export const QUESTIONS = [
     "d": "kann man dafür nicht bestraft werden",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf das deutsche Recht und den Umgang mit Gewalt gegenüber Kindern. In Deutschland haben Kinder ein gesetzlich verankertes Recht auf eine gewaltfreie Erziehung. Der Kontext der Frage soll helfen zu verstehen, welche rechtlichen und gesellschaftlichen Folgen es haben kann, wenn Erwachsene Kindern körperliche Gewalt zufügen, und ob dies als private Angelegenheit oder als strafbares Verhalten gilt.",
     "en": {
       "question": "If you hit a child in Germany, ...",
@@ -5128,7 +5128,7 @@ export const QUESTIONS = [
     "d": "darf man nicht wieder heiraten, wenn man einmal verheiratet war.",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In einem Integrations- oder Staatskundetest werden häufig Fragen zum deutschen Familien- und Eherecht gestellt. Diese sollen prüfen, ob man die grundlegenden gesetzlichen Regelungen kennt, die das Zusammenleben, die Ehe und Partnerschaften in Deutschland betreffen. Dabei geht es unter anderem um die Frage, wie viele Ehen gleichzeitig erlaubt sind und welche rechtlichen Voraussetzungen für eine Eheschließung gelten.",
     "en": {
       "question": "In Germany ...",
@@ -5148,7 +5148,7 @@ export const QUESTIONS = [
     "d": "Das Besuchsrecht für die Kinder gilt ein Jahr.",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die richtige Antwort ergibt sich aus dem offiziellen BAMF-Fragenkatalog.",
     "en": {
       "question": "Married couples in Germany may divorce. They usually have to observe a ‘year of separation’. What does this mean?",
@@ -5228,7 +5228,7 @@ export const QUESTIONS = [
     "d": "Es entscheidet, welche Schule das Kind besucht.",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf die Aufgaben und Befugnisse des Jugendamts in Deutschland. Das Jugendamt ist eine staatliche Behörde, die sich mit dem Schutz und der Unterstützung von Kindern, Jugendlichen und Familien beschäftigt. Um die richtige Antwort zu finden, muss man wissen, welche gesetzlichen Grundlagen das Jugendamt hat und in welchen Situationen es eingreifen darf oder nicht. Die Antwortmöglichkeiten beschreiben unterschiedliche mögliche Zuständigkeiten dieser Behörde.",
     "en": {
       "question": "What is the youth welfare office allowed to do in Germany?",
@@ -5308,7 +5308,7 @@ export const QUESTIONS = [
     "d": "werden nicht bestraft.",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland gibt es besondere gesetzliche Regelungen für Kinder und Jugendliche im Strafrecht. Diese Regeln sollen berücksichtigen, dass junge Menschen sich noch in der Entwicklung befinden und anders als Erwachsene handeln und denken. Ab einem bestimmten Alter können sie für Straftaten verantwortlich gemacht werden, jedoch gelten dabei spezielle Vorschriften des Jugendstrafrechts, die sich von denen für Erwachsene unterscheiden.",
     "en": {
       "question": "In Germany, young people from the age of 14 are criminally responsible. This means that young people who are 14 years of age and older and who violate criminal laws ...",
@@ -5348,7 +5348,7 @@ export const QUESTIONS = [
     "d": "Sie muss mindestens zehn Jahre in Deutschland leben, bevor sie den Führerschein machen kann.",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Eine junge Frau lebt in Deutschland und möchte den Führerschein erwerben. Sie kann bereits fahren, ist aber unsicher wegen der theoretischen und praktischen Prüfung. Besonders sorgt sie sich, weil Deutsch nicht ihre Muttersprache ist und sie Angst hat, die Fragen nicht zu verstehen. Nun informiert sie sich über die Möglichkeiten, unter welchen Voraussetzungen und in welcher Sprache sie die Führerscheinprüfung ablegen kann.",
     "en": {
       "question": "A young woman wants to get her driver's license. She is afraid of the exam because her mother tongue is not German. Which is correct?",
@@ -5428,7 +5428,7 @@ export const QUESTIONS = [
     "d": "die Einwilligung der Kinder",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "Die Frage bezieht sich auf die rechtlichen Voraussetzungen für eine Ehescheidung in Deutschland. Sie richtet sich an Personen, die wissen möchten, welche formalen oder gesetzlichen Bedingungen erfüllt sein müssen, um eine Ehe beenden zu können. Dabei geht es um mögliche Beteiligte oder Nachweise, die im Scheidungsverfahren eine Rolle spielen könnten. Die Antwort soll klären, was tatsächlich gesetzlich erforderlich ist.",
     "en": {
       "question": "What do you need for a divorce in Germany?",
@@ -5448,7 +5448,7 @@ export const QUESTIONS = [
     "d": "der Vereinten Nationen (VN)",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die außenpolitische Einbindung der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg. Sie prüft Kenntnisse über internationale Organisationen und Militärbündnisse, die in der zweiten Hälfte des 20. Jahrhunderts entstanden sind. Wichtig ist dabei zu wissen, wann die Bundesrepublik gegründet wurde und welche internationalen Zusammenschlüsse es zu diesem Zeitpunkt bereits gab oder später entstanden. Dadurch lässt sich beurteilen, bei welchen Organisationen Deutschland von Beginn an beteiligt war.",
     "en": {
       "question": "The Federal Republic of Germany is a founding member ...",
@@ -5468,7 +5468,7 @@ export const QUESTIONS = [
     "d": "Deutsche können ohne Passkontrolle in jedes Land reisen",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Das Schengener Abkommen ist ein europäisches Abkommen, das die Grenzkontrollen zwischen bestimmten europäischen Staaten regelt. Es betrifft vor allem das Reisen über Landesgrenzen hinweg und hat Auswirkungen darauf, wie und mit welchen Dokumenten Menschen sich innerhalb Europas bewegen können. Um die Frage zu beantworten, sollte man wissen, welche Länder zum Schengen-Raum gehören und welche Erleichterungen oder Einschränkungen sich daraus für Reisende ergeben.",
     "en": {
       "question": "Germany is a member of the Schengen Agreement. What does that mean?",
@@ -5488,7 +5488,7 @@ export const QUESTIONS = [
     "d": "Schweiz",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage stammt aus einem Geografie‑Quiz über Europa. Sie prüft das Wissen über die Lage Deutschlands und seine direkten Nachbarländer. Um die richtige Antwort zu finden, sollte man wissen, welche Länder eine gemeinsame Grenze mit Deutschland haben und welche weiter entfernt liegen. Kenntnisse über die europäische Landkarte sind dabei hilfreich.",
     "en": {
       "question": "Which country is a neighboring country of Germany?",
@@ -5508,7 +5508,7 @@ export const QUESTIONS = [
     "d": "Polen",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage stammt aus einem Geografie-Quiz über Europa. Sie prüft grundlegende Kenntnisse über die Lage Deutschlands und seine direkten Nachbarstaaten. Die Antwortmöglichkeiten nennen verschiedene europäische Länder, von denen nur eines eine gemeinsame Grenze mit Deutschland hat. Aufgabe ist es, dieses Nachbarland korrekt zu identifizieren.",
     "en": {
       "question": "Which country is a neighboring country of Germany?",
@@ -5528,7 +5528,7 @@ export const QUESTIONS = [
     "d": "Zwei Frauen leben zusammen",
     "solution": "c",
     "image": null,
-    "category": "Law & Governance",
+    "category": "Law",
     "context": "In Deutschland sind verschiedene Lebens- und Familienformen rechtlich geregelt. Das Familienrecht legt fest, welche Partnerschaften und Formen des Zusammenlebens erlaubt sind, etwa durch Ehe-, Familien- und Strafrecht. Die folgende Frage bezieht sich auf rechtliche Vorgaben in Deutschland und prüft das Verständnis darüber, welche Lebensformen gesellschaftlich vorkommen, aber gesetzlich erlaubt oder verboten sind. Dabei geht es nicht um moralische Bewertungen, sondern um die aktuelle Rechtslage.",
     "en": {
       "question": "Which way of life is not allowed in Germany?",
@@ -5548,7 +5548,7 @@ export const QUESTIONS = [
     "d": "Norwegen",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf Länder außerhalb Deutschlands, in denen Deutsch als Muttersprache oder wichtige Verkehrssprache von vielen Menschen gesprochen wird. In Europa gibt es mehrere Nachbarstaaten mit historisch gewachsenen deutschsprachigen Bevölkerungsgruppen. Kenntnisse über Sprachverbreitung, Geschichte und kulturelle Nähe helfen dabei, die richtige Antwort auszuwählen.",
     "en": {
       "question": "In which other country is there a large German-speaking population?",
@@ -5568,7 +5568,7 @@ export const QUESTIONS = [
     "d": "Bild 4",
     "solution": "b",
     "image": "assets/questions/279.png",
-    "category": "History & Geography",
+    "category": "State",
     "context": "In einem Quiz zur allgemeinen Bildung und europäischen Symbolen sollen die Teilnehmenden ihr Wissen testen. Die folgende Frage bezieht sich auf die Europäische Union und ihre offiziellen Symbole. Es werden mehrere Bilder gezeigt, von denen nur eines die richtige Flagge der Europäischen Union darstellt. Wählen Sie das Bild aus, das korrekt ist.",
     "en": {
       "question": "What is the flag of the European Union?",
@@ -5588,7 +5588,7 @@ export const QUESTIONS = [
     "d": "Dänemark",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf geografisches Grundwissen über Europa. Deutschland liegt in Mitteleuropa und grenzt an mehrere andere Staaten. Um die richtige Antwort zu wählen, sollte man wissen, welche Länder direkt eine gemeinsame Land- oder Seegrenze mit Deutschland haben. Die Antwortmöglichkeiten nennen verschiedene nordische Länder zur Auswahl.",
     "en": {
       "question": "Which country is a neighboring country of Germany?",
@@ -5608,7 +5608,7 @@ export const QUESTIONS = [
     "d": "Bulgarien",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die folgende Frage bezieht sich auf geografisches Grundwissen über Europa. Deutschland liegt im zentralen Teil Europas und grenzt an mehrere andere Länder. Um die richtige Antwort zu finden, sollte man wissen, welche Staaten eine direkte Landgrenze mit Deutschland teilen und welche zwar in Europa liegen, aber nicht an Deutschland angrenzen.",
     "en": {
       "question": "Which country is a neighboring country of Germany?",
@@ -5688,7 +5688,7 @@ export const QUESTIONS = [
     "d": "Tschechien",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf geografisches Grundwissen über Europa. Sie fordert dazu auf, die Nachbarländer Deutschlands zu kennen. Deutschland liegt in Mitteleuropa und grenzt an mehrere Staaten. Unter den gegebenen Antwortmöglichkeiten soll das Land ausgewählt werden, das direkt eine gemeinsame Grenze mit Deutschland hat.",
     "en": {
       "question": "Which country is a neighboring country of Germany?",
@@ -5708,7 +5708,7 @@ export const QUESTIONS = [
     "d": "London",
     "solution": "b",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Das Europäische Parlament ist eines der zentralen Organe der Europäischen Union und vertritt die Bürgerinnen und Bürger der Mitgliedstaaten. Wie viele EU-Institutionen ist auch das Parlament nicht an einem einzigen Ort angesiedelt, sondern hat historisch festgelegte Standorte. Die Frage bezieht sich darauf, in welcher Stadt sich der offizielle Sitz des Europäischen Parlaments befindet.",
     "en": {
       "question": "Where is the seat of the European Parliament?",
@@ -5748,7 +5748,7 @@ export const QUESTIONS = [
     "d": "27",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Europäische Union ist ein politischer und wirtschaftlicher Zusammenschluss europäischer Länder. Zweck der EU ist es, Zusammenarbeit, Frieden und wirtschaftliche Entwicklung zwischen den Mitgliedstaaten zu fördern. Im Laufe der Zeit sind neue Länder der EU beigetreten, während andere sie verlassen haben. Um aktuelle politische, wirtschaftliche oder geografische Fragen richtig beantworten zu können, ist es wichtig zu wissen, aus wie vielen Staaten die EU derzeit besteht.",
     "en": {
       "question": "How many Member States does the EU have today?",
@@ -5768,7 +5768,7 @@ export const QUESTIONS = [
     "d": "Verpflichtung Deutschlands zu Reparationsleistungen",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf ein wichtiges Ereignis der europäischen Nachkriegsgeschichte. Die „Römischen Verträge“ wurden 1957 von mehreren westeuropäischen Staaten unterzeichnet und gelten als zentraler Schritt der europäischen Integration. Zum 50. Jahrestag im Jahr 2007 wurde an ihre Bedeutung für Zusammenarbeit, Wirtschaft und Politik in Europa erinnert. Um die richtige Antwort zu finden, ist es hilfreich zu wissen, welche Ziele mit den Verträgen verfolgt wurden und welche Institutionen dadurch entstanden.",
     "en": {
       "question": "In 2007, the 50th anniversary of the \"Treaties of Rome\" was celebrated. What was the content of the contracts?",
@@ -5788,7 +5788,7 @@ export const QUESTIONS = [
     "d": "Bonn, Zürich und Mailand",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Diese Frage bezieht sich auf die Arbeitsorte des Europäischen Parlaments, einer zentralen Institution der Europäischen Union. Es geht darum zu wissen, in welchen europäischen Städten das Parlament seine offiziellen Tätigkeiten ausübt, wie zum Beispiel Parlamentssitzungen, Ausschussarbeit oder Verwaltung. Die Antwortmöglichkeiten listen verschiedene Städtekombinationen zur Auswahl.",
     "en": {
       "question": "Where does the European Parliament work?",
@@ -5808,7 +5808,7 @@ export const QUESTIONS = [
     "d": "durch die \"Londoner Verträge\"",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "In der Nachkriegszeit bemühte sich die Bundesrepublik Deutschland um politische und wirtschaftliche Zusammenarbeit mit anderen europäischen Staaten. Ziel war es, den Frieden zu sichern, den Wiederaufbau zu fördern und gemeinsame Märkte zu schaffen. In diesem Zusammenhang wurden mehrere internationale Verträge geschlossen, die zur Gründung europäischer Gemeinschaften führten. Die Frage bezieht sich auf jene Verträge, durch die die Bundesrepublik Teil der Europäischen Wirtschaftsgemeinschaft (EWG) wurde.",
     "en": {
       "question": "By what treaties did the Federal Republic of Germany join forces with other states to form the European Economic Community?",
@@ -5828,7 +5828,7 @@ export const QUESTIONS = [
     "d": "2005",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf die Einführung des Euro als Bargeld in Deutschland. Der Euro wurde zunächst als Buchgeld für Überweisungen und Rechnungen eingeführt, während die Deutsche Mark noch im Umlauf war. Erst zu einem späteren Zeitpunkt konnten Menschen im Alltag mit Euro-Banknoten und -Münzen bezahlen. Die Antwortmöglichkeiten nennen verschiedene Jahre, in denen diese Umstellung erfolgt sein könnte.",
     "en": {
       "question": "Since when do people in Germany pay in cash with the euro?",
@@ -5848,7 +5848,7 @@ export const QUESTIONS = [
     "d": "Marokko",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "In Deutschland leben viele Menschen mit Migrationshintergrund. Die Zusammensetzung dieser Bevölkerungsgruppe hat sich im Laufe der Zeit durch verschiedene historische Ereignisse verändert, zum Beispiel durch Arbeitsmigration, politische Entwicklungen oder die EU-Freizügigkeit. Statistiken zeigen, aus welchen Herkunftsländern besonders viele Migrantinnen und Migranten nach Deutschland gekommen sind. Die folgende Frage bezieht sich auf diese demografischen Entwicklungen und möchte prüfen, welches Herkunftsland den größten Anteil hat.",
     "en": {
       "question": "From which country did the most migrants come to Germany?",
@@ -5868,7 +5868,7 @@ export const QUESTIONS = [
     "d": "Vietnam, Polen, Mosambik",
     "solution": "d",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Die Frage bezieht sich auf Migration in der Deutschen Demokratischen Republik (DDR). In der DDR lebten und arbeiteten ausländische Arbeitskräfte und Vertragsarbeiter, die meist auf Grundlage staatlicher Abkommen aus sozialistischen oder befreundeten Ländern kamen. Sie wurden vor allem in Industrie, Landwirtschaft und Bauwesen eingesetzt. Das Wissen über Herkunftsländer dieser Migrantinnen und Migranten ist wichtig, um die Migrationspolitik und internationalen Beziehungen der DDR besser zu verstehen.",
     "en": {
       "question": "In the GDR, migrants mainly came from …",
@@ -5888,7 +5888,7 @@ export const QUESTIONS = [
     "d": "Schichtarbeiter/Schichtarbeiterinnen",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg erlebte die Bundesrepublik Deutschland ein starkes Wirtschaftswachstum, das sogenannte „Wirtschaftswunder“. Da es nicht genügend Arbeitskräfte gab, schloss Deutschland Anwerbeabkommen mit verschiedenen Ländern, um Arbeitskräfte aus dem Ausland zu gewinnen. Viele Menschen kamen in den 1950er- und 1960er-Jahren nach Deutschland, um in Fabriken, im Bergbau oder in anderen Bereichen zu arbeiten. Für diese Gruppe von Arbeitskräften wurde ein bestimmter Begriff verwendet, der heute historisch geprägt ist.",
     "en": {
       "question": "Foreign workers who were recruited by the Federal Republic of Germany in the 50s and 60s were called ...",
@@ -5908,7 +5908,7 @@ export const QUESTIONS = [
     "d": "Spanien",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "History",
     "context": "Nach dem Zweiten Weltkrieg erlebte die Bundesrepublik Deutschland ein starkes Wirtschaftswachstum, das zu Arbeitskräftemangel führte. Um diesen zu beheben, schloss die Regierung in den 1950er- und 1960er-Jahren Anwerbeabkommen mit verschiedenen Ländern. Diese Vereinbarungen ermöglichten es ausländischen Arbeitskräften, zeitweise in Deutschland zu arbeiten. Die Frage bezieht sich auf das erste Herkunftsland dieser sogenannten Gastarbeiter.",
     "en": {
       "question": "From which country did the first guest workers come to Germany?",
@@ -6008,7 +6008,7 @@ export const QUESTIONS = [
     "d": "4",
     "solution": "d",
     "image": "assets/questions/be_1.jpeg",
-    "category": "History & Geography",
+    "category": "State",
     "context": "In dieser Aufgabe geht es um die deutschen Bundesländer und ihre offiziellen Wappen. Jedes Bundesland besitzt ein eigenes Hoheitszeichen, das historische und kulturelle Bedeutungen hat. Auf dem Bild oder in der Aufgabe sind mehrere Wappen mit Nummern dargestellt. Die Frage fordert dazu auf, das Wappen zu identifizieren, das offiziell zum Bundesland Berlin gehört, und die passende Nummer auszuwählen.",
     "en": {
       "question": "Which coat of arms belongs to the state of Berlin?",
@@ -6028,7 +6028,7 @@ export const QUESTIONS = [
     "d": "Altona",
     "solution": "a",
     "image": null,
-    "category": "History & Geography",
+    "category": "Geography",
     "context": "Die Frage bezieht sich auf die Verwaltungsstruktur Deutschlands. Berlin ist in mehrere Bezirke unterteilt, die eine besondere Form der kommunalen Verwaltung darstellen. Die Antwortmöglichkeiten enthalten verschiedene geografische Bezeichnungen: Einige sind Berliner Bezirke, andere sind Landkreise oder Stadtteile in anderen Bundesländern oder Städten. Ziel ist es, den Bezirk zu erkennen, der tatsächlich zu Berlin gehört.",
     "en": {
       "question": "Which is a district of Berlin?",
@@ -6088,7 +6088,7 @@ export const QUESTIONS = [
     "d": "blau-weiß-rot",
     "solution": "c",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die folgende Frage bezieht sich auf allgemeines Wissen über deutsche Bundesländer. Konkret geht es um die Landesflagge von Berlin, also die offizielle Flagge der deutschen Hauptstadt. Anhand der Antwortmöglichkeiten soll erkannt werden, aus welchen Farben diese Flagge besteht. Die Frage prüft Kenntnisse über nationale und regionale Symbole Deutschlands.",
     "en": {
       "question": "What colors does the state flag of Berlin have?",
@@ -6128,7 +6128,7 @@ export const QUESTIONS = [
     "d": "Saarland",
     "solution": "b",
     "image": null,
-    "category": "History & Geography",
+    "category": "State",
     "context": "In Deutschland gibt es 16 Bundesländer mit unterschiedlichen politischen und geografischen Strukturen. Einige Bundesländer bestehen aus mehreren Städten und Regionen, während andere nur aus einer einzigen großen Stadt bestehen und deshalb besondere Verwaltungsformen haben. Zu diesen sogenannten Stadtstaaten zählen nur wenige Bundesländer. Die folgende Frage prüft, ob man weiß, welches der genannten Bundesländer zu dieser speziellen Kategorie gehört.",
     "en": {
       "question": "Which state is a city-state?",
@@ -6168,7 +6168,7 @@ export const QUESTIONS = [
     "d": "Innensenator / Innensenatorin",
     "solution": "a",
     "image": null,
-    "category": "Law & Governance",
+    "category": "State",
     "context": "Berlin ist ein deutsches Bundesland und zugleich Stadtstaat. Die Landesregierung heißt „Senat von Berlin“ und besteht aus dem Regierenden Bürgermeister bzw. der Regierenden Bürgermeisterin sowie mehreren Senatorinnen und Senatoren, die jeweils ein bestimmtes Ressort leiten, zum Beispiel Finanzen, Inneres oder Justiz. Nicht jedes politische Aufgabenfeld existiert auf Landesebene. Die Frage prüft, welches der genannten Senatorenämter es im Berliner Senat nicht gibt.",
     "en": {
       "question": "Which senator does Berlin not have?",
@@ -6188,7 +6188,7 @@ export const QUESTIONS = [
     "d": "4",
     "solution": "d",
     "image": "assets/questions/be_10.jpeg",
-    "category": "History & Geography",
+    "category": "State",
     "context": "Die Frage bezieht sich auf die föderale Struktur Deutschlands. Deutschland besteht aus 16 Bundesländern, von denen einige gleichzeitig Stadtstaaten sind. In einem Quiz oder Test sollen die Teilnehmenden anhand von vorgegebenen Antwortmöglichkeiten auswählen, welches Bundesland Berlin ist. Die Optionen a bis d stehen dabei für nummerierte Antworten, aus denen eine als richtig ausgewählt werden soll.",
     "en": {
       "question": "Which state is Berlin?",

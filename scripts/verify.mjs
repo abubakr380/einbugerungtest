@@ -19,10 +19,15 @@ if (missingIds.length) failures.push(`Missing HTML ids referenced by app.js: ${m
 const requiredQuestionKeys = ["num", "question", "a", "b", "c", "d", "solution", "image", "category", "context", "en"];
 const general = QUESTIONS.filter((question) => !question.num.startsWith("BE-"));
 const berlin = QUESTIONS.filter((question) => question.num.startsWith("BE-"));
+const themeCounts = general.reduce((counts, question) => counts.set(question.category, (counts.get(question.category) || 0) + 1), new Map());
 if (QUESTIONS.length !== 310 || general.length !== 300 || berlin.length !== 10) failures.push("Question split is not 300 general + 10 Berlin.");
 if (new Set(QUESTIONS.map((question) => question.num)).size !== 310) failures.push("Question numbers are not unique.");
 if (QUESTIONS.some((question) => requiredQuestionKeys.some((key) => !(key in question)))) failures.push("At least one question is missing a required key.");
 if (QUESTIONS.some((question) => !["a", "b", "c", "d"].includes(question.solution))) failures.push("At least one solution key is invalid.");
+const undersizedThemes = [...themeCounts].filter(([, count]) => count < 5);
+if (undersizedThemes.length) failures.push(`Themes with fewer than five questions: ${undersizedThemes.map(([theme, count]) => `${theme} (${count})`).join(', ')}`);
+const retiredThemes = ['General', 'History & Geography', 'Law & Governance', 'Press Freedom', 'Assembly & Protests'];
+if (retiredThemes.some(theme => themeCounts.has(theme))) failures.push("At least one retired combined or undersized theme remains.");
 const identicalEnglish = new Set(['Willy Brandt', 'Konrad Adenauer', 'Kurt Georg Kiesinger', 'Helmut Schmidt', 'Japan', 'USA', 'Dresden', 'Frankfurt/Oder', 'Berlin', 'Konrad Adenauer.', 'Willy Brandt.', 'Ludwig Erhard.', 'Gerhard Schröder.', 'Saarland', 'Brandenburg', 'Bremen', 'Baden-Württemberg', 'Schleswig-Holstein', 'Mecklenburg-Vorpommern', 'Gerhard Schröder', 'Helmut Kohl', 'Ludwig Erhard', 'tolerant.', 'Angela Merkel', 'Friedrich Merz', 'Ursula von der Leyen', 'Bärbel Bas', 'Bodo Ramelow', 'Frank-Walter Steinmeier', 'Joachim Gauck', 'Opposition', 'Portugal', 'Paris', 'London', 'Euro Union', 'Pankow', 'Prignitz', 'Altona']);
 for (const question of QUESTIONS) {
   for (const key of ['question', 'a', 'b', 'c', 'd', 'context']) {
@@ -56,6 +61,7 @@ if (failures.length) {
     questions: QUESTIONS.length,
     general: general.length,
     berlin: berlin.length,
+    themes: Object.fromEntries(themeCounts),
     localQuestionImages: QUESTIONS.filter((question) => question.image).length,
     htmlIds: ids.length,
     appIdReferences: new Set(appIdReferences).size,
