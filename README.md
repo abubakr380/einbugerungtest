@@ -155,7 +155,7 @@ The rebuild script deliberately uses empty strings for missing translations inst
 
 ## Data attribution and disclaimer
 
-The question bank was adapted from the public [Leben in Deutschland project](https://github.com/leben-in-deutschland/leben-in-deutschland-app) and follows the [BAMF preparation catalogue](https://oet.bamf.de/ords/oetut/f?p=514:1) format.
+The question bank was adapted from the public [Leben in Deutschland project](https://github.com/leben-in-deutschland/leben-in-deutschland-app). Its questions were compared with the [BAMF overall catalogue dated 7 May 2025](https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.pdf?__blob=publicationFile) in October 2026. This app uses its own stable question numbers and answer order; they do not correspond to the BAMF catalogue numbers. BAMF's [online preparation catalogue](https://oet.bamf.de/ords/oetut/f?p=514:1) shows the official correct answers. The PDF does not include an answer key.
 
 Theme names and question-to-theme assignments are maintained by this app as learning aids; they are not official BAMF categories.
 

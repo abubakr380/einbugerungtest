@@ -308,12 +308,6 @@ function startQuiz(mode, category = null, restored = null) {
     $("#quiz-timer").classList.add("is-hidden");
   }
   renderQuestion();
-  const previous = state.quiz.answers[state.quiz.index];
-  if (previous) {
-    state.quiz.locked = true;
-    state.quiz.selected = previous.selected;
-    renderAnswer(previous.question, previous.selected, previous.correct);
-  }
   saveQuizSession();
   if (mode === "mock") tickTimer();
   $("#quiz-overlay").scrollTop = 0;
@@ -379,9 +373,15 @@ function renderQuestion() {
     </button>`).join("");
   $("#feedback-panel").hidden = true;
   $("#feedback-panel").classList.remove("is-correct", "is-wrong");
-  $("#quiz-footer").hidden = true;
-  $("#next-question").hidden = true;
+  $("#previous-question").disabled = quiz.index === 0;
+  $("#next-question").disabled = true;
   $("#next-question").firstChild.textContent = quiz.index === quiz.questions.length - 1 ? "Auswertung" : "Weiter";
+  const previous = quiz.answers[quiz.index];
+  if (previous) {
+    quiz.locked = true;
+    quiz.selected = previous.selected;
+    renderAnswer(previous.question, previous.selected, previous.correct, false);
+  }
   $(".quiz-main")?.scrollTo?.({ top: 0 });
   $("#quiz-overlay").scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -395,12 +395,12 @@ async function answerQuestion(selected) {
   quiz.selected = selected;
   quiz.answers.push({ question, selected, correct });
 
-  await progressStore.answer(question.num, correct);
   saveQuizSession();
   renderAnswer(question, selected, correct);
+  await progressStore.answer(question.num, correct);
 }
 
-function renderAnswer(question, selected, correct) {
+function renderAnswer(question, selected, correct, scroll = true) {
   $$(".option-button", $("#quiz-options")).forEach((button) => {
     const option = button.dataset.option;
     button.disabled = true;
@@ -420,9 +420,18 @@ function renderAnswer(question, selected, correct) {
   $("#feedback-title").textContent = correct ? "Richtig beantwortet" : "Leider nicht richtig";
   $("#feedback-context").textContent = question.context;
   $("#feedback-translation p").textContent = question.en.context;
-  $("#quiz-footer").hidden = false;
-  $("#next-question").hidden = false;
-  window.setTimeout(() => $("#feedback-panel").scrollIntoView({ behavior: "smooth", block: "nearest" }), 120);
+  $("#next-question").disabled = false;
+  if (scroll) window.setTimeout(() => {
+    if (state.quiz?.questions[state.quiz.index] === question) $("#feedback-panel").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, 120);
+}
+
+function previousQuestion() {
+  const quiz = state.quiz;
+  if (!quiz || quiz.index === 0 || quiz.finishing) return;
+  quiz.index -= 1;
+  renderQuestion();
+  saveQuizSession();
 }
 
 function nextQuestion() {
@@ -621,6 +630,7 @@ function bindEvents() {
     const button = event.target.closest("[data-option]");
     if (button) answerQuestion(button.dataset.option);
   });
+  $("#previous-question").addEventListener("click", previousQuestion);
   $("#next-question").addEventListener("click", nextQuestion);
   $("#translation-toggle").addEventListener("click", toggleTranslation);
   $("#exit-quiz").addEventListener("click", () => openConfirm({
@@ -717,7 +727,7 @@ function restoreQuizSession() {
     if (!saved || saved.generation !== progressStore.doc.generation) return;
     const validIds = new Set(QUESTIONS.map(q => q.num));
     if (!["all", "mock", "weak", "unmastered", "category"].includes(saved.mode) || !Array.isArray(saved.ids) || !saved.ids.length || saved.ids.length > 310 || saved.ids.some(id => !validIds.has(id)) || new Set(saved.ids).size !== saved.ids.length) return;
-    if (!Number.isInteger(saved.index) || saved.index < 0 || saved.index >= saved.ids.length || !Array.isArray(saved.answers) || ![saved.index, saved.index + 1].includes(saved.answers.length)) return;
+    if (!Number.isInteger(saved.index) || saved.index < 0 || saved.index >= saved.ids.length || !Array.isArray(saved.answers) || saved.answers.length > saved.ids.length || saved.index > saved.answers.length) return;
     if (saved.answers.some((a, i) => a.num !== saved.ids[i] || !OPTION_KEYS.includes(a.selected))) return;
     if (saved.mode === "mock" && (!Number.isFinite(saved.deadline) || saved.ids.length !== 33)) return;
     startQuiz(saved.mode, saved.category, saved);

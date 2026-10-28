@@ -370,7 +370,9 @@ body.overlay-open .tab-bar { display: none; }
 .feedback-heading strong { font-size: 13px; }
 .feedback-panel > p { margin: 10px 0 0; color: #aeb9ca; font-size: 12px; line-height: 1.58; }
 .quiz-footer, .results-footer { z-index: 7; padding-top: 13px; padding-right: max(18px, env(safe-area-inset-right), calc((100vw - 680px) / 2 + 18px)); padding-bottom: calc(13px + env(safe-area-inset-bottom)); padding-left: max(18px, env(safe-area-inset-left), calc((100vw - 680px) / 2 + 18px)); border-top: 1px solid var(--border); background: linear-gradient(180deg, rgba(8,12,22,.96), #080c16); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
-.quiz-footer { position: relative; }
+.quiz-footer { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; }
+.quiz-footer .secondary-button { min-width: 95px; }
+.quiz-footer button:disabled { opacity: .45; cursor: not-allowed; }
 .quiz-footer .primary-button { width: 100%; }
 
 .results-overlay { z-index: 120; display: grid; grid-template-rows: minmax(0, 1fr) auto; height: 100vh; height: 100dvh; min-height: 0; overflow: hidden; }
